@@ -53,19 +53,17 @@
 .footer_right{ display:flex; align-items:center; gap:16px; }
 
 .footer_social{
-  width:34px;
-  height:34px;
+  width:30px;
+  height:30px;
   display:inline-flex;
   align-items:center;
   justify-content:center;
-  border:1px solid rgba(38,46,52,.35);
-  border-radius:50%;
   transition:background 120ms ease, transform 120ms ease;
 }
 
 .footer_social img{
-  width:18px;
-  height:18px;
+  width:34px;
+  height:34px;
   display:block;
   opacity:.9;
 }
