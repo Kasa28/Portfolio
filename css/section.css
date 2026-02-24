@@ -47,6 +47,7 @@
 
 .hero_image_shape:hover .hero_bg_shape{
   transform: rotate(-10deg) translate(-18px, 10px) scale(1.03);
+  filter: brightness(0.85);
 }
 
 .hero_image{
