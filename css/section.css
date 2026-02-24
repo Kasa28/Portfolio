@@ -1,4 +1,3 @@
-
 .hero_section{
   height: calc(100dvh - var(--nav_height));
   display: flex;
@@ -17,7 +16,7 @@
 .hero_media_col{
   flex: 1;
   display: flex;
-  align-items: flex-end;      
+  align-items: flex-end;
   justify-content: flex-start;
   overflow: visible;
   padding-bottom: 0;
@@ -28,32 +27,38 @@
   width: clamp(360px, 40vw, 620px);
   aspect-ratio: 1 / 1;
   overflow: visible;
+  align-self: flex-end;
 }
 
 .hero_bg_shape{
   position: absolute;
   z-index: 0;
-  width: 165%;
+  width: 170%;
   height: auto;
-  left: -20%;
-  bottom: -60%;
+  left: -150px;
+  bottom: -360px;
   pointer-events: none;
   user-select: none;
+  transition: transform 260ms cubic-bezier(.2,.8,.2,1);
+  transform-origin: 45% 60%;
+  transform: rotate(0deg) translate(0,0) scale(1);
+  will-change: transform;
 }
 
-.hero_image_shape::before{ content: none !important; }
+.hero_image_shape:hover .hero_bg_shape{
+  transform: rotate(-10deg) translate(-18px, 10px) scale(1.03);
+}
 
 .hero_image{
   position: absolute;
-  z-index: 2;              
+  z-index: 2;
   left: 24%;
-  bottom: -35%;            
-  width: 77%;
+  bottom: -35%;
+  width: 90%;
   height: auto;
   display: block;
   object-fit: contain;
 }
-
 
 .hero_content_col{
   flex: 1;
@@ -159,10 +164,8 @@
 .skills_section,
 .projects_section,
 .contact_section{ margin-top:104px; }
-
 .why_me_section,
 .skills_section{ padding:0 124px; }
-
 .why_me_section,
 .skills_section,
 .projects_section,
@@ -254,10 +257,8 @@
 .icon_60{ width:60px; }
 .icon_36{ width:36px; }
 .icon_32{ width:32px; }
-
 .skills_learning_row{ display:flex; gap:24px; padding:19px 0; }
 .skills_text{ padding:0 45px; }
-
 .projects_tabs{ padding-top:80px; display:flex; box-sizing:border-box; }
 .project_tab_btn{ font-size:30px; font-weight:500; }
 
@@ -325,9 +326,7 @@
 
 .project_preview_shadow_business{ box-shadow:0 0 10px rgba(255,255,255,.1); }
 .project_preview_shadow_game{ box-shadow:0 0 10px rgba(183,97,39,.6); }
-
 .project_actions{ display:flex; gap:40px; margin:34px 0 28px; }
-
 .references_section{ margin-top:80px; color:var(--secondary); }
 .references_title{ font-size:32px; text-align:center; }
 
