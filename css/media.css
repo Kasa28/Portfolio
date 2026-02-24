@@ -1,0 +1,15 @@
+@media (max-width: 900px) {
+  .site_footer {
+    height: auto;
+    padding: 24px 0;
+  }
+
+  .footer_row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer_left {
+    align-items: center;
+  }
+}
