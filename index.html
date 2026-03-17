@@ -181,97 +181,259 @@
 </section>
     </div>
 
-    <section id="projects" class="projects_section">
-      <div class="layout_container">
-        <h2 class="section_title">My Projects</h2>
+<section id="projects" class="projects_section">
+  <div class="layout_container">
+    <h2 class="section_title">My Projects</h2>
 
-        <div class="projects_tabs" role="group">
-          <div class="project_header_tab active">
-            <button onclick="showProject(event)" class="project_tab_btn color_lightblue" role="tab"
-              data_target="join" data_project="project_header_tab" data_content="project_content_tab"
-              aria-selected="true">
-              1. Kanban App
-            </button>
-          </div>
+    <div class="projects_tabs" role="tablist" aria-label="Project tabs">
+      <button class="project_tab active" data-project="join" role="tab" aria-selected="true">
+        1. Join
+      </button>
+      <button class="project_tab" data-project="Elpollo" role="tab" aria-selected="false">
+        2. El Pollo Loco
+      </button>
+      <button class="project_tab" data-project="ongoing" role="tab" aria-selected="false">
+        3. Ongoin Project
+      </button>
+    </div>
+  </div>
 
-          <div class="project_header_tab">
-            <button onclick="showProject(event)" class="project_tab_btn color_lightblue" role="tab"
-              data_target="epl" data_project="project_header_tab" data_content="project_content_tab"
-              aria-selected="false">
-              2. 2D Game
-            </button>
-          </div>
-
-          <div class="project_header_tab">
-            <button onclick="showProject(event)" class="project_tab_btn color_lightblue" role="tab"
-              data_target="upcoming" data_project="project_header_tab" data_content="project_content_tab"
-              aria-selected="false">
-              3. Upcoming
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div class="projects_dark_panel">
-        <div class="layout_container">
-          <article id="join" class="project_content_tab">
-            <ul class="project_details_list">
-              <li><h3 class="project_details_title">About the project</h3></li>
-              <li>
-                <p class="project_details_text">
-                  JOIN is a task management app, inspired by Kanban. It was designed and implemented as a Team project.
-                  You can create and organize tasks using drag and drop functions, assign users and categories.
+  <div class="projects_panel">
+    <div class="layout_container">
+      <article class="project_card active" id="join">
+        <div class="project_layout">
+          <div class="project_info_column">
+            <div class="project_info_item">
+              <img class="project_marker" src="./assets/icons/marker.svg" alt="">
+              <div class="project_info_text">
+                <div class="project_info_headline_row">
+                  <h3>About the project</h3>
+                  <span class="project_duration">Duration: 1,5 Months</span>
+                </div>
+                <p>
+                  Join is a task management application inspired by Kanban and created as a collaborative team project.
+                  Users can create, organize, and manage tasks using drag-and-drop functionality, assign users and categories, edit task cards, and add subtasks.
                 </p>
-              </li>
-
-              <li><h3 class="project_details_title">Work process</h3></li>
-              <li>
-                <p class="project_details_text">
-                  Within the three member team we assigned epics to each one. Then handled via git-branching each user storys,
-                  features, tasks individually. Once a user story was completed, we always merged as team, so no code was deleted by mistake.
-                  <br />
-                  This way development process was clean and team collaboration easy.
-                </p>
-              </li>
-
-              <li><h3 class="project_details_title">My group work experience</h3></li>
-              <li>
-                <p class="project_details_text">
-                  I really enjoyed collaboration and cooperation within the team.
-                  We installed daily calls, in order to keep track of progress and whole process.
-                  I sometimes helped out my colleagues, as well as we tested together in the end of the project.
-                </p>
-              </li>
-
-              <li><h3 class="project_details_title">Duration</h3></li>
-              <li><p class="project_details_text project_details_text_last">1.5 Months</p></li>
-            </ul>
-
-            <div class="project_showcase">
-              <div class="project_tech_block">
-                <p class="project_tech_title">Technologies</p>
-                <div class="project_tech_icons"></div>
-              </div>
-
-              <img class="project_preview_image project_preview_shadow_business"
-                src="./assets/img/project_kanbanapp_join.png" alt="Project preview - Kanban App">
-
-              <div class="project_actions">
-                <button class="btn_cta" tabindex="0">
-                  <a href="" target="_blank" tabindex="-1">Live Test</a>
-                </button>
-                <button class="btn_standard">
-                  <a href="" target="_blank">GitHub</a>
-                </button>
               </div>
             </div>
-          </article>
 
-          <article id="epl" class="project_content_tab" style="display: none;"></article>
-          <article id="upcoming" class="project_content_tab" style="display: none;"></article>
+            <div class="project_info_item">
+              <img class="project_marker" src="./assets/icons/marker.svg" alt="">
+              <div class="project_info_text">
+                <h3>How I have organised my work process</h3>
+                <p>
+                  Within our two-member team, we divided the project into epics and assigned responsibilities to each of us.
+                  We managed user stories, features, and tasks using Git branching. Once a feature was completed, we merged our work together to ensure no code was lost.
+                  This approach kept the development process structured and made collaboration smooth and efficient.
+                </p>
+              </div>
+            </div>
+
+            <div class="project_info_item">
+              <img class="project_marker" src="./assets/icons/marker.svg" alt="">
+              <div class="project_info_text">
+                <h3>My group work experience</h3>
+                <p>
+                  I really enjoyed working collaboratively within our team. We held daily meetings to track progress and stay aligned throughout the development process.
+                  We supported each other when needed and worked together on testing at the end of the project.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project_preview_column">
+            <div class="project_tech_block">
+              <p class="project_tech_title">Technologies</p>
+              <div class="project_tech_icons">
+                <img src="./assets/icons/angular.svg" alt="Angular">
+                <img src="./assets/icons/typescript.svg" alt="TypeScript">
+                <img src="./assets/icons/firebase.svg" alt="Firebase">
+              </div>
+            </div>
+
+            <img class="project_preview_image" src="./assets/img/join.png" alt="DA Bubble preview">
+
+            <div class="project_actions">
+              <button class="btn_cta"><a href="#" target="_blank">Live Test</a></button>
+              <button class="btn_standard"><a href="#" target="_blank">GitHub</a></button>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </article>
+
+      <article class="project_card" id="sharkie">
+        <div class="project_layout">
+          <div class="project_info_column">
+            <div class="project_info_item">
+              <img class="project_marker" src="./assets/icons/marker.svg" alt="">
+              <div class="project_info_text">
+                <div class="project_info_headline_row">
+                  <h3>About the project</h3>
+                  <span class="project_duration">Duration: 4 weeks</span>
+                </div>
+                <p>
+                  Sharkie is a playful project focused on interaction, game logic and user experience.
+                </p>
+              </div>
+            </div>
+
+            <div class="project_info_item">
+              <img class="project_marker" src="./assets/icons/marker.svg" alt="">
+              <div class="project_info_text">
+                <h3>How I have organised my work process</h3>
+                <p>
+                  I divided the features into smaller tasks and implemented them step by step.
+                </p>
+              </div>
+            </div>
+
+            <div class="project_info_item">
+              <img class="project_marker" src="./assets/icons/marker.svg" alt="">
+              <div class="project_info_text">
+                <h3>My lessons learned</h3>
+                <p>
+                  This project helped me improve logic, structure and frontend interactions.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project_preview_column">
+            <div class="project_tech_block">
+              <p class="project_tech_title">Technologies</p>
+              <div class="project_tech_icons">
+                <img src="./assets/icons/js.svg" alt="JavaScript">
+                <img src="./assets/icons/html.svg" alt="HTML">
+                <img src="./assets/icons/css.svg" alt="CSS">
+              </div>
+            </div>
+
+            <img class="project_preview_image" src="./assets/img/sharkie-preview.png" alt="Sharkie preview">
+
+            <div class="project_actions">
+              <button class="btn_cta"><a href="#" target="_blank">Live Test</a></button>
+              <button class="btn_standard"><a href="#" target="_blank">GitHub</a></button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="project_card" id="join">
+        <div class="project_layout">
+          <div class="project_info_column">
+            <div class="project_info_item">
+              <img class="project_marker" src="./assets/icons/marker.svg" alt="">
+              <div class="project_info_text">
+                <div class="project_info_headline_row">
+                  <h3>About the project</h3>
+                  <span class="project_duration">Duration: 1.5 months</span>
+                </div>
+                <p>
+                  Join is a task management app inspired by Kanban. Tasks can be created,
+                  organised and managed with drag and drop.
+                </p>
+              </div>
+            </div>
+
+            <div class="project_info_item">
+              <img class="project_marker" src="./assets/icons/marker.svg" alt="">
+              <div class="project_info_text">
+                <h3>Work process</h3>
+                <p>
+                  We worked with Git branching, split the tasks clearly and merged together as a team.
+                </p>
+              </div>
+            </div>
+
+            <div class="project_info_item">
+              <img class="project_marker" src="./assets/icons/marker.svg" alt="">
+              <div class="project_info_text">
+                <h3>My group work experience</h3>
+                <p>
+                  I enjoyed the collaboration, daily coordination and the testing process together.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project_preview_column">
+            <div class="project_tech_block">
+              <p class="project_tech_title">Technologies</p>
+              <div class="project_tech_icons">
+                <img src="./assets/icons/js.svg" alt="JavaScript">
+                <img src="./assets/icons/html.svg" alt="HTML">
+                <img src="./assets/icons/css.svg" alt="CSS">
+              </div>
+            </div>
+
+            <img class="project_preview_image" src="./assets/img/join.png" alt="Join preview">
+
+            <div class="project_actions">
+              <button class="btn_cta"><a href="#" target="_blank">Live Test</a></button>
+              <button class="btn_standard"><a href="#" target="_blank">GitHub</a></button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="project_card" id="ongoing">
+        <div class="project_layout">
+          <div class="project_info_column">
+            <div class="project_info_item">
+              <img class="project_marker" src="./assets/icons/marker.svg" alt="">
+              <div class="project_info_text">
+                <div class="project_info_headline_row">
+                  <h3>About the project</h3>
+                  <span class="project_duration">Duration: ongoing</span>
+                </div>
+                <p>
+                  My next projects will focus on modern frontend development and deeper technical growth.
+                </p>
+              </div>
+            </div>
+
+            <div class="project_info_item">
+              <img class="project_marker" src="./assets/icons/marker.svg" alt="">
+              <div class="project_info_text">
+                <h3>Current focus</h3>
+                <p>
+                  I am currently expanding my knowledge in Angular, TypeScript and scalable frontend architecture.
+                </p>
+              </div>
+            </div>
+
+            <div class="project_info_item">
+              <img class="project_marker" src="./assets/icons/marker.svg" alt="">
+              <div class="project_info_text">
+                <h3>Goals</h3>
+                <p>
+                  My goal is to keep improving my code quality, structure and project planning.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project_preview_column">
+            <div class="project_tech_block">
+              <p class="project_tech_title">Technologies</p>
+              <div class="project_tech_icons">
+                <img src="./assets/icons/angular.svg" alt="Angular">
+                <img src="./assets/icons/typescript.svg" alt="TypeScript">
+              </div>
+            </div>
+
+            <img class="project_preview_image" src="./assets/img/upcoming-preview.png" alt="Ongoing project preview">
+
+            <div class="project_actions">
+              <button class="btn_cta"><a href="#" target="_blank">Live Test</a></button>
+              <button class="btn_standard"><a href="#" target="_blank">GitHub</a></button>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
 
     <div class="layout_container">
       <section id="references" class="references_section">
