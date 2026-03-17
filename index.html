@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="./css/media.css">
   <link rel="stylesheet" href="./css/section.css">
   <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/projects.css">
 </head>
 
 <body>
@@ -181,20 +182,28 @@
 </section>
     </div>
 
-<section id="projects" class="projects_section">
+
+    <section id="projects" class="projects_section">
   <div class="layout_container">
     <h2 class="section_title">My Projects</h2>
-
     <div class="projects_tabs" role="tablist" aria-label="Project tabs">
-      <button class="project_tab active" data-project="join" role="tab" aria-selected="true">
-        1. Join
-      </button>
-      <button class="project_tab" data-project="Elpollo" role="tab" aria-selected="false">
-        2. El Pollo Loco
-      </button>
-      <button class="project_tab" data-project="ongoing" role="tab" aria-selected="false">
-        3. Ongoin Project
-      </button>
+      <div class="project_tab_item">
+        <button class="project_tab active" data-project="join" role="tab" aria-selected="true">
+          1. Join
+        </button>
+      </div>
+
+      <div class="project_tab_item">
+        <button class="project_tab" data-project="elpolloloco" role="tab" aria-selected="false">
+          2. El Pollo Loco
+        </button>
+      </div>
+
+      <div class="project_tab_item">
+        <button class="project_tab" data-project="ongoing" role="tab" aria-selected="false">
+          3. Ongoing Project
+        </button>
+      </div>
     </div>
   </div>
 
@@ -208,7 +217,7 @@
               <div class="project_info_text">
                 <div class="project_info_headline_row">
                   <h3>About the project</h3>
-                  <span class="project_duration">Duration: 1,5 Months</span>
+                  <span class="project_duration">Duration: 1.5 months</span>
                 </div>
                 <p>
                   Join is a task management application inspired by Kanban and created as a collaborative team project.
@@ -245,23 +254,29 @@
             <div class="project_tech_block">
               <p class="project_tech_title">Technologies</p>
               <div class="project_tech_icons">
-                <img src="./assets/icons/angular.svg" alt="Angular">
-                <img src="./assets/icons/typescript.svg" alt="TypeScript">
-                <img src="./assets/icons/firebase.svg" alt="Firebase">
+                <img src="./assets/icons/js_notext.svg" alt="JavaScript">
+                <img src="./assets/icons/htm_notext.svg" alt="HTML">
+                <img src="./assets/icons/css_notext.svg" alt="CSS">
               </div>
             </div>
 
-            <img class="project_preview_image" src="./assets/img/join.png" alt="DA Bubble preview">
+            <img class="project_preview_image" src="./assets/img/join.png" alt="Join preview">
 
             <div class="project_actions">
-              <button class="btn_cta"><a href="#" target="_blank">Live Test</a></button>
-              <button class="btn_standard"><a href="#" target="_blank">GitHub</a></button>
+              <a class="btn_cta project_link_btn" href="HIER-DEIN-JOIN-LIVE-LINK" target="_blank" rel="noopener noreferrer">
+                Live Test
+              </a>
+
+              <a class="btn_standard project_link_btn" href="HIER-DEIN-JOIN-GITHUB-LINK" target="_blank" rel="noopener noreferrer">
+                GitHub
+              </a>
             </div>
           </div>
         </div>
       </article>
 
-      <article class="project_card" id="sharkie">
+      <!-- EL POLLO LOCO -->
+      <article class="project_card" id="elpolloloco">
         <div class="project_layout">
           <div class="project_info_column">
             <div class="project_info_item">
@@ -269,10 +284,11 @@
               <div class="project_info_text">
                 <div class="project_info_headline_row">
                   <h3>About the project</h3>
-                  <span class="project_duration">Duration: 4 weeks</span>
+                  <span class="project_duration">Duration: 1 month</span>
                 </div>
                 <p>
-                  Sharkie is a playful project focused on interaction, game logic and user experience.
+                  El Pollo Loco is a 2D jump-and-run game based on object-oriented programming.
+                  Players guide Pepe through different levels, collecting items and battling enemies by throwing spicy salsa bottles to defeat the final boss.
                 </p>
               </div>
             </div>
@@ -282,7 +298,8 @@
               <div class="project_info_text">
                 <h3>How I have organised my work process</h3>
                 <p>
-                  I divided the features into smaller tasks and implemented them step by step.
+                  The project was structured into multiple user stories, allowing a clear and organized development process.
+                  Object-oriented programming helped me structure the code by connecting methods to relevant classes and applying core OOP principles such as encapsulation, abstraction, inheritance, and polymorphism.
                 </p>
               </div>
             </div>
@@ -292,7 +309,8 @@
               <div class="project_info_text">
                 <h3>My lessons learned</h3>
                 <p>
-                  This project helped me improve logic, structure and frontend interactions.
+                  Designing and implementing classes and methods significantly improved my development skills.
+                  It enabled me to write more modular, flexible, and reusable code, and deepened my understanding of scalable application structure.
                 </p>
               </div>
             </div>
@@ -302,75 +320,22 @@
             <div class="project_tech_block">
               <p class="project_tech_title">Technologies</p>
               <div class="project_tech_icons">
-                <img src="./assets/icons/js.svg" alt="JavaScript">
-                <img src="./assets/icons/html.svg" alt="HTML">
-                <img src="./assets/icons/css.svg" alt="CSS">
+                <img src="./assets/icons/js_notext.svg" alt="JavaScript">
+                <img src="./assets/icons/htm_notext.svg" alt="HTML">
+                <img src="./assets/icons/css_notext.svg" alt="CSS">
               </div>
             </div>
 
-            <img class="project_preview_image" src="./assets/img/sharkie-preview.png" alt="Sharkie preview">
+            <img class="project_preview_image" src="./assets/img/elpolloloco.png" alt="El Pollo Loco preview">
 
             <div class="project_actions">
-              <button class="btn_cta"><a href="#" target="_blank">Live Test</a></button>
-              <button class="btn_standard"><a href="#" target="_blank">GitHub</a></button>
-            </div>
-          </div>
-        </div>
-      </article>
+              <a class="btn_cta project_link_btn" href="HIER-DEIN-SPIEL-LIVE-LINK" target="_blank" rel="noopener noreferrer">
+                Live Test
+              </a>
 
-      <article class="project_card" id="join">
-        <div class="project_layout">
-          <div class="project_info_column">
-            <div class="project_info_item">
-              <img class="project_marker" src="./assets/icons/marker.svg" alt="">
-              <div class="project_info_text">
-                <div class="project_info_headline_row">
-                  <h3>About the project</h3>
-                  <span class="project_duration">Duration: 1.5 months</span>
-                </div>
-                <p>
-                  Join is a task management app inspired by Kanban. Tasks can be created,
-                  organised and managed with drag and drop.
-                </p>
-              </div>
-            </div>
-
-            <div class="project_info_item">
-              <img class="project_marker" src="./assets/icons/marker.svg" alt="">
-              <div class="project_info_text">
-                <h3>Work process</h3>
-                <p>
-                  We worked with Git branching, split the tasks clearly and merged together as a team.
-                </p>
-              </div>
-            </div>
-
-            <div class="project_info_item">
-              <img class="project_marker" src="./assets/icons/marker.svg" alt="">
-              <div class="project_info_text">
-                <h3>My group work experience</h3>
-                <p>
-                  I enjoyed the collaboration, daily coordination and the testing process together.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="project_preview_column">
-            <div class="project_tech_block">
-              <p class="project_tech_title">Technologies</p>
-              <div class="project_tech_icons">
-                <img src="./assets/icons/js.svg" alt="JavaScript">
-                <img src="./assets/icons/html.svg" alt="HTML">
-                <img src="./assets/icons/css.svg" alt="CSS">
-              </div>
-            </div>
-
-            <img class="project_preview_image" src="./assets/img/join.png" alt="Join preview">
-
-            <div class="project_actions">
-              <button class="btn_cta"><a href="#" target="_blank">Live Test</a></button>
-              <button class="btn_standard"><a href="#" target="_blank">GitHub</a></button>
+              <a class="btn_standard project_link_btn" href="HIER-DEIN-SPIEL-GITHUB-LINK" target="_blank" rel="noopener noreferrer">
+                GitHub
+              </a>
             </div>
           </div>
         </div>
@@ -383,11 +348,11 @@
               <img class="project_marker" src="./assets/icons/marker.svg" alt="">
               <div class="project_info_text">
                 <div class="project_info_headline_row">
-                  <h3>About the project</h3>
+                  <h3>About the projects</h3>
                   <span class="project_duration">Duration: ongoing</span>
                 </div>
                 <p>
-                  My next projects will focus on modern frontend development and deeper technical growth.
+                  My upcoming projects will focus on showcasing my skills in Angular and TypeScript.
                 </p>
               </div>
             </div>
@@ -395,9 +360,9 @@
             <div class="project_info_item">
               <img class="project_marker" src="./assets/icons/marker.svg" alt="">
               <div class="project_info_text">
-                <h3>Current focus</h3>
+                <h3>Memory Game</h3>
                 <p>
-                  I am currently expanding my knowledge in Angular, TypeScript and scalable frontend architecture.
+                  I am currently expanding my frontend expertise by working with TypeScript and SCSS to build more scalable and maintainable applications.
                 </p>
               </div>
             </div>
@@ -405,9 +370,9 @@
             <div class="project_info_item">
               <img class="project_marker" src="./assets/icons/marker.svg" alt="">
               <div class="project_info_text">
-                <h3>Goals</h3>
+                <h3>Poll App</h3>
                 <p>
-                  My goal is to keep improving my code quality, structure and project planning.
+                  One of my next projects is a real-time poll application built with Angular and Supabase, where users can create surveys and track live results as they update instantly.
                 </p>
               </div>
             </div>
@@ -417,16 +382,21 @@
             <div class="project_tech_block">
               <p class="project_tech_title">Technologies</p>
               <div class="project_tech_icons">
-                <img src="./assets/icons/angular.svg" alt="Angular">
-                <img src="./assets/icons/typescript.svg" alt="TypeScript">
+                <img src="./assets/icons/angular_notext.svg" alt="Angular">
+                <img src="./assets/icons/ts_notext.svg" alt="TypeScript">
+                <img src="./assets/icons/js_notext.svg" alt="TypeScript">
               </div>
             </div>
 
-            <img class="project_preview_image" src="./assets/img/upcoming-preview.png" alt="Ongoing project preview">
-
+            <img class="project_preview_image" src="./assets/img/coming.png" alt="Upcoming project preview">
             <div class="project_actions">
-              <button class="btn_cta"><a href="#" target="_blank">Live Test</a></button>
-              <button class="btn_standard"><a href="#" target="_blank">GitHub</a></button>
+              <a class="btn_cta project_link_btn" href="#" target="_blank" rel="noopener noreferrer">
+                Live Test
+              </a>
+
+              <a class="btn_standard project_link_btn" href="#" target="_blank" rel="noopener noreferrer">
+                GitHub
+              </a>
             </div>
           </div>
         </div>
@@ -501,15 +471,13 @@
           <a class="footer_link" href="./legal_notice.html">Legal notice</a>
           <p class="footer_copy">© Kseniya Küntzle 2026</p>
         </div>
-
         <div class="footer_center">
           <div class="footer_brand">
             <svg class="footer_logo" width="53" height="38" viewBox="0 0 53 38" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M32.5339 35H40.0507L50.3594 20.3285L40.0507 5H32.5339L18.5741 35H11.7017L2.35938 20.3285L11.7017 5H18.5741"
-                stroke="#262E34" stroke-opacity="0.8" stroke-width="4" stroke-linecap="round" />
+                stroke="#262E34" stroke-opacity="0.8" stroke-width="4" stroke-linecap="round" >
             </svg>
-
             <div class="footer_brand_text">
               <p class="footer_name">K. Küntzle</p>
               <p class="footer_role">developer</p>
@@ -519,15 +487,13 @@
 
         <div class="footer_right">
           <a class="footer_social" href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-            <img src="./assets/icons/Github button.svg" alt="" />
+            <img src="./assets/icons/Github button.svg" alt="Github icon">
           </a>
-
           <a class="footer_social" href="mailto:kseniya.kuentzle.dev@gmail.com" aria-label="Email">
-            <img src="./assets/icons/Email button.svg" alt="" />
+            <img src="./assets/icons/Email button.svg" alt="Email icon">
           </a>
-
           <a class="footer_social" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-            <img src="./assets/icons/Linkedin button.svg" alt="" />
+            <img src="./assets/icons/Linkedin button.svg" alt="Linkedin icon" >
           </a>
         </div>
       </div>

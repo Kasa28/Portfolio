@@ -1,0 +1,259 @@
+.projects_section {
+  padding: 28px 0 0;
+}
+
+.projects_section .section_title {
+  margin-bottom: 28px;
+}
+
+.projects_tabs {
+  display: flex;
+  align-items: end;
+  gap: 0;
+  margin-bottom: 0;
+  flex-wrap: wrap;
+}
+
+.project_tab_item {
+  display: flex;
+  align-items: end;
+}
+
+.project_tab {
+  border: none;
+  background: transparent;
+  color: #89BCD9;
+  font-size: 1.9rem;
+  font-weight: 600;
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 26px 34px 22px;
+  cursor: pointer;
+  border-radius: 28px 28px 0 0;
+}
+
+.project_tab.active {
+  color: #f6e7cf;
+  background: #2d383f;
+}
+
+.projects_panel {
+  background: #2d383f;
+  padding: 26px 0 34px;
+  border-radius: 0 28px 28px 28px;
+}
+
+.project_card {
+  display: none;
+}
+
+.project_card.active {
+  display: block;
+}
+
+.project_layout {
+  display: grid;
+  grid-template-columns: 1.2fr 0.88fr;
+  gap: 54px;
+  align-items: start;
+}
+
+.project_info_column {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.project_info_item {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.project_marker {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  margin-top: 8px;
+  flex-shrink: 0;
+}
+
+.project_info_text {
+  max-width: 700px;
+}
+
+.project_info_headline_row {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.project_info_text h3 {
+  margin: 0;
+  color: #f6e7cf;
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+
+.project_duration {
+  color: #f6e7cf;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.project_info_text p {
+  margin: 0;
+  color: #f6e7cf;
+  font-size: 1rem;
+  line-height: 1.42;
+}
+
+.project_preview_column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: end;
+  width: 100%;
+  max-width: 430px;
+}
+
+.project_tech_block {
+  align-self: center;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.project_tech_title {
+  margin: 0 0 10px;
+  color: #f6e7cf;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.project_tech_icons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.project_tech_icons img {
+  object-fit: contain;
+}
+
+.project_preview_image {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 28px;
+  display: block;
+}
+
+.project_actions {
+  display: flex;
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.project_link_btn {
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1100px) {
+  .project_layout {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .project_preview_column {
+    justify-self: start;
+    align-items: flex-start;
+    max-width: 100%;
+  }
+
+  .project_tech_block {
+    align-self: flex-start;
+    text-align: left;
+  }
+}
+
+@media (max-width: 700px) {
+  .project_tab {
+    font-size: 1.2rem;
+    padding: 16px 18px 14px;
+  }
+
+  .projects_panel {
+    padding: 20px 0 26px;
+  }
+
+  .project_info_text h3 {
+    font-size: 1.3rem;
+  }
+
+  .project_info_text p {
+    font-size: 0.98rem;
+  }
+
+  .project_marker {
+    width: 20px;
+    height: 20px;
+    margin-top: 4px;
+  }
+
+  .project_tech_icons img {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.project_link_btn {
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.125rem;
+}
+
+.btn_cta.project_link_btn,
+.btn_cta.project_link_btn:visited,
+.btn_cta.project_link_btn:hover,
+.btn_cta.project_link_btn:active {
+  color: #262E34;
+}
+
+.btn_standard.project_link_btn,
+.btn_standard.project_link_btn:visited,
+.btn_standard.project_link_btn:hover,
+.btn_standard.project_link_btn:active {
+  color: #89BCD9;
+}
+
+.project_tech_block {
+  align-self: center;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.project_tech_title {
+  margin: 0 0 8px;
+  color: #f6e7cf;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.project_tech_icons {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.project_tech_icons img {
+  width: 34px;
+  height: 36px;
+  object-fit: contain;
+  display: block;
+}
