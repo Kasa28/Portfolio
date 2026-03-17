@@ -184,7 +184,7 @@
 .why_me_grid,
 .skills_grid{
   display:flex;
-  justify-content:space-between;
+  justify-content: space-around;
   align-items:flex-start;
   padding-top:80px;
   color:var(--secondary);
