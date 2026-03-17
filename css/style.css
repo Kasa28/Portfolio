@@ -66,3 +66,227 @@ input,textarea,select{ font:inherit; }
   60%{ transform:translateY(-5px); }
   100%{ transform:translateY(0); }
 }
+
+.skills_section {
+  padding: 72px 0 38px;
+}
+
+.skills_section .section_title {
+  margin-bottom: 0;
+}
+
+.skills_boxes {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 34px;
+}
+
+.skills_icons_section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 34px;
+  flex: 1;
+  max-width: 560px;
+  padding-top: 28px;
+  padding-left: 10px;
+}
+
+.skill_icon_item {
+  width: 86px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 125ms ease-in-out;
+}
+
+.skill_icon {
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.skills_text_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 318px;
+  min-width: 318px;
+  min-height: 318px;
+  position: relative;
+  isolation: isolate;
+  color: #f8e8d2;
+  margin-top: 0;
+  margin-right: 10px;
+}
+
+.skills_text_container::before {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  background: url("../assets/icons/Ellipse 02.svg") no-repeat center;
+  background-size: contain;
+  z-index: 1;
+  pointer-events: none;
+  transition: all 125ms ease-in;
+  transform-origin: center;
+}
+
+.learning_intro,
+.skills_learning_icons,
+.skills_learning_text {
+  position: relative;
+  z-index: 2;
+}
+
+.learning_intro {
+  margin: 0 0 12px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #f6e7cf;
+}
+
+.skills_learning_icons {
+  display: flex;
+  gap: 16px;
+  padding: 0 0 12px;
+}
+
+.learning_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.learning_icon {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  display: block;
+}
+
+.skills_learning_text {
+  max-width: 208px;
+  margin: 0;
+  font-size: 0.84rem;
+  line-height: 1.28;
+  font-weight: 700;
+  color: #f6e7cf;
+}
+
+@media (hover: hover) {
+  .skills_text_container:hover::before {
+    transform: rotate(72deg);
+    background: url("../assets/icons/Ellipse 25.svg") no-repeat center;
+    background-size: contain;
+  }
+
+  .skill_icon_item:hover {
+    transform: translateY(-8px);
+  }
+}
+
+@media (max-width: 1100px) {
+  .skills_boxes {
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+  }
+
+  .skills_icons_section {
+    justify-content: center;
+    max-width: 100%;
+    padding-left: 0;
+    padding-top: 0;
+  }
+
+  .skills_text_container {
+    width: 320px;
+    min-width: 320px;
+    min-height: 320px;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .skills_section {
+    padding: 64px 0 32px;
+  }
+
+  .skills_boxes {
+    margin-top: 26px;
+    gap: 34px;
+  }
+
+  .skills_icons_section {
+    gap: 22px 24px;
+  }
+
+  .skill_icon_item {
+    width: 78px;
+  }
+
+  .skill_icon {
+    width: 62px;
+  }
+
+  .skills_text_container {
+    width: 280px;
+    min-width: 280px;
+    min-height: 280px;
+  }
+
+  .learning_intro {
+    font-size: 1rem;
+  }
+
+  .learning_icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .skills_learning_text {
+    max-width: 190px;
+    font-size: 0.78rem;
+  }
+
+  .skills_text_container::before {
+    background-size: 88%;
+  }
+}
+
+.skills_text_container {
+  width: 390px;
+  min-width: 390px;
+  min-height: 390px;
+  margin-top: -8px;
+  margin-right: 0;
+}
+
+.skills_text_container::before {
+  inset: -12px;
+  background-size: contain;
+}
+
+.learning_intro {
+  margin: 0 0 16px;
+  font-size: 1.55rem;
+}
+
+.skills_learning_icons {
+  gap: 22px;
+  padding: 0 0 16px;
+}
+
+.learning_icon {
+  width: 44px;
+  height: 44px;
+}
+
+.skills_learning_text {
+  max-width: 250px;
+  font-size: 1rem;
+  line-height: 1.32;
+}
