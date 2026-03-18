@@ -697,3 +697,15 @@
     font-size: 14px;
   }
 }
+
+.reference_project {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #f6e7cf;
+}
+
+.reference_project .color_lightblue {
+  color: var(--primary);
+}
