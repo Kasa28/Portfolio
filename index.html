@@ -475,44 +475,81 @@
           </div>
 
           <div class="reference_card">
-            <h4>Emin Fatih Halici</h4>
-            <p>Project <span class="color_lightblue">Join</span></p>
+            <h4>Laura Aller</h4>
+            <p>Project <span class="color_lightblue">Coding together</span></p>
             <p class="reference_text">Die Zusammenarbeit mit Kseniya war eine absolute Bereicherung...</p>
-            <a href="https://www.linkedin.com/in/emin-fatih-halici/" target="_blank" rel="noopener noreferrer">
-              LinkedIn Profile
-            </a>
           </div>
 
           <div class="reference_card">
-            <h4>Emin Fatih Halici</h4>
-            <p>Project <span class="color_lightblue">Join</span></p>
+            <h4>Elli Sander</h4>
+            <p>Project <span class="color_lightblue">Coding together</span></p>
             <p class="reference_text">Working with Kseniya was an absolute enrichment to our group project...</p>
-            <a href="https://www.linkedin.com/in/emin-fatih-halici/" target="_blank" rel="noopener noreferrer">
-              LinkedIn Profile
-            </a>
           </div>
         </article>
       </section>
 
-      <section id="contact" class="contact_section">
-        <h2 class="section_title">Contact me</h2>
+   <section id="contact" class="contact_section" tabindex="-1">
+  <h2 class="section_title">Contact me</h2>
 
-        <div class="contact_grid">
-          <div class="contact_text">
-            <p>UPDATE NEEDED HERE - Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
-          </div>
+  <div class="contact_grid">
+    <div class="contact_text">
+      <p>
+        Ready for the next project? I look forward to hearing from you and building clean, modern, and user-friendly web experiences together.
+      </p>
+    </div>
 
-          <div class="contact_details">
-            <a href="mailto:kseniya.kuentzle.dev@gmail.com">Email: kseniya.kuentzle.dev@gmail.com</a>
-          </div>
-        </div>
+    <div class="contact_details">
+      <a class="contact_link contact_link_mail" href="mailto:kseniya.kuentzle.dev@gmail.com">
+        E-mail: kseniya.kuentzle.dev@gmail.com
+      </a>
 
-        <div class="section_cta_row">
-          <button class="btn_standard">
-            <a href="">send</a>
-          </button>
-        </div>
-      </section>
+      <a class="contact_link contact_link_phone" href="tel:+4915122413321">
+        Tel. +49 1512 268898
+      </a>
+    </div>
+  </div>
+
+  <form class="contact_form" onsubmit="sendForm(); return false;" novalidate>
+    <div class="contact_form_field">
+      <label for="name" class="form_label">Your name</label>
+      <input type="text" id="name" class="form_group" maxlength="30" autocomplete="off">
+    </div>
+
+    <div class="contact_form_field">
+      <label for="email" class="form_label">Your Email</label>
+      <input type="email" id="email" class="form_group" maxlength="50" autocomplete="off">
+    </div>
+
+    <div class="contact_form_field form_stretch">
+      <label for="message" class="form_label">Your Message</label>
+      <textarea id="message" class="form_group textarea_height" maxlength="250" autocomplete="off"></textarea>
+    </div>
+
+    <div class="form_stretch form_policy">
+      <input type="checkbox" id="privacy" class="form_checkbox">
+      <label for="privacy" class="form_policy_label">
+        I've read the <a href="./legal_notice.html">privacy policy</a> and agree to the processing of my data as outlined.
+      </label>
+    </div>
+
+    <div id="formError" class="form_stretch error_message_text" aria-live="polite"></div>
+
+    <div class="form_button_row">
+  <button type="submit" class="form_button">Send</button>
+</div>
+  </form>
+
+  <a class="contact_btn_up" href="#header" aria-label="Go to top of the page">
+    <svg aria-hidden="true" width="38" height="89" viewBox="0 0 38 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="0.5" y="0.5" width="37" height="88" rx="18.5" stroke="#89BCD9" />
+      <path
+        class="ignore_fill"
+        d="M17.5858 24.9366L10.6735 31.2396C10.2918 31.5877 9.7077 31.5877 9.32595 31.2396L8.81034 30.7694C8.3754 30.3728 8.3754 29.6882 8.81034 29.2916L18.3262 20.6144C18.708 20.2663 19.292 20.2663 19.6738 20.6144L29.1897 29.2916C29.6246 29.6882 29.6246 30.3728 29.1897 30.7694L28.6741 31.2396C28.2923 31.5877 27.7082 31.5877 27.3265 31.2396L20.4142 24.9366L20.4142 69C20.4142 69.5523 19.9665 70 19.4142 70H18.5858C18.0335 70 17.5858 69.5523 17.5858 69L17.5858 24.9366Z"
+        fill="#89BCD9"
+      />
+    </svg>
+  </a>
+</section>
     </div>
   </main>
 
