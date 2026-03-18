@@ -10,6 +10,9 @@
   height: var(--nav_height);
 }
 
+
+
+
 .nav_row {
   display: flex;
   justify-content: space-between;
@@ -194,7 +197,7 @@
 }
 
 .reference_project .color_lightblue {
-  color: var(--primary);
+  color: var(--primary) !important;
 }
 
 .reference_text {
@@ -481,4 +484,73 @@
   .reference_content a {
     font-size: 14px;
   }
+}
+
+.hero_logo_block .brand_role.color_lightblue,
+.hero_logo_mobile .brand_role.color_lightblue {
+  color: #89BCD9 !important;
+}
+
+
+.nav_row {
+  display: grid;
+  grid-template-columns: 160px 1fr 88px;
+  align-items: center;
+  column-gap: 24px;
+}
+
+.nav_links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 92px;
+}
+
+.nav_language.language_switch_icon {
+  position: relative;
+  width: 88px;
+  min-width: 88px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-self: end;
+}
+
+.nav_language .language_switch_egg {
+  position: absolute;
+  top: 50%;
+  left: 68px;
+  width: 34px;
+  height: 24px;
+  object-fit: contain;
+  transform: translate(-50%, -50%);
+  transition: left 180ms ease-in-out;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.nav_language.language_switch_icon[data-active="de"] .language_switch_egg {
+  left: 20px;
+}
+
+.nav_language.language_switch_icon[data-active="en"] .language_switch_egg {
+  left: 68px;
+}
+
+.language_nav_tab {
+  position: relative;
+  z-index: 1;
+  width: 34px;
+  height: 24px;
+  border: none;
+  background: transparent;
+  color: var(--bg_and_main);
+  font-size: 16px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.language_nav_tab.active {
+  color: var(--secondary);
 }
