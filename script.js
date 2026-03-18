@@ -60,3 +60,26 @@ function initProjectTabs() {
 }
 
 document.addEventListener("DOMContentLoaded", initProjectTabs);
+document.addEventListener("DOMContentLoaded", () => {
+  const burgerMenu = document.getElementById("burgerMenu");
+  const flipCard = document.getElementById("flipCard");
+  const mobileLinks = document.querySelectorAll(".mobile_link_section a");
+
+  if (burgerMenu && flipCard) {
+    burgerMenu.addEventListener("click", () => {
+      burgerMenu.classList.toggle("is_open");
+      flipCard.classList.toggle("show_menu");
+
+      const isOpen = burgerMenu.classList.contains("is_open");
+      burgerMenu.setAttribute("aria-expanded", String(isOpen));
+    });
+  }
+
+  mobileLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      burgerMenu.classList.remove("is_open");
+      flipCard.classList.remove("show_menu");
+      burgerMenu.setAttribute("aria-expanded", "false");
+    });
+  });
+});

@@ -29,6 +29,7 @@
   padding: 26px 34px 22px;
   cursor: pointer;
   border-radius: 28px 28px 0 0;
+  transition: color 125ms ease-in-out, background-color 125ms ease-in-out;
 }
 
 .project_tab.active {
@@ -98,7 +99,7 @@
 
 .project_duration {
   color: #f6e7cf;
-  font-size: 1rem;
+  font-size: 1.123rem;
   font-weight: 700;
 }
 
@@ -121,11 +122,11 @@
 .project_tech_block {
   align-self: center;
   text-align: center;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 
 .project_tech_title {
-  margin: 0 0 10px;
+  margin: 0 0 8px;
   color: #f6e7cf;
   font-size: 1.125rem;
   font-weight: 700;
@@ -133,12 +134,16 @@
 
 .project_tech_icons {
   display: flex;
-  gap: 16px;
+  gap: 30px;
   justify-content: center;
+  align-items: center;
 }
 
 .project_tech_icons img {
+  width: 34px;
+  height: 36px;
   object-fit: contain;
+  display: block;
 }
 
 .project_preview_image {
@@ -159,7 +164,172 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.125rem;
 }
+
+.btn_cta.project_link_btn,
+.btn_cta.project_link_btn:visited,
+.btn_cta.project_link_btn:hover,
+.btn_cta.project_link_btn:active {
+  color: #262E34;
+}
+
+.btn_standard.project_link_btn,
+.btn_standard.project_link_btn:visited,
+.btn_standard.project_link_btn:hover,
+.btn_standard.project_link_btn:active {
+  color: #89BCD9;
+}
+
+
+.hero_mobile_top {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  height: 104px;
+  width: 100%;
+  background-color: var(--bg_and_main);
+}
+
+.hero_mobile_logo_link {
+  text-decoration: none;
+}
+
+.hero_logo_mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--secondary);
+  font-size: 16px;
+}
+
+.burger_menu {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.burger_icon {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  display: block;
+  transition: transform 220ms ease;
+}
+
+.burger_menu.is_open .burger_icon {
+  transform: rotate(90deg);
+}
+
+.hero_layout_mobile_wrap {
+  align-items: center;
+}
+
+.desktop_only {
+  display: block;
+}
+
+.desktop_hero_image {
+  display: block;
+}
+
+.flip_card {
+  display: none;
+  width: min(88vw, 340px);
+  aspect-ratio: 1 / 1;
+  perspective: 1000px;
+}
+
+.flip_card_inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s ease;
+  transform-style: preserve-3d;
+}
+
+.flip_card.show_menu .flip_card_inner {
+  transform: rotateY(180deg);
+}
+
+.hero_image_shape_container_front,
+.hero_image_shape_container_back {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+}
+
+.hero_image_shape_container_back {
+  transform: rotateY(180deg);
+}
+
+.mobile_shape_bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.mobile_shape_bg_back {
+  transform: scaleX(-1);
+}
+
+.mobile_hero_image {
+  position: relative;
+  z-index: 1;
+  width: 78%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.mobile_link_section {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  text-align: center;
+}
+
+.mobile_link_section a {
+  color: var(--bg_and_main);
+  text-decoration: none;
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+
+.mobile_language {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.language_mobile_tab {
+  width: 40px;
+  height: 32px;
+  font-size: 16px;
+  color: var(--bg_and_main);
+  background: transparent;
+  border: none;
+}
+
+.language_mobile_tab.active {
+  color: var(--secondary);
+}
+
 
 @media (max-width: 1100px) {
   .project_layout {
@@ -176,6 +346,49 @@
   .project_tech_block {
     align-self: flex-start;
     text-align: left;
+  }
+}
+
+@media (max-width: 960px) {
+  .hero_mobile_top {
+    display: flex;
+  }
+
+  .site_nav {
+    display: none;
+  }
+
+  .desktop_only {
+    display: none !important;
+  }
+
+  .desktop_hero_image {
+    display: none !important;
+  }
+
+  .flip_card {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .hero_height {
+    height: auto;
+    min-height: unset;
+    padding-bottom: 32px;
+  }
+
+  .hero_layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: auto;
+  }
+
+  .hero_media_col {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -207,53 +420,8 @@
     width: 32px;
     height: 32px;
   }
-}
 
-.project_link_btn {
-  text-decoration: none;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.125rem;
-}
-
-.btn_cta.project_link_btn,
-.btn_cta.project_link_btn:visited,
-.btn_cta.project_link_btn:hover,
-.btn_cta.project_link_btn:active {
-  color: #262E34;
-}
-
-.btn_standard.project_link_btn,
-.btn_standard.project_link_btn:visited,
-.btn_standard.project_link_btn:hover,
-.btn_standard.project_link_btn:active {
-  color: #89BCD9;
-}
-
-.project_tech_block {
-  align-self: center;
-  text-align: center;
-  margin-bottom: 12px;
-}
-
-.project_tech_title {
-  margin: 0 0 8px;
-  color: #f6e7cf;
-  font-size: 1.125rem;
-  font-weight: 700;
-}
-
-.project_tech_icons {
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-  align-items: center;
-}
-
-.project_tech_icons img {
-  width: 34px;
-  height: 36px;
-  object-fit: contain;
-  display: block;
+  .project_actions {
+    flex-wrap: wrap;
+  }
 }
