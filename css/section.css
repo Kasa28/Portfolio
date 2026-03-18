@@ -393,72 +393,6 @@
   line-height: 1.5;
 }
 
-
-.references_section {
-  margin-top: 80px;
-  color: var(--secondary);
-}
-
-.references_title {
-  font-size: 32px;
-  text-align: center;
-}
-
-.references_grid {
-  display: flex;
-  justify-content: center;
-  gap: 17px;
-  flex-wrap: wrap;
-}
-
-.reference_card {
-  margin-top: 56px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: min(100%, 400px);
-  min-height: 400px;
-  position: relative;
-  padding: 32px 20px;
-}
-
-.reference_card h4 {
-  font-size: 26px;
-  font-weight: 600;
-  padding-bottom: 8px;
-}
-
-.reference_text {
-  padding: 19px 45px;
-  font-size: 18px;
-}
-
-.reference_card a {
-  color: var(--primary);
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.reference_card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: -1;
-  transition: all 125ms ease-in;
-  transform-origin: center;
-}
-
-.reference_card:hover::before {
-  transform: rotate(-72deg);
-  background-size: contain;
-}
-
-
 .contact_section {
   max-inline-size: 920px;
   margin-inline: auto;
@@ -600,5 +534,166 @@
   .reference_text {
     padding: 16px 20px;
     font-size: 16px;
+  }
+}
+.references_section {
+  margin-top: 80px;
+  color: var(--secondary);
+}
+
+.references_title {
+  margin: 0 0 56px;
+  font-size: 32px;
+  text-align: center;
+  color: var(--primary);
+}
+
+.references_grid {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.references_grid .reference_card {
+  width: 320px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex: 0 0 320px;
+}
+
+.references_grid .reference_card::before {
+  display: none !important;
+  content: none !important;
+}
+
+.reference_egg {
+  position: relative;
+  width: 320px;
+  height: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reference_egg_bg {
+  position: absolute;
+  inset: 0;
+  background: url("../assets/img/team_bevore.svg") no-repeat center center;
+  background-size: contain;
+  transition: background-image 180ms ease, transform 180ms ease;
+  transform-origin: center;
+  z-index: 0;
+}
+
+.reference_card:hover .reference_egg_bg {
+  background-image: url("../assets/img/skill_shape_default_opac0.2.svg");
+  transform: rotate(-8deg);
+}
+
+.reference_content {
+  position: relative;
+  z-index: 1;
+  width: 72%;
+  max-width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.reference_content h4 {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.15;
+  font-weight: 700;
+  color: #f6e7cf;
+}
+
+.reference_project {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #f6e7cf;
+}
+
+.reference_text {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  line-height: 1.35;
+  font-weight: 700;
+  color: #f6e7cf;
+  text-wrap: balance;
+}
+
+.reference_content a {
+  margin-top: 6px;
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+@media (max-width: 1100px) {
+  .references_grid .reference_card {
+    width: 290px;
+    flex: 0 0 290px;
+  }
+
+  .reference_egg {
+    width: 290px;
+    height: 382px;
+  }
+
+  .reference_content {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 700px) {
+  .references_title {
+    font-size: 26px;
+    margin-bottom: 36px;
+  }
+
+  .references_grid .reference_card {
+    width: 250px;
+    flex: 0 0 250px;
+  }
+
+  .reference_egg {
+    width: 250px;
+    height: 330px;
+  }
+
+  .reference_content {
+    width: 72%;
+    max-width: 170px;
+    gap: 8px;
+  }
+
+  .reference_content h4 {
+    font-size: 20px;
+  }
+
+  .reference_project {
+    font-size: 14px;
+  }
+
+  .reference_text {
+    font-size: 13px;
+    line-height: 1.28;
+  }
+
+  .reference_content a {
+    font-size: 14px;
   }
 }
