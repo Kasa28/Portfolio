@@ -28,10 +28,10 @@
 .hero_bg_shape {
   position: absolute;
   z-index: 1;
-  width: 118%;
+  width: 102%;
   max-width: 760px;
   height: auto;
-  left: 43%;
+  left: 53%;
   bottom: 0;
   transform: translateX(-50%);
   transition: transform 180ms ease-in-out;
@@ -354,15 +354,15 @@
 }
 
 .hero_image {
-  position: absolute;
-  z-index: 2;
-  width: 84%;
-  max-width: 540px;
-  height: auto;
-  object-fit: contain;
-  left: 36%;
-  bottom: -2px;
-  transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+    width: 107%;
+    max-width: 662px;
+    height: auto;
+    object-fit: contain;
+    left: 49%;
+    bottom: -22px;
+    transform: translateX(-50%);
 }
 
 .hero_content_col {
