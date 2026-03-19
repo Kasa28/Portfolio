@@ -469,3 +469,24 @@
 .language_nav_tab.active {
   color: var(--secondary);
 }
+
+.btn_standard {
+  border-radius: 30px;
+  width: 135px;
+  height: 48px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 18px;
+
+  border: 1px solid var(--primary);
+  color: var(--primary);
+
+  transition: all 180ms ease-in-out;
+}
+
+.nav_brand .brand_role.color_dark {
+  color: #272f35 !important;
+}
