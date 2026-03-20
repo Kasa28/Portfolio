@@ -490,3 +490,23 @@
 .nav_brand .brand_role.color_dark {
   color: #272f35 !important;
 }
+
+.hero_scroll_btn{
+  width: 38px;
+  height: 89px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  transition: background 125ms ease;
+}
+
+.hero_scroll_btn:hover{
+  background: rgba(137, 188, 217, 0.15);
+}
+
+.hero_scroll_icon{
+  display: block;
+  width: 38px;
+  height: 89px;
+}
