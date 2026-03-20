@@ -136,11 +136,11 @@
 }
 
 .contact_link_mail::before {
-  background-image: url("../assets/icons/icon_email_default.svg");
+  background-image: url("../assets/icons/icon_email_bevoreone.svg");
 }
 
 .contact_link_phone::before {
-  background-image: url("../assets/icons/icon_phone_default.svg");
+  background-image: url("../assets/icons/icon_phone_bevore.svg");
 }
 
 .contact_form {
@@ -364,4 +364,45 @@
   border-color: var(--primary);
   opacity: 0.65;
   cursor: not-allowed;
+}
+
+.contact_link {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  color: #f6e7cf;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.3;
+  transition: color 125ms ease, transform 125ms ease;
+}
+
+.contact_link:hover {
+  color: var(--primary);
+}
+
+.contact_link_mail:hover::before {
+  background-image: url("../assets/icons/email_blue_hover.svg");
+}
+
+.contact_link_phone:hover::before {
+  background-image: url("../assets/icons/icon_phone_hover.svg");
+}
+
+.contact_btn_up{
+  position: absolute;
+  top: 78px;
+  right: -76px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 89px;
+  border-radius: 20px;
+  transition: background 125ms ease;
+}
+
+.contact_btn_up:hover{
+  background: rgba(137, 188, 217, 0.15);
 }
