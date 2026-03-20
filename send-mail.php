@@ -42,8 +42,6 @@ switch ($_SERVER["REQUEST_METHOD"]) {
         $safeName = htmlspecialchars($name, ENT_QUOTES, "UTF-8");
         $safeEmail = htmlspecialchars($email, ENT_QUOTES, "UTF-8");
         $safeMessage = nl2br(htmlspecialchars($userMessage, ENT_QUOTES, "UTF-8"));
-
-        $recipient = $siteEmail;
         $subject = "Website Contact Form";
 
         $mailBody = "
