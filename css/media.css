@@ -203,3 +203,134 @@
     font-size: 16px;
   }
 }
+
+@media (max-width: 960px) {
+  .project_layout {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .project_preview_column {
+    order: 1;
+    width: 100%;
+  }
+
+  .project_info_column {
+    order: 2;
+    width: 100%;
+  }
+}
+
+@media (max-width: 960px) {
+  .project_layout {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .project_info_column,
+  .project_preview_column {
+    display: contents;
+  }
+
+  .project_tech_block {
+    order: 1;
+  }
+
+  .project_preview_image {
+    order: 2;
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .project_info_item {
+    order: 3;
+  }
+
+  .project_actions {
+    order: 4;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 8px;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 960px) {
+  .projects_tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 18px;
+  }
+
+  .project_tab {
+    font-size: 16px;
+    padding: 10px 14px;
+  }
+
+  .project_card {
+    padding: 20px;
+    border-radius: 28px;
+  }
+
+  .project_info_headline_row {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: flex-start;
+  }
+
+  .project_duration {
+    font-size: 15px;
+  }
+
+  .project_info_item {
+    margin-bottom: 18px;
+  }
+}
+
+@media (max-width: 960px) {
+
+
+  .contact_btn_up {
+    position: static !important;
+    display: flex;
+    justify-content: center;
+    margin: 32px auto 24px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 960px) {
+  .form_policy {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .form_checkbox {
+    margin-top: 4px;
+    flex-shrink: 0;
+  }
+
+  .form_policy_label {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.35;
+    max-width: 260px;
+  }
+}
+@media (max-width: 960px) {
+  .form_policy_label {
+    max-width: 220px;
+  }
+}

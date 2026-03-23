@@ -268,7 +268,9 @@
 
 @media (max-width: 960px) {
   .contact_section {
-    margin: 80px auto 130px;
+    margin: 54px auto 0px;
+    padding-left: 20px;
+        padding-right: 20px;
   }
 
   .contact_grid {
@@ -336,7 +338,6 @@
   grid-column: 1 / -1;
   display: flex;
   justify-content: flex-end;
-  margin-top: 18px;
 }
 
 .form_button{
@@ -394,7 +395,6 @@
   position: absolute;
   top: 78px;
   right: -76px;
-  display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 38px;
