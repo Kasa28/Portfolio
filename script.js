@@ -227,3 +227,11 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 window.sendForm = sendForm;
+
+const burgerMenu = document.getElementById("burgerMenu");
+const flipCard = document.getElementById("flipCard");
+
+burgerMenu.addEventListener("click", () => {
+  burgerMenu.classList.toggle("is_open");
+  flipCard.classList.toggle("show_menu");
+});
