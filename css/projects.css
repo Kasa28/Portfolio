@@ -222,10 +222,6 @@
   transition: transform 220ms ease;
 }
 
-.burger_menu.is_open .burger_icon {
-  transform: rotate(90deg);
-}
-
 .hero_layout_mobile_wrap {
   align-items: center;
 }

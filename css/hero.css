@@ -227,10 +227,6 @@
   transition: transform 220ms ease;
 }
 
-.burger_menu.is_open .burger_icon {
-  transform: rotate(90deg);
-}
-
 .desktop_hero_image {
   display: flex;
 }
@@ -277,7 +273,6 @@
 .hero_image_shape_container_back {
   transform: rotateY(180deg);
 }
-
 
 .mobile_hero_visual {
   position: relative;
@@ -378,7 +373,7 @@
 }
 
 .mobile_hero_title {
-  margin: 18px 0 6px;
+  margin: 18px 0 9px;
   font-size: 3rem;
   line-height: 1.02;
   text-align: center;
@@ -397,8 +392,48 @@
 .mobile_hero_scroll_btn {
   display: inline-flex;
   justify-content: center;
-  margin-top: 14px;
+  margin-top: 30px;
 }
+
+/* BUTTON STANDARD */
+
+.btn_standard {
+  width: 170px;
+  height: 54px;
+  border: 1px solid var(--primary);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--primary);
+  font-size: 18px;
+  font-weight: 500;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: background 180ms ease, color 180ms ease, transform 180ms ease, box-shadow 180ms ease;
+}
+
+.btn_standard:hover {
+  background: var(--primary);
+  color: var(--bg_and_main);
+  box-shadow: 0 0 18px hsla(202, 51%, 60%, 0.25);
+}
+
+.nav_brand .brand_role.color_dark {
+  color: #272f35 !important;
+}
+
+/* CTA SWITCH */
+
+.section_cta_row {
+  display: flex;
+}
+
+.skills_mobile_cta {
+  display: none;
+}
+
+/* MOBILE */
 
 @media (max-width: 960px) {
   .hero_mobile_top {
@@ -449,6 +484,40 @@
     flex-direction: column;
     align-items: center;
   }
+
+  .why_me_section .section_cta_row {
+    display: none;
+  }
+
+  .skills_mobile_cta {
+    display: flex;
+    justify-content: center;
+    margin-top: 28px;
+    margin-bottom: 20px;
+  }
+
+  .skills_mobile_cta .btn_standard {
+    width: 170px;
+    height: 54px;
+    border: none;
+    border-radius: 999px;
+    background: var(--primary);
+    color: var(--bg_and_main);
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: 0 0 18px hsla(202, 51%, 60%, 0.25);
+  }
+
+  .skills_mobile_cta .btn_standard:hover {
+    background: var(--primary);
+    color: var(--bg_and_main);
+    transform: none;
+    box-shadow: 0 0 18px hsla(202, 51%, 60%, 0.25);
+  }
 }
 
 @media (max-width: 700px) {
@@ -469,7 +538,7 @@
   }
 
   .mobile_hero_title {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .mobile_hero_subtitle {
