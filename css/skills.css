@@ -1,0 +1,231 @@
+/* =========================
+   SKILLS SYSTEM (FINAL CLEAN)
+========================= */
+
+.skills_desktop_block {
+  display: flex;
+}
+
+.skills_mobile_block {
+  display: none;
+}
+
+/* MOBILE SWITCH */
+@media (max-width: 960px) {
+  .skills_desktop_block {
+    display: none !important;
+  }
+
+  .skills_mobile_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+    width: 100%;
+    margin-top: 12px;
+  }
+
+  /* ICON GRID */
+  .skills_mobile_icons_grid {
+    width: 100%;
+    max-width: 320px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px 18px;
+    justify-items: center;
+  }
+
+  .skills_mobile_icon_item img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+
+  /* letzte icon mittig */
+  .skills_mobile_icon_item:last-child:nth-child(9) {
+    grid-column: 2 / span 2;
+  }
+
+  /* HEADLINE */
+  .skills_mobile_learning_headline {
+    margin: 4px 0 0;
+    color: var(--primary);
+    font-size: 18px;
+    text-align: center;
+  }
+
+  /* 💙 BLOB CARD */
+  .skills_mobile_bottom_box {
+    width: 100%;
+    max-width: 320px;
+    min-height: 320px;
+    padding: 34px 24px 30px;
+    background: hsla(206, 15%, 18%, 0.88);
+
+    /* DAS ist dein Shape wie Screenshot */
+    border-radius: 42% 58% 44% 56% / 46% 42% 58% 54%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    text-align: center;
+  }
+
+  .skills_mobile_learning_title {
+    margin: 0;
+    color: var(--secondary);
+    font-size: 22px;
+  }
+
+  /* ICONS IM KREIS */
+  .skills_mobile_learning_icons {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+  }
+
+  .skills_mobile_learning_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .skills_mobile_learning_item img {
+    width: 56px;
+    height: 56px;
+  }
+
+  .skills_mobile_learning_item span {
+    color: var(--secondary);
+    font-size: 14px;
+  }
+
+  /* TEXT */
+  .skills_mobile_learning_text {
+    max-width: 240px;
+    color: var(--secondary);
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  /* BUTTON */
+  .skills_mobile_cta {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .mobile_talk_btn {
+    width: 170px;
+    height: 54px;
+    border-radius: 999px;
+    border: none;
+    background: var(--primary);
+    color: var(--bg_and_main);
+    font-size: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 0 18px hsla(202, 51%, 60%, 0.25);
+  }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 700px) {
+  .skills_mobile_icons_grid {
+    max-width: 290px;
+    gap: 18px 12px;
+  }
+
+  .skills_mobile_icon_item img {
+    width: 44px;
+    height: 44px;
+  }
+
+  .skills_mobile_bottom_box {
+    max-width: 290px;
+    min-height: 300px;
+    padding: 30px 20px;
+  }
+
+  .skills_mobile_learning_item img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .skills_mobile_learning_text {
+    font-size: 14px;
+  }
+
+  .mobile_talk_btn {
+    width: 150px;
+    height: 50px;
+    font-size: 17px;
+  }
+}
+
+.skills_mobile_circle {
+  position: relative;
+  width: 132px;
+  height: 132px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex-shrink: 0;
+}
+
+.skills_mobile_circle_bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.skills_mobile_circle_item {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.skills_mobile_circle_item img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  display: block;
+}
+
+.skills_mobile_circle_item span {
+  color: var(--secondary);
+  font-size: 12px;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+@media (max-width: 700px) {
+  .skills_mobile_circle {
+    width: 118px;
+    height: 118px;
+    gap: 12px;
+  }
+
+  .skills_mobile_circle_item img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .skills_mobile_circle_item span {
+    font-size: 11px;
+  }
+}

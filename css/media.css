@@ -13,3 +13,193 @@
     align-items: center;
   }
 }
+
+.skills_desktop_block {
+  display: block;
+}
+
+.skills_mobile_block {
+  display: none;
+}
+
+@media (max-width: 960px) {
+  .why_me_section .section_cta_row {
+    display: none !important;
+  }
+
+  .skills_desktop_block {
+    display: none !important;
+  }
+
+  .skills_mobile_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  .skills_mobile_icons_grid {
+    width: 100%;
+    max-width: 320px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px 18px;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 18px;
+  }
+
+  .skills_mobile_icon_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .skills_mobile_icon_item img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    display: block;
+  }
+
+  .skills_mobile_icon_item:last-child:nth-child(9) {
+    grid-column: 2 / span 2;
+  }
+
+  .skills_mobile_learning_headline {
+    margin: 0 0 26px;
+    color: var(--primary);
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  .skills_mobile_info_row {
+    width: 100%;
+    max-width: 320px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .skills_mobile_info_text {
+    margin: 0;
+    max-width: 175px;
+    color: var(--secondary);
+    font-size: 14px;
+    line-height: 1.45;
+    text-align: left;
+  }
+
+  .skills_mobile_circle {
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    background: hsla(206, 15%, 18%, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex-shrink: 0;
+  }
+
+  .skills_mobile_circle_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .skills_mobile_circle_item img {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+    display: block;
+  }
+
+  .skills_mobile_circle_item span {
+    color: var(--secondary);
+    font-size: 12px;
+    line-height: 1;
+    white-space: nowrap;
+  }
+
+  .skills_mobile_cta {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 26px;
+  }
+
+  .mobile_talk_btn {
+    width: 160px;
+    height: 50px;
+    border: none;
+    border-radius: 999px;
+    background: var(--primary);
+    color: var(--bg_and_main);
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 18px hsla(202, 51%, 60%, 0.25);
+  }
+
+  .mobile_talk_btn:hover {
+    background: var(--primary);
+    color: var(--bg_and_main);
+  }
+}
+
+@media (max-width: 700px) {
+  .skills_mobile_icons_grid {
+    max-width: 290px;
+    gap: 18px 12px;
+  }
+
+  .skills_mobile_icon_item img {
+    width: 44px;
+    height: 44px;
+  }
+
+  .skills_mobile_learning_headline {
+    font-size: 17px;
+    margin-bottom: 22px;
+  }
+
+  .skills_mobile_info_row {
+    max-width: 290px;
+    gap: 14px;
+  }
+
+  .skills_mobile_info_text {
+    max-width: 150px;
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .skills_mobile_circle {
+    width: 118px;
+    height: 118px;
+    gap: 12px;
+  }
+
+  .skills_mobile_circle_item img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .skills_mobile_circle_item span {
+    font-size: 11px;
+  }
+
+  .mobile_talk_btn {
+    width: 150px;
+    height: 48px;
+    font-size: 16px;
+  }
+}
