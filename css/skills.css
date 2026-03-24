@@ -1,6 +1,3 @@
-/* =========================
-   SKILLS SYSTEM (FINAL CLEAN)
-========================= */
 
 .skills_desktop_block {
   display: flex;
@@ -10,7 +7,6 @@
   display: none;
 }
 
-/* MOBILE SWITCH */
 @media (max-width: 960px) {
   .skills_desktop_block {
     display: none !important;
@@ -22,10 +18,9 @@
     align-items: center;
     gap: 22px;
     width: 100%;
-    margin-top: 12px;
+    margin-top: 45px;
   }
 
-  /* ICON GRID */
   .skills_mobile_icons_grid {
     width: 100%;
     max-width: 320px;
@@ -41,12 +36,10 @@
     object-fit: contain;
   }
 
-  /* letzte icon mittig */
   .skills_mobile_icon_item:last-child:nth-child(9) {
     grid-column: 2 / span 2;
   }
 
-  /* HEADLINE */
   .skills_mobile_learning_headline {
     margin: 4px 0 0;
     color: var(--primary);
@@ -54,17 +47,13 @@
     text-align: center;
   }
 
-  /* 💙 BLOB CARD */
   .skills_mobile_bottom_box {
     width: 100%;
     max-width: 320px;
     min-height: 320px;
     padding: 34px 24px 30px;
     background: hsla(206, 15%, 18%, 0.88);
-
-    /* DAS ist dein Shape wie Screenshot */
     border-radius: 42% 58% 44% 56% / 46% 42% 58% 54%;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -79,7 +68,6 @@
     font-size: 22px;
   }
 
-  /* ICONS IM KREIS */
   .skills_mobile_learning_icons {
     display: flex;
     justify-content: center;
@@ -103,7 +91,6 @@
     font-size: 14px;
   }
 
-  /* TEXT */
   .skills_mobile_learning_text {
     max-width: 240px;
     color: var(--secondary);
@@ -111,7 +98,6 @@
     line-height: 1.5;
   }
 
-  /* BUTTON */
   .skills_mobile_cta {
     display: flex;
     justify-content: center;
@@ -126,16 +112,13 @@
     background: var(--primary);
     color: var(--bg_and_main);
     font-size: 18px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     box-shadow: 0 0 18px hsla(202, 51%, 60%, 0.25);
   }
 }
 
-/* SMALL MOBILE */
 @media (max-width: 700px) {
   .skills_mobile_icons_grid {
     max-width: 290px;

@@ -9,6 +9,7 @@ const translations = {
     "nav.projects": "Projects",
     "nav.contact": "Contact",
 
+    "hero.name": "Kseniya Küntzle",
     "hero.role": "FRONTEND DEVELOPER",
 
     "whyMe.title": "Why me",
@@ -25,6 +26,9 @@ const translations = {
     "projects.title": "My Projects",
     "projects.tech": "Technologies",
     "projects.live": "Live Test",
+    "projects.tabJoin": "1. Join",
+    "projects.tabElPollo": "2. El Pollo Loco",
+    "projects.tabOngoing": "3. Ongoing Project",
 
     "projects.join.aboutTitle": "About the project",
     "projects.join.duration": "Duration: 1.5 months",
@@ -52,20 +56,23 @@ const translations = {
     "projects.ongoing.duration": "Duration: ongoing",
     "projects.ongoing.aboutText":
       "My upcoming projects will focus on showcasing my skills in Angular and TypeScript.",
+    "projects.ongoing.memoryTitle": "Memory Game",
     "projects.ongoing.memoryText":
       "I am currently expanding my frontend expertise by working with TypeScript and SCSS to build more scalable and maintainable applications.",
+    "projects.ongoing.pollTitle": "Poll App",
     "projects.ongoing.pollText":
       "One of my next projects is a real-time poll application built with Angular and Supabase, where users can create surveys and track live results as they update instantly.",
 
-    "references.title": "Need a teamplayer? Here’s what my colleagues say about me",
+    "references.titleMain": "Need a teamplayer?",
+    "references.titleSub": "Here’s what my colleagues say about me",
     "references.project": "Project",
     "references.linkedin": "LinkedIn Profile",
     "references.maya":
-      "Working with Kseniya on our Join project was a great experience. She contributed with care, strong team spirit, and a clear eye for structure. Her reliable way of working made collaboration smooth and enjoyable.",
+      "Working with Kseniya was a great experience. She is reliable, structured, and a strong team player.",
     "references.laura":
-      "Kseniya is a thoughtful and supportive person to work with. She approaches tasks with patience, creativity, and a real willingness to improve. I especially value her positive attitude and dedication.",
+      "Kseniya is thoughtful and supportive, with creativity, patience, and a strong drive to improve.",
     "references.elli":
-      "Kseniya brings motivation, reliability, and a strong sense for clean design into her work. She is open to feedback, learns quickly, and works with real commitment. That makes her a valuable teammate in any project.",
+      "Kseniya is motivated, reliable, and has a great eye for clean design. She’s a valuable team member.",
 
     "contact.title": "Contact me",
     "contact.text":
@@ -92,6 +99,7 @@ const translations = {
     "nav.projects": "Projekte",
     "nav.contact": "Kontakt",
 
+    "hero.name": "Kseniya Küntzle",
     "hero.role": "FRONTEND ENTWICKLERIN",
 
     "whyMe.title": "Warum ich",
@@ -108,6 +116,9 @@ const translations = {
     "projects.title": "Meine Projekte",
     "projects.tech": "Technologien",
     "projects.live": "Live Test",
+    "projects.tabJoin": "1. Join",
+    "projects.tabElPollo": "2. El Pollo Loco",
+    "projects.tabOngoing": "3. Laufendes Projekt",
 
     "projects.join.aboutTitle": "Über das Projekt",
     "projects.join.duration": "Dauer: 1,5 Monate",
@@ -135,20 +146,23 @@ const translations = {
     "projects.ongoing.duration": "Dauer: laufend",
     "projects.ongoing.aboutText":
       "Meine kommenden Projekte werden sich darauf konzentrieren, meine Fähigkeiten in Angular und TypeScript zu zeigen.",
+    "projects.ongoing.memoryTitle": "Memory Game",
     "projects.ongoing.memoryText":
       "Ich erweitere aktuell meine Frontend-Kenntnisse mit TypeScript und SCSS, um skalierbarere und wartbarere Anwendungen zu entwickeln.",
+    "projects.ongoing.pollTitle": "Poll App",
     "projects.ongoing.pollText":
       "Eines meiner nächsten Projekte ist eine Echtzeit-Umfrage-App mit Angular und Supabase, bei der Nutzer Umfragen erstellen und Live-Ergebnisse in Echtzeit verfolgen können.",
 
-    "references.title": "Du suchst eine Teamplayerin? Das sagen meine Kolleginnen über mich",
+    "references.titleMain": "Du suchst eine Teamplayerin?",
+    "references.titleSub": "Das sagen meine Kolleginnen über mich",
     "references.project": "Projekt",
     "references.linkedin": "LinkedIn Profil",
     "references.maya":
-      "Die Zusammenarbeit mit Kseniya an unserem Join-Projekt war eine tolle Erfahrung. Sie hat mit Sorgfalt, starkem Teamgeist und einem klaren Blick für Struktur beigetragen. Ihre zuverlässige Arbeitsweise hat die Zusammenarbeit angenehm und reibungslos gemacht.",
+      "Die Zusammenarbeit mit Kseniya war eine tolle Erfahrung. Sie ist zuverlässig, strukturiert und eine starke Teamplayerin.",
     "references.laura":
-      "Kseniya ist eine aufmerksame und unterstützende Person in der Zusammenarbeit. Sie geht Aufgaben mit Geduld, Kreativität und echtem Wunsch nach Verbesserung an. Besonders schätze ich ihre positive Einstellung und ihr Engagement.",
+      "Kseniya ist aufmerksam und unterstützend, mit Kreativität, Geduld und dem starken Wunsch, sich weiterzuentwickeln.",
     "references.elli":
-      "Kseniya bringt Motivation, Zuverlässigkeit und ein gutes Gespür für sauberes Design in ihre Arbeit ein. Sie ist offen für Feedback, lernt schnell und arbeitet mit echtem Einsatz. Das macht sie zu einer wertvollen Teamkollegin in jedem Projekt.",
+      "Kseniya ist motiviert, zuverlässig und hat ein gutes Gespür für sauberes Design. Sie ist eine wertvolle Teamkollegin.",
 
     "contact.title": "Kontakt",
     "contact.text":
@@ -168,21 +182,51 @@ const translations = {
   }
 };
 
-function applyLanguage(lang) {
+function setText(lang) {
   document.querySelectorAll("[data-i18n]").forEach((element) => {
-    const value = translations[lang]?.[element.dataset.i18n];
+    const key = element.dataset.i18n;
+    const value = translations[lang]?.[key];
     if (value) element.textContent = value;
   });
+}
 
+function setPlaceholders(lang) {
   document.querySelectorAll("[data-i18n-placeholder]").forEach((element) => {
-    const value = translations[lang]?.[element.dataset.i18nPlaceholder];
+    const key = element.dataset.i18nPlaceholder;
+    const value = translations[lang]?.[key];
     if (value) element.placeholder = value;
   });
 }
 
-window.applyLanguage = applyLanguage;
+function syncButtons(lang) {
+  document.querySelectorAll("[data-lang]").forEach((button) => {
+    button.classList.toggle("active", button.dataset.lang === lang);
+  });
+}
 
-document.addEventListener("DOMContentLoaded", () => {
+function syncEgg(lang) {
+  document.querySelectorAll(".language_switch_icon").forEach((switcher) => {
+    switcher.dataset.active = lang;
+  });
+}
+
+function applyLanguage(lang) {
+  setText(lang);
+  setPlaceholders(lang);
+  syncButtons(lang);
+  syncEgg(lang);
+  document.documentElement.lang = lang;
+  localStorage.setItem("language", lang);
+}
+
+function initLanguageSwitch() {
   const savedLang = localStorage.getItem("language") || "en";
   applyLanguage(savedLang);
-});
+
+  document.querySelectorAll("[data-lang]").forEach((button) => {
+    button.addEventListener("click", () => applyLanguage(button.dataset.lang));
+  });
+}
+
+window.applyLanguage = applyLanguage;
+document.addEventListener("DOMContentLoaded", initLanguageSwitch);

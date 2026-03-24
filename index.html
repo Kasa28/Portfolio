@@ -31,7 +31,7 @@
             <path d="M32.5339 35H40.0507L50.3594 20.3285L40.0507 5H32.5339L18.5741 35H11.7017L2.35938 20.3285L11.7017 5H18.5741" stroke="#89BCD9" stroke-width="4" stroke-linecap="round"/>
           </svg>
           <p class="brand_name">K. Küntzle</p>
-          <p class="brand_role color_lightblue">developer</p>
+          <p class="brand_role color_lightblue" data-i18n="brand.role">developer</p>
         </div>
       </a>
 
@@ -57,15 +57,15 @@
         <div class="mobile_hero_stage">
           <div class="flip_card" id="flipCard">
             <div class="flip_card_inner">
-       <div class="hero_image_shape_container_front">
-        <div class="mobile_hero_visual">
-      <div class="mobile_oval_clip">
-      <img class="mobile_hero_image" src="./assets/img/ganz.png" alt="Developer Kseniya Küntzle">
-    </div>
+              <div class="hero_image_shape_container_front">
+                <div class="mobile_hero_visual">
+                  <div class="mobile_oval_clip">
+                    <img class="mobile_hero_image" src="./assets/img/ganz.png" alt="Developer Kseniya Küntzle">
+                  </div>
 
-    <img class="mobile_shape_bg" src="./assets/icons/Ellipse_egg.svg" alt="" aria-hidden="true">
-     </div>
-    </div>
+                  <img class="mobile_shape_bg" src="./assets/icons/Ellipse_egg.svg" alt="" aria-hidden="true">
+                </div>
+              </div>
 
               <div class="hero_image_shape_container_back">
                 <img class="mobile_shape_bg_back" src="./assets/icons/Ellipse_egg.svg" alt="" aria-hidden="true">
@@ -78,7 +78,7 @@
 
                   <div class="mobile_language">
                     <button class="language_mobile_tab" data-lang="de" type="button">DE</button>
-                    <button class="language_mobile_tab active"  data-lang="en" type="button">EN</button>
+                    <button class="language_mobile_tab active" data-lang="en" type="button">EN</button>
                   </div>
                 </nav>
               </div>
@@ -86,8 +86,8 @@
           </div>
 
           <div class="mobile_hero_text">
-            <h1 class="mobile_hero_title">Kseniya Küntzle</h1>
-            <h2 class="mobile_hero_subtitle">FRONTEND DEVELOPER</h2>
+            <h1 class="mobile_hero_title" data-i18n="hero.name">Kseniya Küntzle</h1>
+            <h2 class="mobile_hero_subtitle" data-i18n="hero.role">FRONTEND DEVELOPER</h2>
 
             <a class="mobile_hero_scroll_btn" href="#me" aria-label="Scroll down">
               <img class="hero_scroll_icon" src="./assets/icons/Arrow_down.svg" alt="" aria-hidden="true">
@@ -104,11 +104,11 @@
             <path d="M32.5339 35H40.0507L50.3594 20.3285L40.0507 5H32.5339L18.5741 35H11.7017L2.35938 20.3285L11.7017 5H18.5741" stroke="#89BCD9" stroke-width="4" stroke-linecap="round"/>
           </svg>
           <p class="brand_name">K. Küntzle</p>
-          <p class="brand_role color_lightblue">developer</p>
+          <p class="brand_role color_lightblue" data-i18n="brand.role">developer</p>
         </div>
 
-        <h1 class="hero_title">Kseniya Küntzle</h1>
-        <h2 class="hero_subtitle">FRONTEND DEVELOPER</h2>
+        <h1 class="hero_title" data-i18n="hero.name">Kseniya Küntzle</h1>
+        <h2 class="hero_subtitle" data-i18n="hero.role">FRONTEND DEVELOPER</h2>
 
         <a class="hero_scroll_btn" href="#me" aria-label="Scroll down">
           <img class="hero_scroll_icon" src="./assets/icons/Arrow_down.svg" alt="" aria-hidden="true">
@@ -124,207 +124,178 @@
   </div>
 </header>
 
+<nav class="site_nav">
+  <div class="layout_container">
+    <section class="nav_row">
+      <article>
+        <a href="#header" aria-label="Go to top of the page">
+          <div class="nav_brand">
+            <svg width="53" height="38" viewBox="0 0 53 38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M14 27.8594C13.4948 27.8438 13.0573 27.7266 12.6875 27.5078C12.3177 27.2891 12.0104 27 11.7656 26.6406C11.5312 26.2969 11.3542 25.9115 11.2344 25.4844C11.1146 25.0625 11.0547 24.6432 11.0547 24.2266V22.9062C11.0547 22.1562 10.875 21.612 10.5156 21.2734C10.1615 20.9349 9.61719 20.763 8.88281 20.7578V19.625C9.61719 19.625 10.1615 19.4583 10.5156 19.125C10.875 18.7865 11.0547 18.2396 11.0547 17.4844V16.1562C11.0547 15.7344 11.1094 15.3047 11.2188 14.8672C11.3333 14.4245 11.513 14.0286 11.7578 13.6797C11.987 13.3464 12.2865 13.0755 12.6562 12.8672C13.026 12.6536 13.474 12.5391 14 12.5234L14.1641 13.4219C13.7891 13.4323 13.4896 13.5208 13.2656 13.6875C13.0469 13.8542 12.8828 14.0651 12.7734 14.3203C12.6589 14.5807 12.5859 14.8724 12.5547 15.1953C12.5234 15.5182 12.5078 15.8385 12.5078 16.1562V17.4844C12.5078 18.1094 12.362 18.6589 12.0703 19.1328C11.7839 19.6016 11.3385 19.9583 10.7344 20.2031C11.3385 20.4427 11.7839 20.7995 12.0703 21.2734C12.3568 21.7422 12.5026 22.2865 12.5078 22.9062V24.2266C12.5078 24.5495 12.5339 24.8698 12.5859 25.1875C12.638 25.5104 12.7292 25.7995 12.8594 26.0547C12.9844 26.3151 13.151 26.5286 13.3594 26.6953C13.5729 26.862 13.8411 26.9505 14.1641 26.9609L14 27.8594Z" fill="#F8F5EC"/>
+              <path d="M38.8828 26.9609C39.2005 26.9505 39.4661 26.862 39.6797 26.6953C39.8932 26.5286 40.0651 26.3151 40.1953 26.0547C40.3203 25.7995 40.4089 25.5104 40.4609 25.1875C40.5182 24.8698 40.5469 24.5495 40.5469 24.2266V22.9062C40.5469 22.4948 40.6068 22.1146 40.7266 21.7656C40.8516 21.4167 41.0417 21.1146 41.2969 20.8594C41.4323 20.724 41.5833 20.6016 41.75 20.4922C41.9219 20.3828 42.1094 20.2865 42.3125 20.2031C42.1042 20.1198 41.9115 20.0208 41.7344 19.9062C41.5625 19.7917 41.4115 19.6641 41.2812 19.5234C41.0312 19.263 40.8464 18.9609 40.7266 18.6172C40.6068 18.2682 40.5469 17.8906 40.5469 17.4844V16.1562C40.5469 15.8385 40.5286 15.5182 40.4922 15.1953C40.4609 14.8724 40.3906 14.5807 40.2812 14.3203C40.1667 14.0651 40 13.8542 39.7812 13.6875C39.5625 13.5208 39.2656 13.4323 38.8906 13.4219L39.0469 12.5234C39.5521 12.5391 39.9844 12.6458 40.3438 12.8438C40.7083 13.0417 41.0078 13.2995 41.2422 13.6172C41.5078 13.9766 41.6979 14.3802 41.8125 14.8281C41.9323 15.276 41.9922 15.7188 41.9922 16.1562V17.4844C41.9922 17.7969 42.0208 18.0729 42.0781 18.3125C42.1406 18.5469 42.2318 18.75 42.3516 18.9219C42.5234 19.1667 42.7604 19.3464 43.0625 19.4609C43.3698 19.5703 43.737 19.625 44.1641 19.625V20.7578C43.7891 20.763 43.4609 20.8099 43.1797 20.8984C42.9036 20.9818 42.6771 21.1146 42.5 21.2969C42.3281 21.474 42.2005 21.6953 42.1172 21.9609C42.0339 22.2266 41.9922 22.5417 41.9922 22.9062V24.2266C41.9922 24.6432 41.9349 25.0625 41.8203 25.4844C41.7057 25.9115 41.5286 26.2995 41.2891 26.6484C41.0443 26.9974 40.737 27.2839 40.3672 27.5078C39.9974 27.7318 39.5573 27.849 39.0469 27.8594L38.8828 26.9609Z" fill="#F8F5EC"/>
+              <path d="M32.5339 35H40.0507L50.3594 20.3285L40.0507 5H32.5339L18.5741 35H11.7017L2.35938 20.3285L11.7017 5H18.5741" stroke="#262E34" stroke-opacity="0.8" stroke-width="4" stroke-linecap="round"/>
+            </svg>
 
-  <nav class="site_nav">
-    <div class="layout_container">
-      <section class="nav_row">
-        <article>
-          <a href="#header" aria-label="Go to top of the page">
-            <div class="nav_brand">
-              <svg width="53" height="38" viewBox="0 0 53 38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <path
-                  d="M14 27.8594C13.4948 27.8438 13.0573 27.7266 12.6875 27.5078C12.3177 27.2891 12.0104 27 11.7656 26.6406C11.5312 26.2969 11.3542 25.9115 11.2344 25.4844C11.1146 25.0625 11.0547 24.6432 11.0547 24.2266V22.9062C11.0547 22.1562 10.875 21.612 10.5156 21.2734C10.1615 20.9349 9.61719 20.763 8.88281 20.7578V19.625C9.61719 19.625 10.1615 19.4583 10.5156 19.125C10.875 18.7865 11.0547 18.2396 11.0547 17.4844V16.1562C11.0547 15.7344 11.1094 15.3047 11.2188 14.8672C11.3333 14.4245 11.513 14.0286 11.7578 13.6797C11.987 13.3464 12.2865 13.0755 12.6562 12.8672C13.026 12.6536 13.474 12.5391 14 12.5234L14.1641 13.4219C13.7891 13.4323 13.4896 13.5208 13.2656 13.6875C13.0469 13.8542 12.8828 14.0651 12.7734 14.3203C12.6589 14.5807 12.5859 14.8724 12.5547 15.1953C12.5234 15.5182 12.5078 15.8385 12.5078 16.1562V17.4844C12.5078 18.1094 12.362 18.6589 12.0703 19.1328C11.7839 19.6016 11.3385 19.9583 10.7344 20.2031C11.3385 20.4427 11.7839 20.7995 12.0703 21.2734C12.3568 21.7422 12.5026 22.2865 12.5078 22.9062V24.2266C12.5078 24.5495 12.5339 24.8698 12.5859 25.1875C12.638 25.5104 12.7292 25.7995 12.8594 26.0547C12.9844 26.3151 13.151 26.5286 13.3594 26.6953C13.5729 26.862 13.8411 26.9505 14.1641 26.9609L14 27.8594Z"
-                  fill="#F8F5EC"
-                />
-                <path
-                  d="M38.8828 26.9609C39.2005 26.9505 39.4661 26.862 39.6797 26.6953C39.8932 26.5286 40.0651 26.3151 40.1953 26.0547C40.3203 25.7995 40.4089 25.5104 40.4609 25.1875C40.5182 24.8698 40.5469 24.5495 40.5469 24.2266V22.9062C40.5469 22.4948 40.6068 22.1146 40.7266 21.7656C40.8516 21.4167 41.0417 21.1146 41.2969 20.8594C41.4323 20.724 41.5833 20.6016 41.75 20.4922C41.9219 20.3828 42.1094 20.2865 42.3125 20.2031C42.1042 20.1198 41.9115 20.0208 41.7344 19.9062C41.5625 19.7917 41.4115 19.6641 41.2812 19.5234C41.0312 19.263 40.8464 18.9609 40.7266 18.6172C40.6068 18.2682 40.5469 17.8906 40.5469 17.4844V16.1562C40.5469 15.8385 40.5286 15.5182 40.4922 15.1953C40.4609 14.8724 40.3906 14.5807 40.2812 14.3203C40.1667 14.0651 40 13.8542 39.7812 13.6875C39.5625 13.5208 39.2656 13.4323 38.8906 13.4219L39.0469 12.5234C39.5521 12.5391 39.9844 12.6458 40.3438 12.8438C40.7083 13.0417 41.0078 13.2995 41.2422 13.6172C41.5078 13.9766 41.6979 14.3802 41.8125 14.8281C41.9323 15.276 41.9922 15.7188 41.9922 16.1562V17.4844C41.9922 17.7969 42.0208 18.0729 42.0781 18.3125C42.1406 18.5469 42.2318 18.75 42.3516 18.9219C42.5234 19.1667 42.7604 19.3464 43.0625 19.4609C43.3698 19.5703 43.737 19.625 44.1641 19.625V20.7578C43.7891 20.763 43.4609 20.8099 43.1797 20.8984C42.9036 20.9818 42.6771 21.1146 42.5 21.2969C42.3281 21.474 42.2005 21.6953 42.1172 21.9609C42.0339 22.2266 41.9922 22.5417 41.9922 22.9062V24.2266C41.9922 24.6432 41.9349 25.0625 41.8203 25.4844C41.7057 25.9115 41.5286 26.2995 41.2891 26.6484C41.0443 26.9974 40.737 27.2839 40.3672 27.5078C39.9974 27.7318 39.5573 27.849 39.0469 27.8594L38.8828 26.9609Z"
-                  fill="#F8F5EC"
-                />
-                <path
-                  d="M32.5339 35H40.0507L50.3594 20.3285L40.0507 5H32.5339L18.5741 35H11.7017L2.35938 20.3285L11.7017 5H18.5741"
-                  stroke="#262E34"
-                  stroke-opacity="0.8"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                />
-              </svg>
+            <p class="brand_name">K. Küntzle</p>
+            <p class="brand_role color_dark" data-i18n="brand.role">developer</p>
+          </div>
+        </a>
+      </article>
 
-              <p class="brand_name">K. Küntzle</p>
-              <p class="brand_role color_dark" data-i18n="brand.role">developer</p>
-            </div>
-          </a>
-        </article>
+      <article class="nav_links">
+        <a href="#me" data-i18n="nav.whyMe">Why me</a>
+        <a href="#skills" data-i18n="nav.skills">Skills</a>
+        <a href="#projects" data-i18n="nav.projects">Projects</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </article>
 
-        <article class="nav_links">
-          <a href="#me" data-i18n="nav.whyMe">Why me</a>
-          <a href="#skills" data-i18n="nav.skills">Skills</a>
-          <a href="#projects" data-i18n="nav.projects">Projects</a>
-          <a href="#contact" data-i18n="nav.contact">Contact</a>
-        </article>
+      <article class="nav_language language_switch_icon" data-active="en" aria-label="Language switcher">
+        <img class="language_switch_egg" src="./assets/icons/nav_shape_active_translate.svg" alt="" aria-hidden="true">
 
-        <article class="nav_language language_switch_icon" data-active="en" aria-label="Language switcher">
-          <img
-            class="language_switch_egg"
-            src="./assets/icons/nav_shape_active_translate.svg"
-            alt=""
-            aria-hidden="true"
-          >
+        <button class="language_nav_tab" type="button" data-lang="de">DE</button>
+        <button class="language_nav_tab active" type="button" data-lang="en">EN</button>
+      </article>
+    </section>
+  </div>
+</nav>
 
-          <button class="language_nav_tab" type="button" data-lang="de">
-            DE
-          </button>
+<main>
+  <div class="layout_container">
+    <section id="me" class="why_me_section">
+      <h2 class="section_title" data-i18n="whyMe.title">Why me</h2>
 
-          <button class="language_nav_tab active" type="button" data-lang="en">
-            EN
-          </button>
-        </article>
-      </section>
-    </div>
-  </nav>
+      <div class="why_me_grid">
+        <div id="meInteractiv" class="why_me_location">
+          <img src="./assets/icons/pin.svg" alt="Location pin">
+          <p data-i18n="whyMe.location">I am located in Heilbronn</p>
+        </div>
 
-  <main>
-    <div class="layout_container">
-      <section id="me" class="why_me_section">
-        <h2 class="section_title" data-i18n="whyMe.title">Why me</h2>
+        <div class="why_me_text">
+          <p data-i18n="whyMe.text">
+            I’m a frontend developer with a strong eye for clean UI and a love for building smooth, responsive experiences.
+            I enjoy turning ideas into structured, maintainable code — and I’m always curious to learn and improve.
+          </p>
+        </div>
+      </div>
 
-        <div class="why_me_grid">
-          <div id="meInteractiv" class="why_me_location">
-            <img src="./assets/icons/pin.svg" alt="Location pin">
-            <p data-i18n="whyMe.location">I am located in Heilbronn</p>
+      <div class="section_cta_row">
+        <a class="btn_standard" href="#contact" data-i18n="whyMe.button">Let's talk</a>
+      </div>
+    </section>
+
+    <section id="skills" class="skills_section">
+      <h2 class="section_title" data-i18n="skills.title">My Skills</h2>
+
+      <div class="skills_mobile_block">
+        <div class="skills_mobile_icons_grid">
+          <div class="skills_mobile_icon_item">
+            <img src="./assets/icons/js_notext.svg" alt="JavaScript">
           </div>
 
-          <div class="why_me_text">
-            <p data-i18n="whyMe.text">
-              I’m a frontend developer with a strong eye for clean UI and a love for building smooth, responsive experiences.
-              I enjoy turning ideas into structured, maintainable code — and I’m always curious to learn and improve.
+          <div class="skills_mobile_icon_item">
+            <img src="./assets/icons/htm_notext.svg" alt="HTML">
+          </div>
+
+          <div class="skills_mobile_icon_item">
+            <img src="./assets/icons/css_notext.svg" alt="CSS">
+          </div>
+
+          <div class="skills_mobile_icon_item">
+            <img src="./assets/icons/Api_notext.svg" alt="REST API">
+          </div>
+
+          <div class="skills_mobile_icon_item">
+            <img src="./assets/icons/firebase_notext.svg" alt="Firebase">
+          </div>
+
+          <div class="skills_mobile_icon_item">
+            <img src="./assets/icons/git_notext.svg" alt="Git">
+          </div>
+
+          <div class="skills_mobile_icon_item">
+            <img src="./assets/icons/scrum_notext.svg" alt="Scrum">
+          </div>
+        </div>
+
+        <p class="skills_mobile_learning_headline" data-i18n="skills.learningTitle">What I am currently learning</p>
+
+        <div class="skills_mobile_info_row">
+          <p class="skills_mobile_info_text" data-i18n="skills.learningText">
+            I’m driven by continuous learning. Every new challenge is an opportunity to grow, improve, and build new skills.
+          </p>
+
+          <div class="skills_mobile_circle">
+            <img class="skills_mobile_circle_bg" src="./assets/icons/Ellipse 24.svg" alt="" aria-hidden="true">
+
+            <div class="skills_mobile_circle_item">
+              <img src="./assets/icons/angular_notext.svg" alt="Angular">
+              <span>Angular</span>
+            </div>
+
+            <div class="skills_mobile_circle_item">
+              <img src="./assets/icons/ts_notext.svg" alt="TypeScript">
+              <span>TypeScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills_mobile_cta">
+          <a class="mobile_talk_btn" href="#contact" data-i18n="whyMe.button">Let's talk</a>
+        </div>
+      </div>
+
+      <div class="skills_desktop_block">
+        <div class="skills_boxes">
+          <div class="skills_icons_section">
+            <div class="skill_icon_item">
+              <img class="skill_icon" src="./assets/icons/js.svg" alt="JavaScript">
+            </div>
+
+            <div class="skill_icon_item">
+              <img class="skill_icon" src="./assets/icons/HTML.svg" alt="HTML">
+            </div>
+
+            <div class="skill_icon_item">
+              <img class="skill_icon" src="./assets/icons/css.svg" alt="CSS">
+            </div>
+
+            <div class="skill_icon_item">
+              <img class="skill_icon" src="./assets/icons/git_under.svg" alt="Git">
+            </div>
+
+            <div class="skill_icon_item">
+              <img class="skill_icon" src="./assets/icons/rest_api.svg" alt="REST API">
+            </div>
+
+            <div class="skill_icon_item">
+              <img class="skill_icon" src="./assets/icons/firebase.svg" alt="Firebase">
+            </div>
+
+            <div class="skill_icon_item">
+              <img class="skill_icon" src="./assets/icons/scrum.svg" alt="Scrum">
+            </div>
+          </div>
+
+          <div class="skills_text_container">
+            <h3 class="learning_intro" data-i18n="skills.learningTitle">I am currently learning</h3>
+
+            <div class="skills_learning_icons">
+              <div class="learning_item">
+                <img class="learning_icon" src="./assets/icons/angular_notext.svg" alt="Angular">
+              </div>
+
+              <div class="learning_item">
+                <img class="learning_icon" src="./assets/icons/ts_notext.svg" alt="TypeScript">
+              </div>
+            </div>
+
+            <p class="skills_learning_text" data-i18n="skills.learningText">
+              I’m passionate about continuous learning. Every new challenge is an opportunity to grow, improve, and develop new skills.
             </p>
           </div>
         </div>
-
-        <div class="section_cta_row">
-          <a class="btn_standard" href="#contact" data-i18n="whyMe.button">Let's talk</a>
-        </div>
-      </section>
-
-  <section id="skills" class="skills_section">
-  <h2 class="section_title" data-i18n="skills.title">My Skills</h2>
-
-  <div class="skills_mobile_block">
-    <div class="skills_mobile_icons_grid">
-
-      <div class="skills_mobile_icon_item">
-        <img src="./assets/icons/js_notext.svg" alt="JavaScript">
       </div>
-
-      <div class="skills_mobile_icon_item">
-        <img src="./assets/icons/htm_notext.svg" alt="HTML">
-      </div>
-
-      <div class="skills_mobile_icon_item">
-        <img src="./assets/icons/css_notext.svg" alt="CSS">
-      </div>
-
-      <div class="skills_mobile_icon_item">
-        <img src="./assets/icons/Api_notext.svg" alt="REST API">
-      </div>
-
-      <div class="skills_mobile_icon_item">
-        <img src="./assets/icons/firebase_notext.svg" alt="Firebase">
-      </div>
-
-      <div class="skills_mobile_icon_item">
-        <img src="./assets/icons/git_notext.svg" alt="Git">
-      </div>
-
-      <div class="skills_mobile_icon_item">
-        <img src="./assets/icons/scrum_notext.svg" alt="Scrum">
-      </div>
-    </div>
-
-    <p class="skills_mobile_learning_headline">What I am currently learning</p>
-
-    <div class="skills_mobile_info_row">
-      <p class="skills_mobile_info_text">
-        I’m driven by continuous learning. Every new challenge is an opportunity to grow, improve, and build new skills.
-      </p>
-
-      <div class="skills_mobile_circle">
-  <img
-    class="skills_mobile_circle_bg"
-    src="./assets/icons/Ellipse 24.svg"
-    alt=""
-    aria-hidden="true"
-  >
-
-  <div class="skills_mobile_circle_item">
-    <img src="./assets/icons/angular_notext.svg" alt="Angular">
-    <span>Angular</span>
-  </div>
-
-  <div class="skills_mobile_circle_item">
-    <img src="./assets/icons/ts_notext.svg" alt="TypeScript">
-    <span>TypeScrit</span>
-  </div>
-</div>
-    </div>
-
-    <div class="skills_mobile_cta">
-      <a class="mobile_talk_btn" href="#contact" data-i18n="whyMe.button">Let's talk</a>
-    </div>
-  </div>
-
-  <div class="skills_desktop_block">
-    <div class="skills_boxes">
-      <div class="skills_icons_section">
-        <div class="skill_icon_item">
-          <img class="skill_icon" src="./assets/icons/js.svg" alt="JavaScript">
-        </div>
-
-        <div class="skill_icon_item">
-          <img class="skill_icon" src="./assets/icons/HTML.svg" alt="HTML">
-        </div>
-
-        <div class="skill_icon_item">
-          <img class="skill_icon" src="./assets/icons/css.svg" alt="CSS">
-        </div>
-
-        <div class="skill_icon_item">
-          <img class="skill_icon" src="./assets/icons/git_under.svg" alt="Git">
-        </div>
-
-        <div class="skill_icon_item">
-          <img class="skill_icon" src="./assets/icons/rest_api.svg" alt="REST API">
-        </div>
-
-        <div class="skill_icon_item">
-          <img class="skill_icon" src="./assets/icons/firebase.svg" alt="Firebase">
-        </div>
-
-        <div class="skill_icon_item">
-          <img class="skill_icon" src="./assets/icons/scrum.svg" alt="Scrum">
-        </div>
-      </div>
-
-      <div class="skills_text_container">
-        <h3 class="learning_intro" data-i18n="skills.learningTitle">I am currently learning</h3>
-
-        <div class="skills_learning_icons">
-          <div class="learning_item">
-            <img class="learning_icon" src="./assets/icons/angular_notext.svg" alt="Angular">
-          </div>
-
-          <div class="learning_item">
-            <img class="learning_icon" src="./assets/icons/ts_notext.svg" alt="TypeScript">
-          </div>
-        </div>
-
-        <p class="skills_learning_text" data-i18n="skills.learningText">
-          I’m passionate about continuous learning. Every new challenge is an opportunity to grow, improve, and develop new skills.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
     <section id="projects" class="projects_section">
       <div class="layout_container">
@@ -332,19 +303,19 @@
 
         <div class="projects_tabs" role="tablist" aria-label="Project tabs">
           <div class="project_tab_item">
-            <button class="project_tab active" data-project="join" role="tab" aria-selected="true">
+            <button class="project_tab active" data-project="join" role="tab" aria-selected="true" data-i18n="projects.tabJoin">
               1. Join
             </button>
           </div>
 
           <div class="project_tab_item">
-            <button class="project_tab" data-project="elpolloloco" role="tab" aria-selected="false">
+            <button class="project_tab" data-project="elpolloloco" role="tab" aria-selected="false" data-i18n="projects.tabElPollo">
               2. El Pollo Loco
             </button>
           </div>
 
           <div class="project_tab_item">
-            <button class="project_tab" data-project="ongoing" role="tab" aria-selected="false">
+            <button class="project_tab" data-project="ongoing" role="tab" aria-selected="false" data-i18n="projects.tabOngoing">
               3. Ongoing Project
             </button>
           </div>
@@ -503,7 +474,7 @@
                 <div class="project_info_item">
                   <img class="project_marker" src="./assets/icons/marker.svg" alt="">
                   <div class="project_info_text">
-                    <h3>Memory Game</h3>
+                    <h3 data-i18n="projects.ongoing.memoryTitle">Memory Game</h3>
                     <p data-i18n="projects.ongoing.memoryText">
                       I am currently expanding my frontend expertise by working with TypeScript and SCSS to build more scalable and maintainable applications.
                     </p>
@@ -513,7 +484,7 @@
                 <div class="project_info_item">
                   <img class="project_marker" src="./assets/icons/marker.svg" alt="">
                   <div class="project_info_text">
-                    <h3>Poll App</h3>
+                    <h3 data-i18n="projects.ongoing.pollTitle">Poll App</h3>
                     <p data-i18n="projects.ongoing.pollText">
                       One of my next projects is a real-time poll application built with Angular and Supabase, where users can create surveys and track live results as they update instantly.
                     </p>
@@ -541,9 +512,10 @@
 
     <div class="layout_container">
       <section id="references" class="references_section">
-        <h3 class="references_title" data-i18n="references.title">
-          Need a teamplayer? Here’s what my colleagues say about me
-        </h3>
+        <h3 class="references_title">
+  <span data-i18n="references.titleMain" class="need_team">Need a teamplayer?</span>
+  <span class="references_title_light" data-i18n="references.titleSub">Here’s what my colleagues say about me</span>
+</h3>
 
         <article class="references_grid">
           <div class="reference_card">
@@ -557,9 +529,7 @@
                   <span class="color_lightblue">Join</span>
                 </p>
                 <p class="reference_text" data-i18n="references.maya">
-                  Working with Kseniya on our Join project was a great experience.
-                  She contributed with care, strong team spirit, and a clear eye for structure.
-                  Her reliable way of working made collaboration smooth and enjoyable.
+                  Working with Kseniya was a great experience. She is reliable, structured, and a strong team player.
                 </p>
                 <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" data-i18n="references.linkedin">
                   LinkedIn Profile
@@ -576,12 +546,10 @@
                 <h4>Laura Aller</h4>
                 <p class="reference_project">
                   <span data-i18n="references.project">Project</span>
-                  <span class="color_lightblue">Coding together</span>
+                  <span class="color_lightblue">Coding</span>
                 </p>
                 <p class="reference_text" data-i18n="references.laura">
-                  Kseniya is a thoughtful and supportive person to work with.
-                  She approaches tasks with patience, creativity, and a real willingness to improve.
-                  I especially value her positive attitude and dedication.
+                  Kseniya is thoughtful and supportive, with creativity, patience, and a strong drive to improve.
                 </p>
                 <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" data-i18n="references.linkedin">
                   LinkedIn Profile
@@ -598,12 +566,10 @@
                 <h4>Elli Sander</h4>
                 <p class="reference_project">
                   <span data-i18n="references.project">Project</span>
-                  <span class="color_lightblue">Coding together</span>
+                  <span class="color_lightblue">Coding</span>
                 </p>
                 <p class="reference_text" data-i18n="references.elli">
-                  Kseniya brings motivation, reliability, and a strong sense for clean design into her work.
-                  She is open to feedback, learns quickly, and works with real commitment.
-                  That makes her a valuable teammate in any project.
+                  Kseniya is motivated, reliable, and has a great eye for clean design. She’s a valuable team member.
                 </p>
                 <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" data-i18n="references.linkedin">
                   LinkedIn Profile
@@ -613,102 +579,98 @@
           </div>
         </article>
       </section>
+
       <section id="contact" class="contact_section" tabindex="-1">
-  <h2 class="section_title" data-i18n="contact.title">Contact me</h2>
+        <h2 class="section_title" data-i18n="contact.title">Contact me</h2>
 
-  <div class="contact_grid">
-    <div class="contact_text">
-      <p data-i18n="contact.text">
-        Ready for the next project? I look forward to hearing from you and building clean, modern, and user-friendly web experiences together.
-      </p>
-    </div>
+        <div class="contact_grid">
+          <div class="contact_text">
+            <p data-i18n="contact.text">
+              Ready for the next project? I look forward to hearing from you and building clean, modern, and user-friendly web experiences together.
+            </p>
+          </div>
 
-    <div class="contact_details">
-      <a class="contact_link contact_link_mail" href="mailto:kseniya.kuentzle.dev@gmail.com">
-        E-mail: kseniya.kuentzle.dev@gmail.com
-      </a>
+          <div class="contact_details">
+            <a class="contact_link contact_link_mail" href="mailto:kseniya.kuentzle.dev@gmail.com">
+              E-mail: kseniya.kuentzle.dev@gmail.com
+            </a>
 
-      <a class="contact_link contact_link_phone" href="tel:+49151268898">
-        Tel. +49 1512 268898
-      </a>
-    </div>
-  </div>
+            <a class="contact_link contact_link_phone" href="tel:+49151268898">
+              Tel. +49 1512 268898
+            </a>
+          </div>
+        </div>
 
-  <form class="contact_form" id="contactForm" onsubmit="sendForm(); return false;" novalidate>
-    <div class="contact_form_field">
-      <label for="name" class="form_label" data-i18n="contact.nameLabel">Your name</label>
-      <input
-        type="text"
-        id="name"
-        class="form_group"
-        maxlength="30"
-        autocomplete="off"
-        data-i18n-placeholder="contact.namePlaceholder"
-        placeholder="Your name"
-      >
-    </div>
+        <form class="contact_form" id="contactForm" onsubmit="sendForm(); return false;" novalidate>
+          <div class="contact_form_field">
+            <label for="name" class="form_label" data-i18n="contact.nameLabel">Your name</label>
+            <input
+              type="text"
+              id="name"
+              class="form_group"
+              maxlength="30"
+              autocomplete="off"
+              data-i18n-placeholder="contact.namePlaceholder"
+              placeholder="Your name"
+            >
+          </div>
 
-    <div class="contact_form_field">
-      <label for="email" class="form_label" data-i18n="contact.emailLabel">Your Email</label>
-      <input
-        type="email"
-        id="email"
-        class="form_group"
-        maxlength="50"
-        autocomplete="off"
-        data-i18n-placeholder="contact.emailPlaceholder"
-        placeholder="Your Email"
-      >
-    </div>
+          <div class="contact_form_field">
+            <label for="email" class="form_label" data-i18n="contact.emailLabel">Your Email</label>
+            <input
+              type="email"
+              id="email"
+              class="form_group"
+              maxlength="50"
+              autocomplete="off"
+              data-i18n-placeholder="contact.emailPlaceholder"
+              placeholder="Your Email"
+            >
+          </div>
 
-    <div class="contact_form_field form_stretch">
-      <label for="message" class="form_label" data-i18n="contact.messageLabel">Your Message</label>
-      <textarea
-        id="message"
-        class="form_group textarea_height"
-        maxlength="250"
-        autocomplete="off"
-        data-i18n-placeholder="contact.messagePlaceholder"
-        placeholder="Your Message"
-      ></textarea>
-    </div>
+          <div class="contact_form_field form_stretch">
+            <label for="message" class="form_label" data-i18n="contact.messageLabel">Your Message</label>
+            <textarea
+              id="message"
+              class="form_group textarea_height"
+              maxlength="250"
+              autocomplete="off"
+              data-i18n-placeholder="contact.messagePlaceholder"
+              placeholder="Your Message"
+            ></textarea>
+          </div>
 
-    <div class="form_stretch form_policy">
-  <input type="checkbox" id="privacy" class="form_checkbox">
+          <div class="form_stretch form_policy">
+            <input type="checkbox" id="privacy" class="form_checkbox">
 
-  <label for="privacy" class="form_policy_label">
-    <span class="policy_text_start" data-i18n="contact.policyPrefix">I've read the</span>
-    <a
-      href="./privacy.html"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="policy_link"
-      data-i18n="contact.policyLink"
-    >
-      privacy policy
-    </a>
-    <span class="policy_text_end" data-i18n="contact.policySuffix">
-      and agree to the processing of my data as outlined.
-    </span>
-  </label>
-</div>
+            <label for="privacy" class="form_policy_label">
+              <span class="policy_text_start" data-i18n="contact.policyPrefix">I've read the</span>
+              <a
+                href="./privacy.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="policy_link"
+                data-i18n="contact.policyLink"
+              >
+                privacy policy
+              </a>
+              <span class="policy_text_end" data-i18n="contact.policySuffix">
+                and agree to the processing of my data as outlined.
+              </span>
+            </label>
+          </div>
 
-    <div id="formError" class="form_stretch error_message_text" aria-live="polite"></div>
+          <div id="formError" class="form_stretch error_message_text" aria-live="polite"></div>
 
-    <div class="form_button_row">
-      <button type="submit" class="form_button" id="contactSubmitBtn" data-i18n="contact.send" disabled>Send</button>
-    </div>
-  </form>
+          <div class="form_button_row">
+            <button type="submit" class="form_button" id="contactSubmitBtn" data-i18n="contact.send" disabled>Send</button>
+          </div>
+        </form>
 
-  <a class="contact_btn_up" href="#header" aria-label="Scroll to top">
-    <img
-      class="contact_btn_up_icon"
-      src="./assets/icons/Arrow_up.svg"
-      alt=""
-      aria-hidden="true"
-    >
-  </a>
-</section>
+        <a class="contact_btn_up" href="#header" aria-label="Scroll to top">
+          <img class="contact_btn_up_icon" src="./assets/icons/Arrow_up.svg" alt="" aria-hidden="true">
+        </a>
+      </section>
     </div>
   </main>
 
@@ -757,18 +719,18 @@
   </footer>
 
   <div class="contact_popup" id="contactPopup" aria-hidden="true">
-  <div class="contact_popup_box">
-    <h3 class="contact_popup_title" id="contactPopupTitle">
-      Thank you for your message!
-    </h3>
-    <p class="contact_popup_text" id="contactPopupText">
-      I appreciate your inquiry and will get back to you as soon as possible.
-    </p>
-    <button class="contact_popup_button" id="contactPopupClose" type="button">
-      Close
-    </button>
+    <div class="contact_popup_box">
+      <h3 class="contact_popup_title" id="contactPopupTitle">
+        Thank you for your message!
+      </h3>
+      <p class="contact_popup_text" id="contactPopupText">
+        I appreciate your inquiry and will get back to you as soon as possible.
+      </p>
+      <button class="contact_popup_button" id="contactPopupClose" type="button">
+        Close
+      </button>
+    </div>
   </div>
-</div>
 
   <script src="./script.js"></script>
   <script src="./projects.js"></script>

@@ -46,7 +46,7 @@
 .skills_section,
 .projects_section,
 .contact_section {
-  margin-top: 80px;
+  margin-top: 70px;
 }
 
 .why_me_section,
@@ -395,6 +395,7 @@
     flex-direction: column;
     align-items: center;
     gap: 28px;
+    padding-left: 30px;
   }
 
   .why_me_location,

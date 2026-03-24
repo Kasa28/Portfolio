@@ -173,6 +173,7 @@
   align-items: center;
   color: var(--secondary);
   font-size: 16px;
+  padding-left: 10px;
 }
 
 .hero_logo_block svg,
@@ -217,6 +218,7 @@
   background: transparent;
   padding: 0;
   cursor: pointer;
+  padding-right: 10px;
 }
 
 .burger_icon {
@@ -378,8 +380,7 @@
 /* BUTTON STANDARD */
 
 .btn_standard {
-  width: 170px;
-  height: 54px;
+
   border: 1px solid var(--primary);
   border-radius: 999px;
   background: transparent;
@@ -431,7 +432,6 @@
   .hero_section,
   .hero_height {
     min-height: auto;
-    padding-bottom: 20px;
   }
 
   .hero_layout {
@@ -518,11 +518,11 @@
   }
 
   .mobile_hero_title {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .mobile_hero_subtitle {
-    font-size: 1.05rem;
+    font-size: 1.2rem;
   }
 
   .hero_scroll_icon {
@@ -712,4 +712,122 @@ html {
   background: url("../assets/icons/nav_shape_active.svg") no-repeat center;
   background-size: contain;
   z-index: -1;
+}
+
+@media (max-width: 960px) {
+  .references_section {
+    overflow: hidden;
+  }
+
+  .references_grid {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 18px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0 20px 12px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .references_grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .references_grid .reference_card {
+    flex: 0 0 260px;
+    width: 260px;
+    scroll-snap-align: start;
+  }
+
+  .reference_egg {
+    width: 260px;
+    height: 340px;
+  }
+
+  .reference_content {
+    width: 72%;
+    max-width: 180px;
+    gap: 8px;
+  }
+
+  .reference_content h4 {
+    font-size: 22px;
+  }
+
+  .reference_project {
+    font-size: 15px;
+  }
+
+  .reference_text {
+    font-size: 13px;
+    line-height: 1.3;
+  }
+
+  .reference_content a {
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 960px) {
+  .references_grid .reference_card {
+    flex: 0 0 220px;
+   width: 269px;
+   padding-left: 13px;
+  }
+
+  .reference_egg {
+            width: 270px;
+        height: 300px;
+  }
+
+    .reference_content {
+        width: 71%;
+        max-width: 209px;
+        gap: 6px;
+    }
+
+  .reference_content h4 {
+    font-size: 22px;
+    line-height: 1.15;
+  }
+
+  .reference_project {
+    font-size: 19px;
+    line-height: 1.2;
+  }
+
+  .reference_text {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .reference_content a {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+}
+
+.references_title {
+  color: var(--primary);
+}
+
+.references_title_light {
+  color: #ffffff;
+  display: block;
+  font-size: 18px;
+    padding-top: 10px;
+}
+  .need_team{
+    font-size: 32px;
+  }
+
+
+@media (min-width: 961px) {
+  .references_title_light {
+    color: #f6e7cf;
+  }
 }
