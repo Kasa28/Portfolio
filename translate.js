@@ -8,6 +8,7 @@ const translations = {
     "nav.skills": "Skills",
     "nav.projects": "Projects",
     "nav.contact": "Contact",
+    "nav.languageSwitcher": "Language switcher",
 
     "hero.name": "Kseniya Küntzle",
     "hero.role": "FRONTEND DEVELOPER",
@@ -88,7 +89,46 @@ const translations = {
     "contact.policySuffix": "and agree to the processing of my data as outlined.",
     "contact.send": "Send",
 
-    "footer.legal": "Legal notice"
+    "footer.legal": "Legal notice",
+
+    "legal.pageTitle": "Legal Notice",
+    "legal.mobileBrandAria": "Go back to homepage",
+    "legal.mobileBackAria": "Back to homepage",
+    "legal.mobileBackAlt": "Back",
+    "legal.desktopBrandAria": "Go back to homepage",
+    "legal.title": "Legal Notice",
+    "legal.imprintTitle": "Imprint",
+    "legal.imprintAddress":
+      "Kseniya Küntzle<br>Heilbronnerstr.25<br>74177 Heilbronn<br>Germany",
+    "legal.emailLabel": "E-mail:",
+    "legal.privacyTitle": "Privacy Policy",
+    "legal.generalTitle": "1. General information",
+    "legal.generalText":
+      "The following information provides a simple overview of what happens to your personal data when you visit this website. Personal data is any data that can be used to identify you personally.",
+    "legal.responsibleTitle": "2. Responsible person",
+    "legal.responsibleIntro":
+      "The controller responsible for data processing on this website is:",
+    "legal.responsibleAddress":
+      'Kseniya Küntzle<br>Heilbronnerstr.25<br>74177 Heilbronn<br>Germany<br>E-mail: <a href="mailto:kseniya.kuentzle.dev@gmail.com">kseniya.kuentzle.dev@gmail.com</a>',
+    "legal.hostingTitle": "3. Hosting",
+    "legal.hostingText1":
+      "This website is hosted by ALL-INKL.COM – Neue Medien Münnich.",
+    "legal.hostingText2":
+      "When you visit this website, technical data such as browser type, operating system, IP address, date and time of access may be processed automatically in server log files.",
+    "legal.hostingText3":
+      "This processing is necessary to ensure the secure and reliable operation of the website.",
+    "legal.contactTitle": "4. Contact",
+    "legal.contactText":
+      "If you contact me by e-mail, the data you provide will be processed only for the purpose of handling your request.",
+    "legal.rightsTitle": "5. Your rights",
+    "legal.rightsText":
+      "You have the right to request information about your stored personal data, as well as the right to rectification, erasure, restriction of processing, and objection in accordance with the applicable legal provisions.",
+    "legal.linksTitle": "6. External links",
+    "legal.linksText":
+      "This website may contain links to external websites such as GitHub or LinkedIn. I am not responsible for the content of external websites.",
+    "legal.changesTitle": "7. Changes",
+    "legal.changesText":
+      "I reserve the right to update this legal notice and privacy information if necessary."
   },
 
   de: {
@@ -98,6 +138,7 @@ const translations = {
     "nav.skills": "Skills",
     "nav.projects": "Projekte",
     "nav.contact": "Kontakt",
+    "nav.languageSwitcher": "Sprachauswahl",
 
     "hero.name": "Kseniya Küntzle",
     "hero.role": "FRONTEND ENTWICKLERIN",
@@ -178,7 +219,46 @@ const translations = {
     "contact.policySuffix": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
     "contact.send": "Senden",
 
-    "footer.legal": "Impressum"
+    "footer.legal": "Impressum",
+
+    "legal.pageTitle": "Impressum",
+    "legal.mobileBrandAria": "Zur Startseite zurück",
+    "legal.mobileBackAria": "Zur Startseite zurück",
+    "legal.mobileBackAlt": "Zurück",
+    "legal.desktopBrandAria": "Zur Startseite zurück",
+    "legal.title": "Impressum",
+    "legal.imprintTitle": "Impressum",
+    "legal.imprintAddress":
+      "Kseniya Küntzle<br>Heilbronnerstr.25<br>74177 Heilbronn<br>Deutschland",
+    "legal.emailLabel": "E-Mail:",
+    "legal.privacyTitle": "Datenschutzhinweise",
+    "legal.generalTitle": "1. Allgemeine Informationen",
+    "legal.generalText":
+      "Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.",
+    "legal.responsibleTitle": "2. Verantwortliche Person",
+    "legal.responsibleIntro":
+      "Verantwortlich für die Datenverarbeitung auf dieser Website ist:",
+    "legal.responsibleAddress":
+      'Kseniya Küntzle<br>Heilbronnerstr.25<br>74177 Heilbronn<br>Deutschland<br>E-Mail: <a href="mailto:kseniya.kuentzle.dev@gmail.com">kseniya.kuentzle.dev@gmail.com</a>',
+    "legal.hostingTitle": "3. Hosting",
+    "legal.hostingText1":
+      "Diese Website wird bei ALL-INKL.COM – Neue Medien Münnich gehostet.",
+    "legal.hostingText2":
+      "Beim Besuch dieser Website können technische Daten wie Browsertyp, Betriebssystem, IP-Adresse sowie Datum und Uhrzeit des Zugriffs automatisch in Server-Logfiles verarbeitet werden.",
+    "legal.hostingText3":
+      "Diese Verarbeitung ist erforderlich, um den sicheren und zuverlässigen Betrieb der Website zu gewährleisten.",
+    "legal.contactTitle": "4. Kontakt",
+    "legal.contactText":
+      "Wenn Sie mich per E-Mail kontaktieren, werden die von Ihnen angegebenen Daten ausschließlich zur Bearbeitung Ihrer Anfrage verarbeitet.",
+    "legal.rightsTitle": "5. Ihre Rechte",
+    "legal.rightsText":
+      "Sie haben das Recht auf Auskunft über Ihre gespeicherten personenbezogenen Daten sowie auf Berichtigung, Löschung, Einschränkung der Verarbeitung und Widerspruch im Rahmen der geltenden gesetzlichen Bestimmungen.",
+    "legal.linksTitle": "6. Externe Links",
+    "legal.linksText":
+      "Diese Website kann Links zu externen Websites wie GitHub oder LinkedIn enthalten. Für die Inhalte externer Websites übernehme ich keine Verantwortung.",
+    "legal.changesTitle": "7. Änderungen",
+    "legal.changesText":
+      "Ich behalte mir vor, dieses Impressum und diese Datenschutzhinweise bei Bedarf anzupassen."
   }
 };
 
@@ -186,7 +266,20 @@ function setText(lang) {
   document.querySelectorAll("[data-i18n]").forEach((element) => {
     const key = element.dataset.i18n;
     const value = translations[lang]?.[key];
-    if (value) element.textContent = value;
+    if (!value) return;
+
+    if (
+      value.includes("<br>") ||
+      value.includes("<a") ||
+      element.tagName === "P" ||
+      element.tagName === "DIV" ||
+      element.tagName === "SPAN"
+    ) {
+      element.innerHTML = value;
+      return;
+    }
+
+    element.textContent = value;
   });
 }
 
@@ -195,6 +288,22 @@ function setPlaceholders(lang) {
     const key = element.dataset.i18nPlaceholder;
     const value = translations[lang]?.[key];
     if (value) element.placeholder = value;
+  });
+}
+
+function setAriaLabels(lang) {
+  document.querySelectorAll("[data-i18n-aria-label]").forEach((element) => {
+    const key = element.dataset.i18nAriaLabel;
+    const value = translations[lang]?.[key];
+    if (value) element.setAttribute("aria-label", value);
+  });
+}
+
+function setAltTexts(lang) {
+  document.querySelectorAll("[data-i18n-alt]").forEach((element) => {
+    const key = element.dataset.i18nAlt;
+    const value = translations[lang]?.[key];
+    if (value) element.setAttribute("alt", value);
   });
 }
 
@@ -213,6 +322,8 @@ function syncEgg(lang) {
 function applyLanguage(lang) {
   setText(lang);
   setPlaceholders(lang);
+  setAriaLabels(lang);
+  setAltTexts(lang);
   syncButtons(lang);
   syncEgg(lang);
   document.documentElement.lang = lang;
