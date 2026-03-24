@@ -1,0 +1,167 @@
+.legal_page {
+  background: var(--bg_and_main);
+  color: var(--secondary);
+  min-height: 100vh;
+}
+
+.legal_mobile_top {
+  display: none;
+}
+
+.legal_main {
+  padding-top: 0;
+}
+
+.legal_notice_section {
+  padding: 96px 0 120px;
+}
+
+.legal_notice_title {
+  margin: 0 0 54px;
+  color: var(--primary);
+  font-size: clamp(42px, 4vw, 62px);
+  line-height: 1;
+}
+
+.legal_notice_content {
+  margin: 0 auto;
+  padding: 0 88px 0 0;
+  box-sizing: border-box;
+}
+
+.legal_notice_content h2 {
+  margin: 0 0 18px;
+  color: var(--primary);
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.legal_notice_content h3 {
+  margin: 34px 0 12px;
+  color: var(--primary);
+  font-size: 24px;
+  line-height: 1.25;
+}
+
+.legal_notice_content p,
+.legal_notice_content li {
+  margin: 0 0 16px;
+  color: var(--secondary);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.legal_notice_content a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.legal_notice_content a:hover {
+  text-decoration: underline;
+}
+
+.legal_footer_space {
+  margin-top: 40px;
+}
+
+@media (max-width: 960px) {
+  .legal_desktop_nav {
+    display: none !important;
+  }
+
+  .legal_mobile_top {
+    display: block;
+    padding-top: 24px;
+  }
+
+  .legal_mobile_top_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .legal_mobile_brand_link {
+    text-decoration: none;
+  }
+
+  .legal_mobile_brand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: var(--secondary);
+  }
+
+  .legal_mobile_brand_text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1.05;
+  }
+
+  .legal_mobile_back {
+    width: 44px;
+    height: 44px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 2px;
+  }
+
+  .legal_mobile_back img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    display: block;
+  }
+
+  .legal_notice_section {
+    padding: 28px 0 72px;
+  }
+
+  .legal_notice_title {
+    margin-bottom: 34px;
+    font-size: 40px;
+  }
+
+  .legal_notice_content {
+    max-width: 100%;
+    padding: 0 18px 0 0;
+    border-right: 2px solid var(--primary);
+  }
+
+  .legal_notice_content h2 {
+    font-size: 22px;
+    margin-bottom: 14px;
+  }
+
+  .legal_notice_content h3 {
+    font-size: 19px;
+    margin-top: 24px;
+  }
+
+  .legal_notice_content p,
+  .legal_notice_content li {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .site_footer {
+    margin-top: 56px;
+  }
+
+  .footer_row {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    padding: 24px 0;
+  }
+
+  .footer_left,
+  .footer_center,
+  .footer_right {
+    justify-content: center;
+    align-items: center;
+  }
+}

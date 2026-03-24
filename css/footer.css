@@ -461,3 +461,18 @@
   color: #7f8b92;
   background: transparent;
 }
+
+.footer_logo {
+  display: block;
+  flex-shrink: 0;
+}
+
+.footer_logo path:last-of-type {
+  transition: transform 180ms ease-in-out;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.footer_brand:hover .footer_logo path:last-of-type {
+  transform: scaleX(1.12);
+}
