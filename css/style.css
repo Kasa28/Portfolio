@@ -299,25 +299,6 @@ input,textarea,select{ font:inherit; }
   margin-bottom: 36px;
 }
 
-.projects_tabs {
-  display: flex;
-  gap: 48px;
-  align-items: center;
-  margin-bottom: 28px;
-  flex-wrap: wrap;
-}
-
-.project_tab {
-  border: none;
-  background: transparent;
-  color: #89BCD9;
-  font-size: 2rem;
-  font-weight: 600;
-  cursor: pointer;
-  padding: 0;
-  font-family: 'Josefin Sans', sans-serif;
-}
-
 .project_tab.active {
   color: #f6e7cf;
 }
@@ -386,12 +367,6 @@ input,textarea,select{ font:inherit; }
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.project_tech_block {
-  align-self: flex-end;
-  text-align: center;
-  margin-bottom: 18px;
 }
 
 .project_tech_title {
@@ -489,17 +464,6 @@ input,textarea,select{ font:inherit; }
 
 .project_card.active {
   display: block;
-}
-
-.project_tab {
-  border: none;
-  background: transparent;
-  color: #89BCD9;
-  font-size: 2rem;
-  font-weight: 600;
-  cursor: pointer;
-  padding: 0;
-  font-family: 'Josefin Sans', sans-serif;
 }
 
 .project_tab.active {
