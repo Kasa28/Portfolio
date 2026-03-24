@@ -330,14 +330,13 @@
     margin-bottom: 0;
   }
 
-  /* Titel oben ausblenden */
   .project_info_item:first-child .project_info_text h3 {
     display: none;
   }
 
   .project_duration {
     color: #f6e7cf;
-    font-size: 0.98rem;
+    font-size: 0.92rem;
     font-weight: 700;
   }
 

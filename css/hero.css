@@ -831,3 +831,47 @@ html {
     color: #f6e7cf;
   }
 }
+.project_tech_text {
+  display: none;
+}
+
+@media (max-width: 960px) {
+  .project_tech_icons {
+    display: none !important;
+  }
+
+  .project_tech_block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 14px;
+  }
+
+  .project_tech_title {
+    margin: 0;
+    font-size: 14px;
+  }
+
+  .project_tech_text {
+    display: inline;
+    margin: 0;
+    color: #f6e7cf;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+
+  .project_tech_block .project_tech_title,
+  .project_tech_block .project_tech_text {
+    display: inline;
+  }
+
+  .project_tech_block {
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+  }
+  .project_tech_title::after {
+  content: ": ";
+}
+}
