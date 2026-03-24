@@ -406,3 +406,58 @@
 .contact_btn_up:hover{
   background: rgba(137, 188, 217, 0.15);
 }
+
+@media (max-width: 960px) {
+  .form_policy {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .form_checkbox {
+    flex-shrink: 0;
+    margin-top: 4px;
+  }
+
+  .form_policy_label {
+    display: inline;
+    max-width: 380px;
+    font-size: 14px;
+    line-height: 1.35;
+    text-align: left;
+    color: #f6e7cf;
+  }
+
+  .policy_text_start,
+  .policy_link,
+  .policy_text_end {
+    display: inline;
+  }
+
+  .policy_link {
+    margin: 0 4px;
+    white-space: nowrap;
+  }
+}
+
+.form_button {
+  width: 135px;
+  height: 48px;
+  border-radius: 30px;
+  border: 1px solid var(--primary);
+  background: transparent;
+  color: var(--primary);
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 180ms ease, color 180ms ease, opacity 180ms ease;
+}
+
+.form_button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  border-color: #7f8b92;
+  color: #7f8b92;
+  background: transparent;
+}

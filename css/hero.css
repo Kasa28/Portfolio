@@ -348,26 +348,6 @@
   font-weight: 500;
 }
 
-.mobile_language {
-  display: flex;
-  gap: 12px;
-  margin-top: 10px;
-}
-
-.language_mobile_tab {
-  width: 40px;
-  height: 32px;
-  font-size: 16px;
-  color: var(--bg_and_main);
-  border: none;
-  background: transparent;
-  cursor: pointer;
-}
-
-.language_mobile_tab.active {
-  color: var(--secondary);
-}
-
 .mobile_hero_text {
   display: none;
 }
@@ -549,4 +529,187 @@
     width: 32px;
     height: auto;
   }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.mobile_link_section a {
+  color: var(--bg_and_main);
+  text-decoration: none;
+  font-size: 1.45rem;
+  font-weight: 500;
+  transition: color 180ms ease;
+}
+
+.mobile_link_section a.active {
+  color: #ffffff !important;
+}
+
+
+
+
+.hero_image_shape_container_front {
+  pointer-events: none;
+}
+
+.hero_image_shape_container_back {
+  pointer-events: auto;
+  z-index: 5;
+}
+
+.mobile_shape_bg_back {
+  pointer-events: none;
+}
+
+.mobile_link_section {
+  position: relative;
+  z-index: 10;
+  pointer-events: auto;
+}
+
+.mobile_link_section a,
+.mobile_link_section button {
+  pointer-events: auto;
+}
+
+.mobile_link_section a {
+  color: var(--bg_and_main);
+  text-decoration: none;
+  font-size: 1.45rem;
+  font-weight: 500;
+  transition: color 150ms ease;
+}
+
+.mobile_link_section a.active,
+.mobile_link_section a:active,
+.mobile_link_section a:focus {
+  color: #ffffff !important;
+}
+
+.mobile_link_section a {
+  position: relative;
+  color: var(--bg_and_main);
+  text-decoration: none;
+  font-size: 1.45rem;
+  font-weight: 500;
+  transition: color 150ms ease;
+  z-index: 1;
+}
+
+.mobile_link_section a.active {
+  color: #ffffff;
+}
+
+.mobile_link_section a.active::before {
+  content: "";
+  position: absolute;
+  inset: -10px -18px;
+  background: url("./assets/icons/Ellipse 24.svg") no-repeat center;
+  background-size: contain;
+  z-index: -1;
+}
+
+
+
+.mobile_language {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.language_mobile_tab.active::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("../assets/icons/Ellipse 24.svg") no-repeat center;
+  background-size: contain;
+  z-index: -1;
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hero_image_shape_container_front {
+  pointer-events: none;
+}
+
+.hero_image_shape_container_back {
+  pointer-events: auto;
+  z-index: 5;
+}
+
+.mobile_shape_bg_back {
+  pointer-events: none;
+}
+
+.mobile_link_section {
+  position: relative;
+  z-index: 10;
+  pointer-events: auto;
+}
+
+.mobile_link_section a,
+.mobile_link_section button {
+  pointer-events: auto;
+}
+
+.mobile_link_section a {
+  position: relative;
+  color: var(--bg_and_main);
+  text-decoration: none;
+  font-size: 1.45rem;
+  font-weight: 500;
+  transition: color 150ms ease;
+  z-index: 1;
+}
+
+.mobile_link_section a.active,
+.mobile_link_section a:active,
+.mobile_link_section a:focus {
+  color: #ffffff !important;
+}
+
+.mobile_link_section a.active::before {
+  content: "";
+  position: absolute;
+  inset: -10px -18px;
+ 
+  background-size: contain;
+  z-index: -1;
+}
+
+.mobile_language {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.language_mobile_tab {
+  position: relative;
+  z-index: 1;
+  width: 42px;
+  height: 32px;
+  font-size: 16px;
+  color: var(--bg_and_main);
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.language_mobile_tab.active {
+  color: #ffffff;
+}
+
+.language_mobile_tab.active::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("../assets/icons/nav_shape_active.svg") no-repeat center;
+  background-size: contain;
+  z-index: -1;
 }
