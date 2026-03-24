@@ -97,7 +97,7 @@ const translations = {
     "whyMe.title": "Warum ich",
     "whyMe.location": "Ich bin in Heilbronn",
     "whyMe.text":
-      "Ich bin Frontend-Entwicklerin mit einem starken Blick für saubere Benutzeroberflächen und einer Leidenschaft für flüssige, responsive Nutzererlebnisse. Ich liebe es, Ideen in strukturieren und wartbaren Code umzusetzen und möchte mich ständig weiterentwickeln.",
+      "Ich bin Frontend-Entwicklerin mit einem starken Blick für saubere Benutzeroberflächen und einer Leidenschaft für flüssige, responsive Nutzererlebnisse. Ich liebe es, Ideen in strukturierten und wartbaren Code umzusetzen und möchte mich ständig weiterentwickeln.",
     "whyMe.button": "Lass uns sprechen",
 
     "skills.title": "Meine Skills",
@@ -168,129 +168,21 @@ const translations = {
   }
 };
 
-function initProjectTabs() {
-  const tabs = document.querySelectorAll(".project_tab");
-  const cards = document.querySelectorAll(".project_card");
-
-  tabs.forEach((tab) => {
-    tab.addEventListener("click", () => {
-      const targetId = tab.dataset.project;
-
-      tabs.forEach((item) => {
-        item.classList.remove("active");
-        item.setAttribute("aria-selected", "false");
-      });
-
-      cards.forEach((card) => {
-        card.classList.remove("active");
-      });
-
-      tab.classList.add("active");
-      tab.setAttribute("aria-selected", "true");
-
-      const targetCard = document.getElementById(targetId);
-      if (targetCard) {
-        targetCard.classList.add("active");
-      }
-    });
-  });
-}
-
-function initBurgerMenu() {
-  const burgerMenu = document.getElementById("burgerMenu");
-  const flipCard = document.getElementById("flipCard");
-  const mobileLinks = document.querySelectorAll(".mobile_link_section a");
-
-  if (!burgerMenu || !flipCard) return;
-
-  burgerMenu.addEventListener("click", () => {
-    burgerMenu.classList.toggle("is_open");
-    flipCard.classList.toggle("show_menu");
-
-    const isOpen = burgerMenu.classList.contains("is_open");
-    burgerMenu.setAttribute("aria-expanded", String(isOpen));
-  });
-
-  mobileLinks.forEach((link) => {
-    link.addEventListener("click", () => {
-      burgerMenu.classList.remove("is_open");
-      flipCard.classList.remove("show_menu");
-      burgerMenu.setAttribute("aria-expanded", "false");
-    });
-  });
-}
-
 function applyLanguage(lang) {
-  const textElements = document.querySelectorAll("[data-i18n]");
-  const placeholderElements = document.querySelectorAll("[data-i18n-placeholder]");
-
-  textElements.forEach((element) => {
-    const key = element.dataset.i18n;
-    const value = translations[lang]?.[key];
-
-    if (value) {
-      element.textContent = value;
-    }
+  document.querySelectorAll("[data-i18n]").forEach((element) => {
+    const value = translations[lang]?.[element.dataset.i18n];
+    if (value) element.textContent = value;
   });
 
-  placeholderElements.forEach((element) => {
-    const key = element.dataset.i18nPlaceholder;
-    const value = translations[lang]?.[key];
-
-    if (value) {
-      element.placeholder = value;
-    }
-  });
-
-  document.documentElement.lang = lang;
-  localStorage.setItem("language", lang);
-}
-
-function syncLanguageSwitches(lang) {
-  const switchers = document.querySelectorAll(".language_switch_icon");
-  switchers.forEach((switcher) => {
-    switcher.dataset.active = lang;
-    const buttons = switcher.querySelectorAll("[data-lang]");
-    buttons.forEach((button) => {
-      button.classList.toggle("active", button.dataset.lang === lang);
-    });
+  document.querySelectorAll("[data-i18n-placeholder]").forEach((element) => {
+    const value = translations[lang]?.[element.dataset.i18nPlaceholder];
+    if (value) element.placeholder = value;
   });
 }
 
-function initLanguageSwitch() {
-  const switchers = document.querySelectorAll(".language_switch_icon");
-  const savedLanguage = localStorage.getItem("language") || "en";
-  applyLanguage(savedLanguage);
-  syncLanguageSwitches(savedLanguage);
-  switchers.forEach((switcher) => {
-    const buttons = switcher.querySelectorAll("[data-lang]");
-    buttons.forEach((button) => {
-      button.addEventListener("click", () => {
-        const selectedLang = button.dataset.lang;
-        applyLanguage(selectedLang);
-        syncLanguageSwitches(selectedLang);
-      });
-    });
-  });
-}
-
-function scrollToTarget(targetId, event) {
-  if (event) {
-    event.preventDefault();
-  }
-  const target = document.getElementById(targetId);
-  if (!target) return;
-
-  target.scrollIntoView({
-    behavior: "smooth",
-    block: "start"
-  });
-}
-
-window.scrollToTarget = scrollToTarget;
+window.applyLanguage = applyLanguage;
 
 document.addEventListener("DOMContentLoaded", () => {
-  initProjectTabs();
-  initBurgerMenu();
-  initLanguageSwitch();
+  const savedLang = localStorage.getItem("language") || "en";
+  applyLanguage(savedLang);
 });

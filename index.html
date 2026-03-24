@@ -71,14 +71,14 @@
                 <img class="mobile_shape_bg_back" src="./assets/icons/Ellipse_egg.svg" alt="" aria-hidden="true">
 
                 <nav class="mobile_link_section" id="mobileNavMenu" aria-label="Mobile Navigation">
-                  <a href="#me">Why me</a>
-                  <a href="#skills">Skills</a>
-                  <a href="#projects">Projects</a>
-                  <a href="#contact">Contact</a>
+                  <a href="#me" data-i18n="nav.whyMe">Why me</a>
+                  <a href="#skills" data-i18n="nav.skills">Skills</a>
+                  <a href="#projects" data-i18n="nav.projects">Projects</a>
+                  <a href="#contact" data-i18n="nav.contact">Contact</a>
 
                   <div class="mobile_language">
-                    <button class="language_mobile_tab" type="button">DE</button>
-                    <button class="language_mobile_tab active" type="button">EN</button>
+                    <button class="language_mobile_tab" data-lang="de" type="button">DE</button>
+                    <button class="language_mobile_tab active"  data-lang="en" type="button">EN</button>
                   </div>
                 </nav>
               </div>
@@ -674,18 +674,29 @@
     </div>
 
     <div class="form_stretch form_policy">
-      <input type="checkbox" id="privacy" class="form_checkbox">
-      <label for="privacy" class="form_policy_label">
-        <span data-i18n="contact.policyPrefix">I've read the</span>
-        <a href="./privacy.html" target="_blank" rel="noopener noreferrer" data-i18n="contact.policyLink">privacy policy</a>
-        <span data-i18n="contact.policySuffix">and agree to the processing of my data as outlined.</span>
-      </label>
-    </div>
+  <input type="checkbox" id="privacy" class="form_checkbox">
+
+  <label for="privacy" class="form_policy_label">
+    <span class="policy_text_start" data-i18n="contact.policyPrefix">I've read the</span>
+    <a
+      href="./privacy.html"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="policy_link"
+      data-i18n="contact.policyLink"
+    >
+      privacy policy
+    </a>
+    <span class="policy_text_end" data-i18n="contact.policySuffix">
+      and agree to the processing of my data as outlined.
+    </span>
+  </label>
+</div>
 
     <div id="formError" class="form_stretch error_message_text" aria-live="polite"></div>
 
     <div class="form_button_row">
-      <button type="submit" class="form_button" id="contactSubmitBtn" data-i18n="contact.send">Send</button>
+      <button type="submit" class="form_button" id="contactSubmitBtn" data-i18n="contact.send" disabled>Send</button>
     </div>
   </form>
 
@@ -760,7 +771,7 @@
 </div>
 
   <script src="./script.js"></script>
-  <script src="./scripts.js"></script>
+  <script src="./projects.js"></script>
   <script src="./translate.js"></script>
 </body>
 </html>
