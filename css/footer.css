@@ -580,3 +580,81 @@
     display: block;
   }
 }
+
+@media (max-width: 960px) {
+  .footer_social {
+    width: 34px;
+    height: 34px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  .footer_social img {
+    opacity: 0;
+    width: 34px;
+    height: 34px;
+  }
+
+  .footer_social[aria-label="GitHub"] {
+    background-image: url("../assets/icons/git_white.svg");
+  }
+
+  .footer_social[aria-label="Email"] {
+    background-image: url("../assets/icons/email_white.svg");
+  }
+
+  .footer_social[aria-label="LinkedIn"] {
+    background-image: url("../assets/icons/linkedin_white.svg");
+  }
+}
+
+.footer_social[aria-label="GitHub"]:hover {
+  background-image: url("../assets/icons/git_white.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.footer_social[aria-label="Email"]:hover {
+  background-image: url("../assets/icons/email_white.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.footer_social[aria-label="LinkedIn"]:hover {
+  background-image: url("../assets/icons/linkedin_white.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.footer_social:hover img {
+  opacity: 0;
+}
+
+.footer_social {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.footer_social:hover {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  transform: translateY(-1px);
+}
+
+.footer_link {
+  color: #262e34;
+  text-decoration: none;
+}
+
+.footer_link:hover {
+  color: #f6e7cf;
+  text-decoration: none;
+}
+
+.footer_name {
+  color: #f6e7cf !important;
+}
