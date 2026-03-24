@@ -1,0 +1,119 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.references_title {
+  color: var(--primary);
+}
+
+.references_title_light {
+  color: #ffffff;
+  display: block;
+  font-size: 18px;
+  padding-top: 10px;
+}
+
+.need_team {
+  font-size: 32px;
+}
+
+@media (min-width: 961px) {
+  .references_title_light {
+    color: #f6e7cf;
+  }
+}
+
+.project_tech_text {
+  display: none;
+}
+
+@media (max-width: 960px) {
+  .references_section {
+    overflow: hidden;
+  }
+
+  .references_grid {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 18px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0 20px 12px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .references_grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .references_grid .reference_card {
+    flex: 0 0 220px;
+    width: 269px;
+    padding-left: 13px;
+    scroll-snap-align: start;
+  }
+
+  .reference_egg {
+    width: 270px;
+    height: 300px;
+  }
+
+  .reference_content {
+    width: 71%;
+    max-width: 209px;
+    gap: 6px;
+  }
+
+  .reference_content h4 {
+    font-size: 22px;
+    line-height: 1.15;
+  }
+
+  .reference_project {
+    font-size: 19px;
+    line-height: 1.2;
+  }
+
+  .reference_text {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .reference_content a {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+
+  .project_tech_icons {
+    display: none !important;
+  }
+
+  .project_tech_block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 14px;
+  }
+
+  .project_tech_title {
+    margin: 0;
+    font-size: 14px;
+  }
+
+  .project_tech_title::after {
+    content: ": ";
+  }
+
+  .project_tech_text {
+    display: inline;
+    margin: 0;
+    color: #f6e7cf;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+}
