@@ -166,7 +166,7 @@
 .skills_mobile_circle_bg {
   position: absolute;
   inset: 0;
-  width: 100%;
+  width: 105%;
   height: 100%;
   object-fit: contain;
   z-index: 0;
@@ -198,14 +198,14 @@
 
 @media (max-width: 700px) {
   .skills_mobile_circle {
-    width: 118px;
-    height: 118px;
+    width: 121px;
+    height: 121px;
     gap: 12px;
   }
 
   .skills_mobile_circle_item img {
-    width: 36px;
-    height: 36px;
+    width: 30px;
+    height: 30px;
   }
 
   .skills_mobile_circle_item span {

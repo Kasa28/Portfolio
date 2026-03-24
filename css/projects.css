@@ -213,7 +213,7 @@
   .projects_section .section_title {
     width: 100%;
     text-align: center;
-    margin-bottom: 18px;
+    margin-bottom: 40px;
   }
 
   .projects_tabs {
@@ -415,7 +415,7 @@
   }
 
   .project_tab {
-    font-size: 0.8rem;
+    font-size: 1.1rem;
     padding: 10px 4px 9px;
   }
 
