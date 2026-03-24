@@ -117,3 +117,56 @@ html {
     line-height: 1.4;
   }
 }
+
+@media (min-width: 961px) {
+  .references_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+  }
+
+  .need_team,
+  .references_title_light {
+    display: inline;
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .references_title_light {
+    color: #f6e7cf;
+    padding-top: 0;
+  }
+}
+
+.references_title {
+  margin: 0 0 56px;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.need_team,
+.references_title_light {
+  color: var(--primary);
+}
+
+@media (max-width: 960px) {
+  .references_title {
+    display: block;
+    margin-bottom: 36px;
+  }
+
+  .need_team {
+    display: block;
+    font-size: 32px;
+    color: var(--primary);
+  }
+
+  .references_title_light {
+    display: block;
+    font-size: 18px;
+    color: #ffffff;
+    padding-top: 10px;
+  }
+}

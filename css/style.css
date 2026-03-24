@@ -23,7 +23,7 @@ input,textarea,select{ font:inherit; }
   max-inline-size:1920px;
   margin-inline:auto;
   width:100%;
-  padding:0 2px;
+  padding: 0 39px;
 }
 
 .btn_cta,
@@ -71,7 +71,7 @@ input,textarea,select{ font:inherit; }
 }
 
 .skills_section .section_title {
-  margin-bottom: 0;
+      margin-bottom: 40px;
 }
 
 .skills_boxes {

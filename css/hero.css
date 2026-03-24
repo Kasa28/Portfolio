@@ -1,39 +1,44 @@
 .hero_section,
 .hero_height {
-  min-height: calc(100dvh - var(--nav_height));
+  min-height: calc(100vh - var(--nav_height));
+  height: calc(100vh - var(--nav_height));
   display: flex;
   flex-direction: column;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .hero_layout {
-  min-height: calc(100dvh - var(--nav_height));
+  min-height: calc(100vh - var(--nav_height));
+  height: calc(100vh - var(--nav_height));
   display: grid;
   grid-template-columns: 1.18fr 1fr;
-  align-items: center;
+  align-items: stretch;
   gap: 0;
   color: var(--secondary);
   position: relative;
 }
 
 .hero_media_col {
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
   position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  min-height: 100%;
+  height: 100%;
   overflow: visible;
-  min-height: calc(100dvh - var(--nav_height));
 }
 
 .hero_image_shape {
-  position: relative;
+  position: absolute;
+  left: 0;
+  bottom: 0;
   width: clamp(450px, 44vw, 720px);
   height: clamp(500px, 54vw, 800px);
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  margin-top: auto;
+  margin: 0;
   overflow: visible;
 }
 
@@ -56,7 +61,7 @@
 .hero_image {
   position: absolute;
   z-index: 2;
-  width: 107%;
+  width: 100%;
   max-width: 662px;
   height: auto;
   object-fit: contain;
@@ -72,7 +77,6 @@
   align-items: center;
   gap: 16px;
   text-align: center;
-  transform: translateX(-22px) translateY(-30px);
 }
 
 .hero_logo_block {
@@ -120,7 +124,7 @@
 .hero_social_column {
   position: absolute;
   top: 137px;
-  right: clamp(24px, 2vw, 36px);
+  right: clamp(28px, 2.4vw, 44px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -235,9 +239,6 @@
   display: flex;
 }
 
-.desktop_only {
-  display: block;
-}
 
 .mobile_hero_stage {
   display: none;
@@ -460,12 +461,21 @@
   color: #272f35 !important;
 }
 
+.hero_logo_block .brand_role.color_lightblue,
+.hero_logo_mobile .brand_role.color_lightblue {
+  color: #89BCD9 !important;
+}
+
 .section_cta_row {
   display: flex;
 }
 
 .skills_mobile_cta {
   display: none;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 @media (max-width: 960px) {
@@ -498,11 +508,19 @@
   }
 
   .hero_media_col {
+    position: relative;
     width: 100%;
     min-height: auto;
     height: auto;
     justify-content: center;
     align-items: center;
+  }
+
+  .hero_image_shape {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    margin: 0;
   }
 
   .mobile_hero_stage {
@@ -589,10 +607,7 @@
   }
 }
 
-@media (min-width: 1200px) {
-  .hero_section,
-  .hero_height {
-    height: calc(100vh - var(--nav_height) - 1px);
-    min-height: calc(100vh - var(--nav_height) - 1px);
-  }
+.hero_image_shape {
+  width: clamp(400px, 40vw, 650px);
+  height: clamp(460px, 50vw, 720px);
 }
