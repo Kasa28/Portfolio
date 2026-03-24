@@ -23,10 +23,9 @@ input,textarea,select{ font:inherit; }
   max-inline-size:1920px;
   margin-inline:auto;
   width:100%;
-  padding:0 72px;
+  padding:0 2px;
 }
 
-/* Buttons */
 .btn_cta,
 .btn_standard{
   border-radius:30px;
@@ -80,6 +79,7 @@ input,textarea,select{ font:inherit; }
   justify-content: space-between;
   align-items: flex-start;
   margin-top: 34px;
+  gap: 130px;
 }
 
 .skills_icons_section {
