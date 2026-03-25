@@ -41,7 +41,7 @@ const translations = {
 
     "projects.join.techText": "JavaScript, HTML, CSS",
     "projects.elpollo.techText": "JavaScript, HTML, CSS",
-    "projects.ongoing.techText": "Angular, TypeScript, JavaScript",
+    "projects.ongoing.techText": "Angular, TS, JS",
 
     "projects.join.aboutTitle": "About the project",
     "projects.join.duration": "Duration: 1.5 months",
@@ -184,7 +184,7 @@ const translations = {
 
     "projects.join.techText": "JavaScript, HTML, CSS",
     "projects.elpollo.techText": "JavaScript, HTML, CSS",
-    "projects.ongoing.techText": "Angular, TypeScript, JavaScript",
+    "projects.ongoing.techText": "Angular, TS, JS",
 
     "projects.join.aboutTitle": "Über das Projekt",
     "projects.join.duration": "Dauer: 1,5 Monate",

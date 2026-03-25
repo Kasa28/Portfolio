@@ -252,7 +252,7 @@
 
   .project_tech_title {
     margin: 0;
-    font-size: 14px;
+    font-size: 16px;
     flex-shrink: 0;
   }
 
@@ -264,7 +264,7 @@
     display: inline;
     margin: 0;
     color: #f6e7cf;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
     line-height: 1.4;
     white-space: nowrap;
@@ -291,7 +291,7 @@
   .project_duration {
     display: block;
     margin: 0;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
     color: #f6e7cf;
   }
@@ -338,7 +338,7 @@
   .project_info_item:nth-of-type(2) .project_info_text p,
   .project_info_item:nth-of-type(3) .project_info_text p {
     margin: 0;
-    font-size: 0.92rem;
+    font-size: 1rem;
     line-height: 1.45;
     color: #f6e7cf;
   }
@@ -369,4 +369,41 @@
   .project_tab_mobile {
     display: inline;
   }
+}
+
+@media (max-width: 480px) {
+  .project_actions {
+    gap: 12px;
+  }
+
+  .project_link_btn,
+  .btn_cta.project_link_btn,
+  .btn_standard.project_link_btn {
+    min-width: 130px;
+    width: 130px;
+    height: 44px;
+    font-size: 18px;
+    padding: 0 16px;
+  }
+  .references_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .need_team {
+    max-width: 280px;
+    line-height: 1.05;
+    word-break: normal;
+    overflow-wrap: normal;
+  }
+
+  .references_title_light {
+    max-width: 280px;
+    margin-top: 10px;
+    line-height: 1.35;
+  }
+
+
 }
