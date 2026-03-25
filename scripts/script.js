@@ -1,5 +1,4 @@
 "use strict";
-
 const TEXTS = {
   de: {
     name: "Bitte gib deinen Namen ein.",
@@ -22,17 +21,62 @@ const TEXTS = {
     close: "Close",
   },
 };
-
 const touched = { name: false, email: false, message: false, privacy: false };
-
 const byId = (id) => document.getElementById(id);
 const getLang = () => document.documentElement.lang === "de" ? "de" : "en";
 const text = (key) => TEXTS[getLang()][key];
 
+function hasBasicEmailShape(value) {
+  return !!value && !value.includes(" ") && !value.includes("..");
+}
+
+function hasSingleAt(value) {
+  return value.split("@").length === 2;
+}
+
+function getEmailParts(value) {
+  const [localPart = "", domainPart = ""] = value.split("@");
+  return { localPart, domainPart };
+}
+
+function hasValidEdgeDots(localPart, domainPart, value) {
+  return !(
+    value.startsWith(".") ||
+    value.endsWith(".") ||
+    localPart.startsWith(".") ||
+    localPart.endsWith(".") ||
+    domainPart.startsWith(".") ||
+    domainPart.endsWith(".")
+  );
+}
+
+function hasValidLocalPart(localPart) {
+  return /^[a-zA-Z0-9._%+-]+$/.test(localPart);
+}
+
+function hasValidDomainPart(domainPart) {
+  return /^(?!-)[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)+$/.test(domainPart);
+}
+
+function hasValidTld(domainPart) {
+  return /\.[a-zA-Z]{2,}$/.test(domainPart);
+}
+
+function hasValidDomainLabels(domainPart) {
+  return domainPart
+    .split(".")
+    .every((label) => label && !label.startsWith("-") && !label.endsWith("-"));
+}
+
 function validateEmail(email) {
   const value = String(email).trim();
-  if (value.includes("..")) return false;
-  return /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(value);
+  if (!hasBasicEmailShape(value) || !hasSingleAt(value)) return false;
+  const { localPart, domainPart } = getEmailParts(value);
+  if (!localPart || !domainPart) return false;
+  if (!hasValidEdgeDots(localPart, domainPart, value)) return false;
+  if (!hasValidLocalPart(localPart)) return false;
+  if (!hasValidDomainPart(domainPart)) return false;
+  return hasValidTld(domainPart) && hasValidDomainLabels(domainPart);
 }
 
 function setFormError(message = "") {
@@ -339,9 +383,7 @@ async function sendForm() {
   setFormError(error);
   if (error) return;
   try {
-    await submitValidForm(form, submit, payload);
-  } catch {
-    setFormError(text("failed"));
+    await submitValidForm(form, submit, payload); } catch {setFormError(text("failed"));
   } finally {
     toggleSubmitState();
   }
