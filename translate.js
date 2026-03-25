@@ -122,7 +122,7 @@ const translations = {
   de: {
     "brand.role": "developer",
     "nav.whyMe": "Warum ich",
-    "nav.skills": "Skills",
+    "nav.skills": "Fähigkeiten",
     "nav.projects": "Projekte",
     "nav.contact": "Kontakt",
     "nav.languageSwitcher": "Sprachauswahl",
@@ -131,12 +131,12 @@ const translations = {
     "whyMe.title": "Warum ich",
     "whyMe.location": "Ich bin in Heilbronn",
     "whyMe.text":
-    "Ich bin Frontend-Entwicklerin mit einem starken Blick für saubere Benutzeroberflächen und einer Leidenschaft für flüssige, responsive Nutzererlebnisse. Ich liebe es, Ideen in strukturierten und wartbaren Code umzusetzen und möchte mich ständig weiterentwickeln.",
+      "Ich bin Frontend-Entwicklerin mit einem starken Blick für saubere Benutzeroberflächen und einer Leidenschaft für flüssige, responsive Nutzererlebnisse. Ich liebe es, Ideen in strukturierten und wartbaren Code umzusetzen und möchte mich ständig weiterentwickeln.",
     "whyMe.button": "Lass uns sprechen",
-    "skills.title": "Meine Skills",
-    "skills.learningTitle": "Ich lerne aktuell",
+    "skills.title": "Meine Fähigkeiten",
+    "skills.learningTitle": "Was ich aktuell lerne",
     "skills.learningText":
-    "Ich lerne mit Leidenschaft weiter. Jede neue Herausforderung ist eine Chance zu wachsen, mich zu verbessern und neue Fähigkeiten zu entwickeln.",
+      "Ich lerne mit Leidenschaft weiter. Jede neue Herausforderung ist eine Chance zu wachsen, mich zu verbessern und neue Fähigkeiten zu entwickeln.",
     "projects.title": "Meine Projekte",
     "projects.tech": "Technologien",
     "projects.live": "Live Test",
@@ -146,46 +146,46 @@ const translations = {
     "projects.join.aboutTitle": "Über das Projekt",
     "projects.join.duration": "Dauer: 1,5 Monate",
     "projects.join.aboutText":
-    "Join ist eine Aufgabenverwaltungs-Anwendung, inspiriert von Kanban und als gemeinsames Teamprojekt entstanden. Nutzer können Aufgaben per Drag-and-Drop erstellen, organisieren und verwalten, Benutzer und Kategorien zuweisen, Task-Karten bearbeiten und Subtasks hinzufügen.",
+      "Join ist eine Aufgabenverwaltungs-Anwendung, inspiriert von Kanban und als gemeinsames Teamprojekt entstanden. Nutzer können Aufgaben per Drag-and-Drop erstellen, organisieren und verwalten, Benutzer und Kategorien zuweisen, Task-Karten bearbeiten und Subtasks hinzufügen.",
     "projects.join.processTitle": "Wie ich meinen Arbeitsprozess organisiert habe",
     "projects.join.processText":
-    "In unserem Zweierteam haben wir das Projekt in Epics aufgeteilt und Verantwortlichkeiten verteilt. Wir haben User Stories, Features und Tasks mit Git Branching organisiert. Sobald ein Feature fertig war, haben wir unsere Arbeit zusammengeführt, damit kein Code verloren geht. So blieb der Entwicklungsprozess strukturiert und die Zusammenarbeit lief reibungslos.",
+      "In unserem Zweierteam haben wir das Projekt in Epics aufgeteilt und Verantwortlichkeiten verteilt. Wir haben User Stories, Features und Tasks mit Git Branching organisiert. Sobald ein Feature fertig war, haben wir unsere Arbeit zusammengeführt, damit kein Code verloren geht. So blieb der Entwicklungsprozess strukturiert und die Zusammenarbeit lief reibungslos.",
     "projects.join.teamTitle": "Meine Erfahrung in der Teamarbeit",
     "projects.join.teamText":
-    "Ich habe die Zusammenarbeit in unserem Team sehr genossen. Wir hatten tägliche Meetings, um den Fortschritt zu verfolgen und während des gesamten Entwicklungsprozesses abgestimmt zu bleiben. Wir haben uns gegenseitig unterstützt und am Ende gemeinsam getestet.",
+      "Ich habe die Zusammenarbeit in unserem Team sehr genossen. Wir hatten tägliche Meetings, um den Fortschritt zu verfolgen und während des gesamten Entwicklungsprozesses abgestimmt zu bleiben. Wir haben uns gegenseitig unterstützt und am Ende gemeinsam getestet.",
     "projects.elpollo.aboutTitle": "Über das Projekt",
     "projects.elpollo.duration": "Dauer: 1 Monat",
     "projects.elpollo.aboutText":
-    "El Pollo Loco ist ein 2D-Jump-and-Run-Spiel auf Basis objektorientierter Programmierung. Spieler steuern Pepe durch verschiedene Level, sammeln Gegenstände und bekämpfen Gegner, indem sie scharfe Salsa-Flaschen werfen, um den Endboss zu besiegen.",
+      "El Pollo Loco ist ein 2D-Jump-and-Run-Spiel auf Basis objektorientierter Programmierung. Spieler steuern Pepe durch verschiedene Level, sammeln Gegenstände und bekämpfen Gegner, indem sie scharfe Salsa-Flaschen werfen, um den Endboss zu besiegen.",
     "projects.elpollo.processTitle": "Wie ich meinen Arbeitsprozess organisiert habe",
     "projects.elpollo.processText":
-    "Das Projekt wurde in mehrere User Stories gegliedert, was einen klaren und organisierten Entwicklungsprozess ermöglicht hat. Objektorientierte Programmierung half mir, den Code besser zu strukturieren, indem Methoden sinnvollen Klassen zugeordnet und zentrale OOP-Prinzipien wie Kapselung, Abstraktion, Vererbung und Polymorphismus angewendet wurden.",
+      "Das Projekt wurde in mehrere User Stories gegliedert, was einen klaren und organisierten Entwicklungsprozess ermöglicht hat. Objektorientierte Programmierung half mir, den Code besser zu strukturieren, indem Methoden sinnvollen Klassen zugeordnet und zentrale OOP-Prinzipien wie Kapselung, Abstraktion, Vererbung und Polymorphismus angewendet wurden.",
     "projects.elpollo.learnedTitle": "Was ich gelernt habe",
     "projects.elpollo.learnedText":
-    "Das Entwerfen und Implementieren von Klassen und Methoden hat meine Entwicklungsfähigkeiten deutlich verbessert. Dadurch konnte ich modulareren, flexibleren und wiederverwendbaren Code schreiben und mein Verständnis für skalierbare Anwendungsstrukturen vertiefen.",
+      "Das Entwerfen und Implementieren von Klassen und Methoden hat meine Entwicklungsfähigkeiten deutlich verbessert. Dadurch konnte ich modulareren, flexibleren und wiederverwendbaren Code schreiben und mein Verständnis für skalierbare Anwendungsstrukturen vertiefen.",
     "projects.ongoing.aboutTitle": "Über die Projekte",
     "projects.ongoing.duration": "Dauer: laufend",
     "projects.ongoing.aboutText":
-    "Meine kommenden Projekte werden sich darauf konzentrieren, meine Fähigkeiten in Angular und TypeScript zu zeigen.",
+      "Meine kommenden Projekte werden sich darauf konzentrieren, meine Fähigkeiten in Angular und TypeScript zu zeigen.",
     "projects.ongoing.memoryTitle": "Memory Game",
     "projects.ongoing.memoryText":
-    "Ich erweitere aktuell meine Frontend-Kenntnisse mit TypeScript und SCSS, um skalierbarere und wartbarere Anwendungen zu entwickeln.",
+      "Ich erweitere aktuell meine Frontend-Kenntnisse mit TypeScript und SCSS, um skalierbarere und wartbarere Anwendungen zu entwickeln.",
     "projects.ongoing.pollTitle": "Poll App",
     "projects.ongoing.pollText":
-    "Eines meiner nächsten Projekte ist eine Echtzeit-Umfrage-App mit Angular und Supabase, bei der Nutzer Umfragen erstellen und Live-Ergebnisse in Echtzeit verfolgen können.",
+      "Eines meiner nächsten Projekte ist eine Echtzeit-Umfrage-App mit Angular und Supabase, bei der Nutzer Umfragen erstellen und Live-Ergebnisse in Echtzeit verfolgen können.",
     "references.titleMain": "Du suchst eine Teamplayerin?",
     "references.titleSub": "Das sagen meine Kolleginnen über mich",
     "references.project": "Projekt",
     "references.linkedin": "LinkedIn Profil",
     "references.maya":
-    "Die Zusammenarbeit mit Kseniya war eine tolle Erfahrung. Sie ist zuverlässig, strukturiert und eine starke Teamplayerin.",
+      "Die Zusammenarbeit mit Kseniya war eine tolle Erfahrung. Sie ist zuverlässig, strukturiert und eine starke Teamplayerin.",
     "references.laura":
-    "Kseniya ist aufmerksam und unterstützend, mit Kreativität, Geduld und dem starken Wunsch, sich weiterzuentwickeln.",
+      "Kseniya ist aufmerksam und unterstützend, mit Kreativität, Geduld und dem starken Wunsch, sich weiterzuentwickeln.",
     "references.elli":
-    "Kseniya ist motiviert, zuverlässig und hat ein gutes Gespür für sauberes Design. Sie ist eine wertvolle Teamkollegin.",
+      "Kseniya ist motiviert, zuverlässig und hat ein gutes Gespür für sauberes Design. Sie ist eine wertvolle Teamkollegin.",
     "contact.title": "Kontakt",
     "contact.text":
-    "Bereit für das nächste Projekt? Ich freue mich darauf, von dir zu hören und gemeinsam saubere, moderne und benutzerfreundliche Web-Erlebnisse zu entwickeln.",
+      "Bereit für das nächste Projekt? Ich freue mich darauf, von dir zu hören und gemeinsam saubere, moderne und benutzerfreundliche Web-Erlebnisse zu entwickeln.",
     "contact.nameLabel": "Dein Name",
     "contact.emailLabel": "Deine E-Mail",
     "contact.messageLabel": "Deine Nachricht",
@@ -205,36 +205,36 @@ const translations = {
     "legal.title": "Impressum",
     "legal.imprintTitle": "Impressum",
     "legal.imprintAddress":
-    "Kseniya Küntzle<br>Heilbronnerstr.25<br>74177 Heilbronn<br>Deutschland",
+      "Kseniya Küntzle<br>Heilbronnerstr.25<br>74177 Heilbronn<br>Deutschland",
     "legal.emailLabel": "E-Mail:",
     "legal.privacyTitle": "Datenschutzhinweise",
     "legal.generalTitle": "1. Allgemeine Informationen",
     "legal.generalText":
-    "Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.",
+      "Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.",
     "legal.responsibleTitle": "2. Verantwortliche Person",
     "legal.responsibleIntro":
-    "Verantwortlich für die Datenverarbeitung auf dieser Website ist:",
+      "Verantwortlich für die Datenverarbeitung auf dieser Website ist:",
     "legal.responsibleAddress":
-    'Kseniya Küntzle<br>Heilbronnerstr.25<br>74177 Heilbronn<br>Deutschland<br>E-Mail: <a href="mailto:kseniya.kuentzle.dev@gmail.com">kseniya.kuentzle.dev@gmail.com</a>',
+      'Kseniya Küntzle<br>Heilbronnerstr.25<br>74177 Heilbronn<br>Deutschland<br>E-Mail: <a href="mailto:kseniya.kuentzle.dev@gmail.com">kseniya.kuentzle.dev@gmail.com</a>',
     "legal.hostingTitle": "3. Hosting",
     "legal.hostingText1":
-    "Diese Website wird bei ALL-INKL.COM – Neue Medien Münnich gehostet.",
+      "Diese Website wird bei ALL-INKL.COM – Neue Medien Münnich gehostet.",
     "legal.hostingText2":
-    "Beim Besuch dieser Website können technische Daten wie Browsertyp, Betriebssystem, IP-Adresse sowie Datum und Uhrzeit des Zugriffs automatisch in Server-Logfiles verarbeitet werden.",
+      "Beim Besuch dieser Website können technische Daten wie Browsertyp, Betriebssystem, IP-Adresse sowie Datum und Uhrzeit des Zugriffs automatisch in Server-Logfiles verarbeitet werden.",
     "legal.hostingText3":
-    "Diese Verarbeitung ist erforderlich, um den sicheren und zuverlässigen Betrieb der Website zu gewährleisten.",
+      "Diese Verarbeitung ist erforderlich, um den sicheren und zuverlässigen Betrieb der Website zu gewährleisten.",
     "legal.contactTitle": "4. Kontakt",
     "legal.contactText":
-    "Wenn Sie mich per E-Mail kontaktieren, werden die von Ihnen angegebenen Daten ausschließlich zur Bearbeitung Ihrer Anfrage verarbeitet.",
+      "Wenn Sie mich per E-Mail kontaktieren, werden die von Ihnen angegebenen Daten ausschließlich zur Bearbeitung Ihrer Anfrage verarbeitet.",
     "legal.rightsTitle": "5. Ihre Rechte",
     "legal.rightsText":
-    "Sie haben das Recht auf Auskunft über Ihre gespeicherten personenbezogenen Daten sowie auf Berichtigung, Löschung, Einschränkung der Verarbeitung und Widerspruch im Rahmen der geltenden gesetzlichen Bestimmungen.",
+      "Sie haben das Recht auf Auskunft über Ihre gespeicherten personenbezogenen Daten sowie auf Berichtigung, Löschung, Einschränkung der Verarbeitung und Widerspruch im Rahmen der geltenden gesetzlichen Bestimmungen.",
     "legal.linksTitle": "6. Externe Links",
     "legal.linksText":
-    "Diese Website kann Links zu externen Websites wie GitHub oder LinkedIn enthalten. Für die Inhalte externer Websites übernehme ich keine Verantwortung.",
+      "Diese Website kann Links zu externen Websites wie GitHub oder LinkedIn enthalten. Für die Inhalte externer Websites übernehme ich keine Verantwortung.",
     "legal.changesTitle": "7. Änderungen",
     "legal.changesText":
-    "Ich behalte mir vor, dieses Impressum und diese Datenschutzhinweise bei Bedarf anzupassen."
+      "Ich behalte mir vor, dieses Impressum und diese Datenschutzhinweise bei Bedarf anzupassen."
   }
 };
 
@@ -243,6 +243,7 @@ function setText(lang) {
     const key = element.dataset.i18n;
     const value = translations[lang]?.[key];
     if (!value) return;
+
     if (
       value.includes("<br>") ||
       value.includes("<a") ||
@@ -253,6 +254,7 @@ function setText(lang) {
       element.innerHTML = value;
       return;
     }
+
     element.textContent = value;
   });
 }
@@ -307,6 +309,7 @@ function applyLanguage(lang) {
 function initLanguageSwitch() {
   const savedLang = localStorage.getItem("language") || "en";
   applyLanguage(savedLang);
+
   document.querySelectorAll("[data-lang]").forEach((button) => {
     button.addEventListener("click", () => applyLanguage(button.dataset.lang));
   });
