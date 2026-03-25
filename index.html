@@ -19,16 +19,17 @@
   <link rel="stylesheet" href="./css/skills.css">
   <link rel="stylesheet" href="./css/contact.css">
   <link rel="stylesheet" href="./css/projects_mobile.css">
+  <link rel="stylesheet" href="./css/legal_page.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
   <link rel="icon" type="image/x-icon" href="./assets/icons/Logo_icon.svg">
 </head>
 
 <body>
 
-<header class="hero_section hero_height" id="header">
+<header class="hero_section hero_height" id="homeHeader">
   <div class="layout_container">
     <section class="hero_mobile_top">
-      <a class="hero_mobile_logo_link" href="#header" aria-label="Go to top of the page">
+      <a class="hero_mobile_logo_link" href="#homeHeader" aria-label="Go to top of the page">
         <div class="hero_logo_mobile">
           <svg width="53" height="38" viewBox="0 0 53 38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path d="M14 27.8594C13.4948 27.8438 13.0573 27.7266 12.6875 27.5078C12.3177 27.2891 12.0104 27 11.7656 26.6406C11.5312 26.2969 11.3542 25.9115 11.2344 25.4844C11.1146 25.0625 11.0547 24.6432 11.0547 24.2266V22.9062C11.0547 22.1562 10.875 21.612 10.5156 21.2734C10.1615 20.9349 9.61719 20.763 8.88281 20.7578V19.625C9.61719 19.625 10.1615 19.4583 10.5156 19.125C10.875 18.7865 11.0547 18.2396 11.0547 17.4844V16.1562C11.0547 15.7344 11.1094 15.3047 11.2188 14.8672C11.3333 14.4245 11.513 14.0286 11.7578 13.6797C11.987 13.3464 12.2865 13.0755 12.6562 12.8672C13.026 12.6536 13.474 12.5391 14 12.5234L14.1641 13.4219C13.7891 13.4323 13.4896 13.5208 13.2656 13.6875C13.0469 13.8542 12.8828 14.0651 12.7734 14.3203C12.6589 14.5807 12.5859 14.8724 12.5547 15.1953C12.5234 15.5182 12.5078 15.8385 12.5078 16.1562V17.4844C12.5078 18.1094 12.362 18.6589 12.0703 19.1328C11.7839 19.6016 11.3385 19.9583 10.7344 20.2031C11.3385 20.4427 11.7839 20.7995 12.0703 21.2734C12.3568 21.7422 12.5026 22.2865 12.5078 22.9062V24.2266C12.5078 24.5495 12.5339 24.8698 12.5859 25.1875C12.638 25.5104 12.7292 25.7995 12.8594 26.0547C12.9844 26.3151 13.151 26.5286 13.3594 26.6953C13.5729 26.862 13.8411 26.9505 14.1641 26.9609L14 27.8594Z" fill="#F8F5EC"/>
@@ -39,20 +40,21 @@
           <p class="brand_role color_lightblue" data-i18n="brand.role">developer</p>
         </div>
       </a>
+
       <button
-       class="burger_menu"
-       id="burgerMenu"
-       type="button"
-       aria-label="Toggle mobile menu"
-       aria-expanded="false"
-       aria-controls="mobileNavMenu"
-       >
-  <span class="burger_icon" aria-hidden="true">
-    <span></span>
-    <span></span>
-    <span></span>
-  </span>
-</button>
+        class="burger_menu"
+        id="burgerMenu"
+        type="button"
+        aria-label="Toggle mobile menu"
+        aria-expanded="false"
+        aria-controls="mobileNavMenu"
+      >
+        <span class="burger_icon" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
     </section>
 
     <section class="hero_layout">
@@ -131,11 +133,11 @@
   </div>
 </header>
 
-<nav class="site_nav">
+<nav class="site_nav" id="homeNav">
   <div class="layout_container">
     <section class="nav_row">
       <article>
-        <a href="#header" aria-label="Go to top of the page">
+        <a href="#homeHeader" aria-label="Go to top of the page">
           <div class="nav_brand">
             <svg width="53" height="38" viewBox="0 0 53 38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <path d="M14 27.8594C13.4948 27.8438 13.0573 27.7266 12.6875 27.5078C12.3177 27.2891 12.0104 27 11.7656 26.6406C11.5312 26.2969 11.3542 25.9115 11.2344 25.4844C11.1146 25.0625 11.0547 24.6432 11.0547 24.2266V22.9062C11.0547 22.1562 10.875 21.612 10.5156 21.2734C10.1615 20.9349 9.61719 20.763 8.88281 20.7578V19.625C9.61719 19.625 10.1615 19.4583 10.5156 19.125C10.875 18.7865 11.0547 18.2396 11.0547 17.4844V16.1562C11.0547 15.7344 11.1094 15.3047 11.2188 14.8672C11.3333 14.4245 11.513 14.0286 11.7578 13.6797C11.987 13.3464 12.2865 13.0755 12.6562 12.8672C13.026 12.6536 13.474 12.5391 14 12.5234L14.1641 13.4219C13.7891 13.4323 13.4896 13.5208 13.2656 13.6875C13.0469 13.8542 12.8828 14.0651 12.7734 14.3203C12.6589 14.5807 12.5859 14.8724 12.5547 15.1953C12.5234 15.5182 12.5078 15.8385 12.5078 16.1562V17.4844C12.5078 18.1094 12.362 18.6589 12.0703 19.1328C11.7839 19.6016 11.3385 19.9583 10.7344 20.2031C11.3385 20.4427 11.7839 20.7995 12.0703 21.2734C12.3568 21.7422 12.5026 22.2865 12.5078 22.9062V24.2266C12.5078 24.5495 12.5339 24.8698 12.5859 25.1875C12.638 25.5104 12.7292 25.7995 12.8594 26.0547C12.9844 26.3151 13.151 26.5286 13.3594 26.6953C13.5729 26.862 13.8411 26.9505 14.1641 26.9609L14 27.8594Z" fill="#F8F5EC"/>
@@ -256,220 +258,220 @@
     </section>
   </div>
 
-<section id="projects" class="projects_section">
-  <div class="layout_container">
-    <h2 class="section_title" data-i18n="projects.title">My Projects</h2>
+  <section id="projects" class="projects_section">
+    <div class="layout_container">
+      <h2 class="section_title" data-i18n="projects.title">My Projects</h2>
 
-<div class="projects_tabs" role="tablist" aria-label="Project tabs">
-  <div class="project_tab_item">
-    <button class="project_tab active" data-project="join" role="tab" aria-selected="true">
-      <span class="project_tab_desktop" data-i18n="projects.tabJoinDesktop">1. Join</span>
-      <span class="project_tab_mobile" data-i18n="projects.tabJoin">1. Project</span>
-    </button>
-  </div>
-
-  <div class="project_tab_item">
-    <button class="project_tab" data-project="elpolloloco" role="tab" aria-selected="false">
-      <span class="project_tab_desktop" data-i18n="projects.tabElPolloDesktop">2. El Pollo Loco</span>
-      <span class="project_tab_mobile" data-i18n="projects.tabElPollo">2. Project</span>
-    </button>
-  </div>
-
-  <div class="project_tab_item">
-    <button class="project_tab" data-project="ongoing" role="tab" aria-selected="false">
-      <span class="project_tab_desktop" data-i18n="projects.tabOngoingDesktop">3. Ongoing Project</span>
-      <span class="project_tab_mobile" data-i18n="projects.tabOngoing">3. Project</span>
-    </button>
-  </div>
-</div>
-  </div>
-
-  <div class="projects_panel">
-    <div class="layout_container projects_panel_inner">
-      <article class="project_card active" id="join">
-        <div class="project_layout">
-          <div class="project_info_column">
-            <h3 class="project_mobile_name" data-i18n="projects.join.name">Join</h3>
-
-            <div class="project_info_item">
-              <img class="project_marker" src="./assets/icons/marker.svg" alt="">
-              <div class="project_info_text">
-                <div class="project_info_headline_row">
-                  <h3 data-i18n="projects.join.aboutTitle">About the project</h3>
-                  <span class="project_duration" data-i18n="projects.join.duration">Duration: 1.5 months</span>
-                </div>
-                <p data-i18n="projects.join.aboutText">
-                  Join is a task management application inspired by Kanban and created as a collaborative team project.
-                  Users can create, organize, and manage tasks using drag-and-drop functionality, assign users and categories, edit task cards, and add subtasks.
-                </p>
-              </div>
-            </div>
-
-            <div class="project_info_item">
-              <img class="project_marker" src="./assets/icons/marker.svg" alt="">
-              <div class="project_info_text">
-                <h3 data-i18n="projects.join.processTitle">How I have organised my work process</h3>
-                <p data-i18n="projects.join.processText">
-                  Within our two-member team, we divided the project into epics and assigned responsibilities to each of us.
-                  We managed user stories, features, and tasks using Git branching. Once a feature was completed, we merged our work together to ensure no code was lost.
-                  This approach kept the development process structured and made collaboration smooth and efficient.
-                </p>
-              </div>
-            </div>
-
-            <div class="project_info_item">
-              <img class="project_marker" src="./assets/icons/marker.svg" alt="">
-              <div class="project_info_text">
-                <h3 data-i18n="projects.join.teamTitle">My group work experience</h3>
-                <p data-i18n="projects.join.teamText">
-                  I really enjoyed working collaboratively within our team. We held daily meetings to track progress and stay aligned throughout the development process.
-                  We supported each other when needed and worked together on testing at the end of the project.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="project_preview_column">
-            <div class="project_tech_block">
-              <p class="project_tech_title" data-i18n="projects.tech">Technologies</p>
-              <div class="project_tech_icons">
-                <img src="./assets/icons/js_notext.svg" alt="JavaScript">
-                <img src="./assets/icons/htm_notext.svg" alt="HTML">
-                <img src="./assets/icons/css_notext.svg" alt="CSS">
-              </div>
-              <p class="project_tech_text" data-i18n="projects.join.techText">JavaScript, HTML, CSS</p>
-            </div>
-
-            <img class="project_preview_image" src="./assets/img/join.png" alt="Join preview">
-
-            <div class="project_actions">
-              <a class="btn_cta project_link_btn" href="https://join.kuentzle-kseniya.de/" target="_blank" rel="noopener noreferrer" data-i18n="projects.live">Live Test</a>
-              <a class="btn_standard project_link_btn" href="https://github.com/Kasa28/Join" target="_blank" rel="noopener noreferrer">GitHub</a>
-            </div>
-          </div>
+      <div class="projects_tabs" role="tablist" aria-label="Project tabs">
+        <div class="project_tab_item">
+          <button class="project_tab active" data-project="join" role="tab" aria-selected="true">
+            <span class="project_tab_desktop" data-i18n="projects.tabJoinDesktop">1. Join</span>
+            <span class="project_tab_mobile" data-i18n="projects.tabJoin">1. Project</span>
+          </button>
         </div>
-      </article>
 
-      <article class="project_card" id="elpolloloco">
-        <div class="project_layout">
-          <div class="project_info_column">
-            <h3 class="project_mobile_name" data-i18n="projects.elpollo.name">El Pollo Loco</h3>
-
-            <div class="project_info_item">
-              <img class="project_marker" src="./assets/icons/marker.svg" alt="">
-              <div class="project_info_text">
-                <div class="project_info_headline_row">
-                  <h3 data-i18n="projects.elpollo.aboutTitle">About the project</h3>
-                  <span class="project_duration" data-i18n="projects.elpollo.duration">Duration: 1 month</span>
-                </div>
-                <p data-i18n="projects.elpollo.aboutText">
-                  El Pollo Loco is a 2D jump-and-run game based on object-oriented programming.
-                  Players guide Pepe through different levels, collecting items and battling enemies by throwing spicy salsa bottles to defeat the final boss.
-                </p>
-              </div>
-            </div>
-
-            <div class="project_info_item">
-              <img class="project_marker" src="./assets/icons/marker.svg" alt="">
-              <div class="project_info_text">
-                <h3 data-i18n="projects.elpollo.processTitle">How I have organised my work process</h3>
-                <p data-i18n="projects.elpollo.processText">
-                  The project was structured into multiple user stories, allowing a clear and organized development process.
-                  Object-oriented programming helped me structure the code by connecting methods to relevant classes and applying core OOP principles such as encapsulation, abstraction, inheritance, and polymorphism.
-                </p>
-              </div>
-            </div>
-
-            <div class="project_info_item">
-              <img class="project_marker" src="./assets/icons/marker.svg" alt="">
-              <div class="project_info_text">
-                <h3 data-i18n="projects.elpollo.learnedTitle">My lessons learned</h3>
-                <p data-i18n="projects.elpollo.learnedText">
-                  Designing and implementing classes and methods significantly improved my development skills.
-                  It enabled me to write more modular, flexible, and reusable code, and deepened my understanding of scalable application structure.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="project_preview_column">
-            <div class="project_tech_block">
-              <p class="project_tech_title" data-i18n="projects.tech">Technologies</p>
-              <div class="project_tech_icons">
-                <img src="./assets/icons/js_notext.svg" alt="JavaScript">
-                <img src="./assets/icons/htm_notext.svg" alt="HTML">
-                <img src="./assets/icons/css_notext.svg" alt="CSS">
-              </div>
-              <p class="project_tech_text" data-i18n="projects.elpollo.techText">JavaScript, HTML, CSS</p>
-            </div>
-
-            <img class="project_preview_image" src="./assets/img/elpolloloco.png" alt="El Pollo Loco preview">
-
-            <div class="project_actions">
-              <a class="btn_cta project_link_btn" href="https://2d-game.kuentzle-kseniya.de/" target="_blank" rel="noopener noreferrer" data-i18n="projects.live">Live Test</a>
-              <a class="btn_standard project_link_btn" href="https://github.com/Kasa28/EL_POLLO_LOCO" target="_blank" rel="noopener noreferrer">GitHub</a>
-            </div>
-          </div>
+        <div class="project_tab_item">
+          <button class="project_tab" data-project="elpolloloco" role="tab" aria-selected="false">
+            <span class="project_tab_desktop" data-i18n="projects.tabElPolloDesktop">2. El Pollo Loco</span>
+            <span class="project_tab_mobile" data-i18n="projects.tabElPollo">2. Project</span>
+          </button>
         </div>
-      </article>
 
-      <article class="project_card" id="ongoing">
-        <div class="project_layout">
-          <div class="project_info_column">
-            <h3 class="project_mobile_name" data-i18n="projects.ongoing.name">Ongoing Project</h3>
-
-            <div class="project_info_item">
-              <img class="project_marker" src="./assets/icons/marker.svg" alt="">
-              <div class="project_info_text">
-                <div class="project_info_headline_row">
-                  <h3 data-i18n="projects.ongoing.aboutTitle">About the projects</h3>
-                  <span class="project_duration" data-i18n="projects.ongoing.duration">Duration: ongoing</span>
-                </div>
-                <p data-i18n="projects.ongoing.aboutText">
-                  My upcoming projects will focus on showcasing my skills in Angular and TypeScript.
-                </p>
-              </div>
-            </div>
-
-            <div class="project_info_item">
-              <img class="project_marker" src="./assets/icons/marker.svg" alt="">
-              <div class="project_info_text">
-                <h3 data-i18n="projects.ongoing.memoryTitle">Memory Game</h3>
-                <p data-i18n="projects.ongoing.memoryText">
-                  I am currently expanding my frontend expertise by working with TypeScript and SCSS to build more scalable and maintainable applications.
-                </p>
-              </div>
-            </div>
-
-            <div class="project_info_item">
-              <img class="project_marker" src="./assets/icons/marker.svg" alt="">
-              <div class="project_info_text">
-                <h3 data-i18n="projects.ongoing.pollTitle">Poll App</h3>
-                <p data-i18n="projects.ongoing.pollText">
-                  One of my next projects is a real-time poll application built with Angular and Supabase, where users can create surveys and track live results as they update instantly.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="project_preview_column">
-            <div class="project_tech_block">
-              <p class="project_tech_title" data-i18n="projects.tech">Technologies</p>
-              <div class="project_tech_icons">
-                <img src="./assets/icons/angular_notext.svg" alt="Angular">
-                <img src="./assets/icons/ts_notext.svg" alt="TypeScript">
-                <img src="./assets/icons/js_notext.svg" alt="JavaScript">
-              </div>
-              <p class="project_tech_text" data-i18n="projects.ongoing.techText">Angular, TypeScript, JavaScript</p>
-            </div>
-
-            <img class="project_preview_image" src="./assets/img/coming.png" alt="Upcoming project preview">
-          </div>
+        <div class="project_tab_item">
+          <button class="project_tab" data-project="ongoing" role="tab" aria-selected="false">
+            <span class="project_tab_desktop" data-i18n="projects.tabOngoingDesktop">3. Ongoing Project</span>
+            <span class="project_tab_mobile" data-i18n="projects.tabOngoing">3. Project</span>
+          </button>
         </div>
-      </article>
+      </div>
     </div>
-  </div>
-</section>
+
+    <div class="projects_panel">
+      <div class="layout_container projects_panel_inner">
+        <article class="project_card active" id="join">
+          <div class="project_layout">
+            <div class="project_info_column">
+              <h3 class="project_mobile_name" data-i18n="projects.join.name">Join</h3>
+
+              <div class="project_info_item">
+                <img class="project_marker" src="./assets/icons/marker.svg" alt="">
+                <div class="project_info_text">
+                  <div class="project_info_headline_row">
+                    <h3 data-i18n="projects.join.aboutTitle">About the project</h3>
+                    <span class="project_duration" data-i18n="projects.join.duration">Duration: 1.5 months</span>
+                  </div>
+                  <p data-i18n="projects.join.aboutText">
+                    Join is a task management application inspired by Kanban and created as a collaborative team project.
+                    Users can create, organize, and manage tasks using drag-and-drop functionality, assign users and categories, edit task cards, and add subtasks.
+                  </p>
+                </div>
+              </div>
+
+              <div class="project_info_item">
+                <img class="project_marker" src="./assets/icons/marker.svg" alt="">
+                <div class="project_info_text">
+                  <h3 data-i18n="projects.join.processTitle">How I have organised my work process</h3>
+                  <p data-i18n="projects.join.processText">
+                    Within our two-member team, we divided the project into epics and assigned responsibilities to each of us.
+                    We managed user stories, features, and tasks using Git branching. Once a feature was completed, we merged our work together to ensure no code was lost.
+                    This approach kept the development process structured and made collaboration smooth and efficient.
+                  </p>
+                </div>
+              </div>
+
+              <div class="project_info_item">
+                <img class="project_marker" src="./assets/icons/marker.svg" alt="">
+                <div class="project_info_text">
+                  <h3 data-i18n="projects.join.teamTitle">My group work experience</h3>
+                  <p data-i18n="projects.join.teamText">
+                    I really enjoyed working collaboratively within our team. We held daily meetings to track progress and stay aligned throughout the development process.
+                    We supported each other when needed and worked together on testing at the end of the project.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="project_preview_column">
+              <div class="project_tech_block">
+                <p class="project_tech_title" data-i18n="projects.tech">Technologies</p>
+                <div class="project_tech_icons">
+                  <img src="./assets/icons/js_notext.svg" alt="JavaScript">
+                  <img src="./assets/icons/htm_notext.svg" alt="HTML">
+                  <img src="./assets/icons/css_notext.svg" alt="CSS">
+                </div>
+                <p class="project_tech_text" data-i18n="projects.join.techText">JavaScript, HTML, CSS</p>
+              </div>
+
+              <img class="project_preview_image" src="./assets/img/join.png" alt="Join preview">
+
+              <div class="project_actions">
+                <a class="btn_cta project_link_btn" href="https://join.kuentzle-kseniya.de/" target="_blank" rel="noopener noreferrer" data-i18n="projects.live">Live Test</a>
+                <a class="btn_standard project_link_btn" href="https://github.com/Kasa28/Join" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project_card" id="elpolloloco">
+          <div class="project_layout">
+            <div class="project_info_column">
+              <h3 class="project_mobile_name" data-i18n="projects.elpollo.name">El Pollo Loco</h3>
+
+              <div class="project_info_item">
+                <img class="project_marker" src="./assets/icons/marker.svg" alt="">
+                <div class="project_info_text">
+                  <div class="project_info_headline_row">
+                    <h3 data-i18n="projects.elpollo.aboutTitle">About the project</h3>
+                    <span class="project_duration" data-i18n="projects.elpollo.duration">Duration: 1 month</span>
+                  </div>
+                  <p data-i18n="projects.elpollo.aboutText">
+                    El Pollo Loco is a 2D jump-and-run game based on object-oriented programming.
+                    Players guide Pepe through different levels, collecting items and battling enemies by throwing spicy salsa bottles to defeat the final boss.
+                  </p>
+                </div>
+              </div>
+
+              <div class="project_info_item">
+                <img class="project_marker" src="./assets/icons/marker.svg" alt="">
+                <div class="project_info_text">
+                  <h3 data-i18n="projects.elpollo.processTitle">How I have organised my work process</h3>
+                  <p data-i18n="projects.elpollo.processText">
+                    The project was structured into multiple user stories, allowing a clear and organized development process.
+                    Object-oriented programming helped me structure the code by connecting methods to relevant classes and applying core OOP principles such as encapsulation, abstraction, inheritance, and polymorphism.
+                  </p>
+                </div>
+              </div>
+
+              <div class="project_info_item">
+                <img class="project_marker" src="./assets/icons/marker.svg" alt="">
+                <div class="project_info_text">
+                  <h3 data-i18n="projects.elpollo.learnedTitle">My lessons learned</h3>
+                  <p data-i18n="projects.elpollo.learnedText">
+                    Designing and implementing classes and methods significantly improved my development skills.
+                    It enabled me to write more modular, flexible, and reusable code, and deepened my understanding of scalable application structure.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="project_preview_column">
+              <div class="project_tech_block">
+                <p class="project_tech_title" data-i18n="projects.tech">Technologies</p>
+                <div class="project_tech_icons">
+                  <img src="./assets/icons/js_notext.svg" alt="JavaScript">
+                  <img src="./assets/icons/htm_notext.svg" alt="HTML">
+                  <img src="./assets/icons/css_notext.svg" alt="CSS">
+                </div>
+                <p class="project_tech_text" data-i18n="projects.elpollo.techText">JavaScript, HTML, CSS</p>
+              </div>
+
+              <img class="project_preview_image" src="./assets/img/elpolloloco.png" alt="El Pollo Loco preview">
+
+              <div class="project_actions">
+                <a class="btn_cta project_link_btn" href="https://2d-game.kuentzle-kseniya.de/" target="_blank" rel="noopener noreferrer" data-i18n="projects.live">Live Test</a>
+                <a class="btn_standard project_link_btn" href="https://github.com/Kasa28/EL_POLLO_LOCO" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project_card" id="ongoing">
+          <div class="project_layout">
+            <div class="project_info_column">
+              <h3 class="project_mobile_name" data-i18n="projects.ongoing.name">Ongoing Project</h3>
+
+              <div class="project_info_item">
+                <img class="project_marker" src="./assets/icons/marker.svg" alt="">
+                <div class="project_info_text">
+                  <div class="project_info_headline_row">
+                    <h3 data-i18n="projects.ongoing.aboutTitle">About the projects</h3>
+                    <span class="project_duration" data-i18n="projects.ongoing.duration">Duration: ongoing</span>
+                  </div>
+                  <p data-i18n="projects.ongoing.aboutText">
+                    My upcoming projects will focus on showcasing my skills in Angular and TypeScript.
+                  </p>
+                </div>
+              </div>
+
+              <div class="project_info_item">
+                <img class="project_marker" src="./assets/icons/marker.svg" alt="">
+                <div class="project_info_text">
+                  <h3 data-i18n="projects.ongoing.memoryTitle">Memory Game</h3>
+                  <p data-i18n="projects.ongoing.memoryText">
+                    I am currently expanding my frontend expertise by working with TypeScript and SCSS to build more scalable and maintainable applications.
+                  </p>
+                </div>
+              </div>
+
+              <div class="project_info_item">
+                <img class="project_marker" src="./assets/icons/marker.svg" alt="">
+                <div class="project_info_text">
+                  <h3 data-i18n="projects.ongoing.pollTitle">Poll App</h3>
+                  <p data-i18n="projects.ongoing.pollText">
+                    One of my next projects is a real-time poll application built with Angular and Supabase, where users can create surveys and track live results as they update instantly.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="project_preview_column">
+              <div class="project_tech_block">
+                <p class="project_tech_title" data-i18n="projects.tech">Technologies</p>
+                <div class="project_tech_icons">
+                  <img src="./assets/icons/angular_notext.svg" alt="Angular">
+                  <img src="./assets/icons/ts_notext.svg" alt="TypeScript">
+                  <img src="./assets/icons/js_notext.svg" alt="JavaScript">
+                </div>
+                <p class="project_tech_text" data-i18n="projects.ongoing.techText">Angular, TypeScript, JavaScript</p>
+              </div>
+
+              <img class="project_preview_image" src="./assets/img/coming.png" alt="Upcoming project preview">
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
 
   <div class="layout_container">
     <section id="references" class="references_section">
@@ -596,15 +598,12 @@
 
           <label for="privacy" class="form_policy_label">
             <span class="policy_text_start" data-i18n="contact.policyPrefix">I've read the</span>
-            <a
-              href="./privacy.html"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="policy_link"
-              data-i18n="contact.policyLink"
-            >
-              privacy policy
-            </a>
+           <a
+            href="#legal"
+            class="policy_link"
+            data-i18n="contact.policyLink">
+           privacy policy
+          </a>
             <span class="policy_text_end" data-i18n="contact.policySuffix">
               and agree to the processing of my data as outlined.
             </span>
@@ -618,18 +617,97 @@
         </div>
       </form>
 
-      <a class="contact_btn_up" href="#header" aria-label="Scroll to top">
+      <a class="contact_btn_up" href="#homeHeader" aria-label="Scroll to top">
         <img class="contact_btn_up_icon" src="./assets/icons/Arrow_up.svg" alt="" aria-hidden="true">
       </a>
     </section>
   </div>
+
+  <section id="legal" class="legal_notice_section">
+    <div class="layout_container">
+      <h1 class="legal_notice_title" data-i18n="legal.title">Legal Notice</h1>
+
+      <div class="legal_notice_content">
+        <h2 data-i18n="legal.imprintTitle">Imprint</h2>
+        <p data-i18n="legal.imprintAddress">
+          Kseniya Küntzle<br>
+          Heilbronnerstr.25<br>
+          74177 Heilbronn<br>
+          Germany
+        </p>
+
+        <p>
+          <span data-i18n="legal.emailLabel">E-mail:</span>
+          <a href="mailto:kseniya.kuentzle.dev@gmail.com">kseniya.kuentzle.dev@gmail.com</a>
+        </p>
+
+        <h2 data-i18n="legal.privacyTitle">Privacy Policy</h2>
+
+        <h3 data-i18n="legal.generalTitle">1. General information</h3>
+        <p data-i18n="legal.generalText">
+          The following information provides a simple overview of what happens to your personal data
+          when you visit this website. Personal data is any data that can be used to identify you personally.
+        </p>
+
+        <h3 data-i18n="legal.responsibleTitle">2. Responsible person</h3>
+        <p data-i18n="legal.responsibleIntro">
+          The controller responsible for data processing on this website is:
+        </p>
+
+        <p data-i18n="legal.responsibleAddress">
+          Kseniya Küntzle<br>
+          Heilbronnerstr.25<br>
+          74177 Heilbronn<br>
+          Germany<br>
+          E-mail:
+          <a href="mailto:kseniya.kuentzle.dev@gmail.com">kseniya.kuentzle.dev@gmail.com</a>
+        </p>
+
+        <h3 data-i18n="legal.hostingTitle">3. Hosting</h3>
+        <p data-i18n="legal.hostingText1">
+          This website is hosted by ALL-INKL.COM – Neue Medien Münnich.
+        </p>
+        <p data-i18n="legal.hostingText2">
+          When you visit this website, technical data such as browser type, operating system,
+          IP address, date and time of access may be processed automatically in server log files.
+        </p>
+        <p data-i18n="legal.hostingText3">
+          This processing is necessary to ensure the secure and reliable operation of the website.
+        </p>
+
+        <h3 data-i18n="legal.contactTitle">4. Contact</h3>
+        <p data-i18n="legal.contactText">
+          If you contact me by e-mail, the data you provide will be processed only for the purpose
+          of handling your request.
+        </p>
+
+        <h3 data-i18n="legal.rightsTitle">5. Your rights</h3>
+        <p data-i18n="legal.rightsText">
+          You have the right to request information about your stored personal data,
+          as well as the right to rectification, erasure, restriction of processing,
+          and objection in accordance with the applicable legal provisions.
+        </p>
+
+        <h3 data-i18n="legal.linksTitle">6. External links</h3>
+        <p data-i18n="legal.linksText">
+          This website may contain links to external websites such as GitHub or LinkedIn.
+          I am not responsible for the content of external websites.
+        </p>
+
+        <h3 data-i18n="legal.changesTitle">7. Changes</h3>
+        <p data-i18n="legal.changesText">
+          I reserve the right to update this legal notice and privacy information if necessary.
+        </p>
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer class="site_footer">
   <div class="layout_container">
     <div class="footer_row">
       <div class="footer_left">
-        <a class="footer_link" href="./legal_notice.html" data-i18n="footer.legal">Legal notice</a>
+        <a class="footer_link" href="#legal" data-i18n="footer.legal">Legal notice</a>
         <p class="footer_copy">© Kseniya Küntzle 2026</p>
       </div>
 
@@ -679,10 +757,11 @@
   </div>
 </div>
 
-<script src="./script.js"></script>
-<script src="./projects.js"></script>
-<script src="./translate.js"></script>
+<script src="./scripts/script.js"></script>
+<script src="./scripts/projects.js"></script>
+<script src="./scripts/translate.js"></script>
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script src="./aos.js"></script>
+<script src="./scripts/aos.js"></script>
+<script src="./scripts/router.js"></script>
 </body>
 </html>

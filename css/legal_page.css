@@ -388,3 +388,10 @@ body {
 main {
   flex: 1;
 }
+
+@media (max-width: 768px) {
+  #legal .layout_container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}

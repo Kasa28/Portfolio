@@ -382,3 +382,21 @@ input,textarea,select{ font:inherit; }
   border-color: #89BCD9;
   box-shadow: 0 0 12px rgba(137, 188, 217, 0.12);
 }
+
+#legal {
+  display: none;
+}
+
+body.legal-route #legal {
+  display: block;
+}
+
+body.legal-route #homeHeader,
+body.legal-route #me,
+body.legal-route #skills,
+body.legal-route #projects,
+body.legal-route #references,
+body.legal-route #contact,
+body.legal-route .contact_popup {
+  display: none !important;
+}
