@@ -252,203 +252,209 @@
     </section>
   </div>
 
-  <section id="projects" class="projects_section">
-    <div class="layout_container">
-      <h2 class="section_title" data-i18n="projects.title">My Projects</h2>
+<section id="projects" class="projects_section">
+  <div class="layout_container">
+    <h2 class="section_title" data-i18n="projects.title">My Projects</h2>
 
-      <div class="projects_tabs" role="tablist" aria-label="Project tabs">
-        <div class="project_tab_item">
-          <button class="project_tab active" data-project="join" role="tab" aria-selected="true" data-i18n="projects.tabJoin">1. Join</button>
-        </div>
-        <div class="project_tab_item">
-          <button class="project_tab" data-project="elpolloloco" role="tab" aria-selected="false" data-i18n="projects.tabElPollo">2. El Pollo Loco</button>
-        </div>
-        <div class="project_tab_item">
-          <button class="project_tab" data-project="ongoing" role="tab" aria-selected="false" data-i18n="projects.tabOngoing">3. Ongoing Project</button>
-        </div>
+    <div class="projects_tabs" role="tablist" aria-label="Project tabs">
+      <div class="project_tab_item">
+        <button class="project_tab active" data-project="join" role="tab" aria-selected="true" data-i18n="projects.tabJoin">1. Join</button>
+      </div>
+      <div class="project_tab_item">
+        <button class="project_tab" data-project="elpolloloco" role="tab" aria-selected="false" data-i18n="projects.tabElPollo">2. El Pollo Loco</button>
+      </div>
+      <div class="project_tab_item">
+        <button class="project_tab" data-project="ongoing" role="tab" aria-selected="false" data-i18n="projects.tabOngoing">3. Ongoing Project</button>
       </div>
     </div>
+  </div>
 
-    <div class="projects_panel">
-      <div class="layout_container projects_panel_inner">
-        <article class="project_card active" id="join">
-          <div class="project_layout">
-            <div class="project_info_column">
-              <div class="project_info_item">
-                <img class="project_marker" src="./assets/icons/marker.svg" alt="">
-                <div class="project_info_text">
-                  <div class="project_info_headline_row">
-                    <h3 data-i18n="projects.join.aboutTitle">About the project</h3>
-                    <span class="project_duration" data-i18n="projects.join.duration">Duration: 1.5 months</span>
-                  </div>
-                  <p data-i18n="projects.join.aboutText">
-                    Join is a task management application inspired by Kanban and created as a collaborative team project.
-                    Users can create, organize, and manage tasks using drag-and-drop functionality, assign users and categories, edit task cards, and add subtasks.
-                  </p>
-                </div>
-              </div>
+  <div class="projects_panel">
+    <div class="layout_container projects_panel_inner">
+      <article class="project_card active" id="join">
+        <div class="project_layout">
+          <div class="project_info_column">
+            <h3 class="project_mobile_name" data-i18n="projects.join.name">Join</h3>
 
-              <div class="project_info_item">
-                <img class="project_marker" src="./assets/icons/marker.svg" alt="">
-                <div class="project_info_text">
-                  <h3 data-i18n="projects.join.processTitle">How I have organised my work process</h3>
-                  <p data-i18n="projects.join.processText">
-                    Within our two-member team, we divided the project into epics and assigned responsibilities to each of us.
-                    We managed user stories, features, and tasks using Git branching. Once a feature was completed, we merged our work together to ensure no code was lost.
-                    This approach kept the development process structured and made collaboration smooth and efficient.
-                  </p>
+            <div class="project_info_item">
+              <img class="project_marker" src="./assets/icons/marker.svg" alt="">
+              <div class="project_info_text">
+                <div class="project_info_headline_row">
+                  <h3 data-i18n="projects.join.aboutTitle">About the project</h3>
+                  <span class="project_duration" data-i18n="projects.join.duration">Duration: 1.5 months</span>
                 </div>
-              </div>
-
-              <div class="project_info_item">
-                <img class="project_marker" src="./assets/icons/marker.svg" alt="">
-                <div class="project_info_text">
-                  <h3 data-i18n="projects.join.teamTitle">My group work experience</h3>
-                  <p data-i18n="projects.join.teamText">
-                    I really enjoyed working collaboratively within our team. We held daily meetings to track progress and stay aligned throughout the development process.
-                    We supported each other when needed and worked together on testing at the end of the project.
-                  </p>
-                </div>
+                <p data-i18n="projects.join.aboutText">
+                  Join is a task management application inspired by Kanban and created as a collaborative team project.
+                  Users can create, organize, and manage tasks using drag-and-drop functionality, assign users and categories, edit task cards, and add subtasks.
+                </p>
               </div>
             </div>
 
-            <div class="project_preview_column">
-              <div class="project_tech_block">
-                <p class="project_tech_title" data-i18n="projects.tech">Technologies</p>
-                <div class="project_tech_icons">
-                  <img src="./assets/icons/js_notext.svg" alt="JavaScript">
-                  <img src="./assets/icons/htm_notext.svg" alt="HTML">
-                  <img src="./assets/icons/css_notext.svg" alt="CSS">
-                </div>
-                <p class="project_tech_text" data-i18n="projects.join.techText">JavaScript, HTML, CSS</p>
+            <div class="project_info_item">
+              <img class="project_marker" src="./assets/icons/marker.svg" alt="">
+              <div class="project_info_text">
+                <h3 data-i18n="projects.join.processTitle">How I have organised my work process</h3>
+                <p data-i18n="projects.join.processText">
+                  Within our two-member team, we divided the project into epics and assigned responsibilities to each of us.
+                  We managed user stories, features, and tasks using Git branching. Once a feature was completed, we merged our work together to ensure no code was lost.
+                  This approach kept the development process structured and made collaboration smooth and efficient.
+                </p>
               </div>
+            </div>
 
-              <img class="project_preview_image" src="./assets/img/join.png" alt="Join preview">
-
-              <div class="project_actions">
-                <a class="btn_cta project_link_btn" href="https://join.kuentzle-kseniya.de/" target="_blank" rel="noopener noreferrer" data-i18n="projects.live">Live Test</a>
-                <a class="btn_standard project_link_btn" href="https://github.com/Kasa28/Join" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <div class="project_info_item">
+              <img class="project_marker" src="./assets/icons/marker.svg" alt="">
+              <div class="project_info_text">
+                <h3 data-i18n="projects.join.teamTitle">My group work experience</h3>
+                <p data-i18n="projects.join.teamText">
+                  I really enjoyed working collaboratively within our team. We held daily meetings to track progress and stay aligned throughout the development process.
+                  We supported each other when needed and worked together on testing at the end of the project.
+                </p>
               </div>
             </div>
           </div>
-        </article>
 
-        <article class="project_card" id="elpolloloco">
-          <div class="project_layout">
-            <div class="project_info_column">
-              <div class="project_info_item">
-                <img class="project_marker" src="./assets/icons/marker.svg" alt="">
-                <div class="project_info_text">
-                  <div class="project_info_headline_row">
-                    <h3 data-i18n="projects.elpollo.aboutTitle">About the project</h3>
-                    <span class="project_duration" data-i18n="projects.elpollo.duration">Duration: 1 month</span>
-                  </div>
-                  <p data-i18n="projects.elpollo.aboutText">
-                    El Pollo Loco is a 2D jump-and-run game based on object-oriented programming.
-                    Players guide Pepe through different levels, collecting items and battling enemies by throwing spicy salsa bottles to defeat the final boss.
-                  </p>
-                </div>
+          <div class="project_preview_column">
+            <div class="project_tech_block">
+              <p class="project_tech_title" data-i18n="projects.tech">Technologies</p>
+              <div class="project_tech_icons">
+                <img src="./assets/icons/js_notext.svg" alt="JavaScript">
+                <img src="./assets/icons/htm_notext.svg" alt="HTML">
+                <img src="./assets/icons/css_notext.svg" alt="CSS">
               </div>
+              <p class="project_tech_text" data-i18n="projects.join.techText">JavaScript, HTML, CSS</p>
+            </div>
 
-              <div class="project_info_item">
-                <img class="project_marker" src="./assets/icons/marker.svg" alt="">
-                <div class="project_info_text">
-                  <h3 data-i18n="projects.elpollo.processTitle">How I have organised my work process</h3>
-                  <p data-i18n="projects.elpollo.processText">
-                    The project was structured into multiple user stories, allowing a clear and organized development process.
-                    Object-oriented programming helped me structure the code by connecting methods to relevant classes and applying core OOP principles such as encapsulation, abstraction, inheritance, and polymorphism.
-                  </p>
-                </div>
-              </div>
+            <img class="project_preview_image" src="./assets/img/join.png" alt="Join preview">
 
-              <div class="project_info_item">
-                <img class="project_marker" src="./assets/icons/marker.svg" alt="">
-                <div class="project_info_text">
-                  <h3 data-i18n="projects.elpollo.learnedTitle">My lessons learned</h3>
-                  <p data-i18n="projects.elpollo.learnedText">
-                    Designing and implementing classes and methods significantly improved my development skills.
-                    It enabled me to write more modular, flexible, and reusable code, and deepened my understanding of scalable application structure.
-                  </p>
+            <div class="project_actions">
+              <a class="btn_cta project_link_btn" href="https://join.kuentzle-kseniya.de/" target="_blank" rel="noopener noreferrer" data-i18n="projects.live">Live Test</a>
+              <a class="btn_standard project_link_btn" href="https://github.com/Kasa28/Join" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="project_card" id="elpolloloco">
+        <div class="project_layout">
+          <div class="project_info_column">
+            <h3 class="project_mobile_name" data-i18n="projects.elpollo.name">El Pollo Loco</h3>
+
+            <div class="project_info_item">
+              <img class="project_marker" src="./assets/icons/marker.svg" alt="">
+              <div class="project_info_text">
+                <div class="project_info_headline_row">
+                  <h3 data-i18n="projects.elpollo.aboutTitle">About the project</h3>
+                  <span class="project_duration" data-i18n="projects.elpollo.duration">Duration: 1 month</span>
                 </div>
+                <p data-i18n="projects.elpollo.aboutText">
+                  El Pollo Loco is a 2D jump-and-run game based on object-oriented programming.
+                  Players guide Pepe through different levels, collecting items and battling enemies by throwing spicy salsa bottles to defeat the final boss.
+                </p>
               </div>
             </div>
 
-            <div class="project_preview_column">
-              <div class="project_tech_block">
-                <p class="project_tech_title" data-i18n="projects.tech">Technologies</p>
-                <div class="project_tech_icons">
-                  <img src="./assets/icons/js_notext.svg" alt="JavaScript">
-                  <img src="./assets/icons/htm_notext.svg" alt="HTML">
-                  <img src="./assets/icons/css_notext.svg" alt="CSS">
-                </div>
-                <p class="project_tech_text" data-i18n="projects.elpollo.techText">JavaScript, HTML, CSS</p>
+            <div class="project_info_item">
+              <img class="project_marker" src="./assets/icons/marker.svg" alt="">
+              <div class="project_info_text">
+                <h3 data-i18n="projects.elpollo.processTitle">How I have organised my work process</h3>
+                <p data-i18n="projects.elpollo.processText">
+                  The project was structured into multiple user stories, allowing a clear and organized development process.
+                  Object-oriented programming helped me structure the code by connecting methods to relevant classes and applying core OOP principles such as encapsulation, abstraction, inheritance, and polymorphism.
+                </p>
               </div>
+            </div>
 
-              <img class="project_preview_image" src="./assets/img/elpolloloco.png" alt="El Pollo Loco preview">
-
-              <div class="project_actions">
-                <a class="btn_cta project_link_btn" href="https://2d-game.kuentzle-kseniya.de/" target="_blank" rel="noopener noreferrer" data-i18n="projects.live">Live Test</a>
-                <a class="btn_standard project_link_btn" href="https://github.com/Kasa28/EL_POLLO_LOCO" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <div class="project_info_item">
+              <img class="project_marker" src="./assets/icons/marker.svg" alt="">
+              <div class="project_info_text">
+                <h3 data-i18n="projects.elpollo.learnedTitle">My lessons learned</h3>
+                <p data-i18n="projects.elpollo.learnedText">
+                  Designing and implementing classes and methods significantly improved my development skills.
+                  It enabled me to write more modular, flexible, and reusable code, and deepened my understanding of scalable application structure.
+                </p>
               </div>
             </div>
           </div>
-        </article>
 
-        <article class="project_card" id="ongoing">
-          <div class="project_layout">
-            <div class="project_info_column">
-              <div class="project_info_item">
-                <img class="project_marker" src="./assets/icons/marker.svg" alt="">
-                <div class="project_info_text">
-                  <div class="project_info_headline_row">
-                    <h3 data-i18n="projects.ongoing.aboutTitle">About the projects</h3>
-                    <span class="project_duration" data-i18n="projects.ongoing.duration">Duration: ongoing</span>
-                  </div>
-                  <p data-i18n="projects.ongoing.aboutText">
-                    My upcoming projects will focus on showcasing my skills in Angular and TypeScript.
-                  </p>
-                </div>
+          <div class="project_preview_column">
+            <div class="project_tech_block">
+              <p class="project_tech_title" data-i18n="projects.tech">Technologies</p>
+              <div class="project_tech_icons">
+                <img src="./assets/icons/js_notext.svg" alt="JavaScript">
+                <img src="./assets/icons/htm_notext.svg" alt="HTML">
+                <img src="./assets/icons/css_notext.svg" alt="CSS">
               </div>
-
-              <div class="project_info_item">
-                <img class="project_marker" src="./assets/icons/marker.svg" alt="">
-                <div class="project_info_text">
-                  <h3 data-i18n="projects.ongoing.memoryTitle">Memory Game</h3>
-                  <p data-i18n="projects.ongoing.memoryText">
-                    I am currently expanding my frontend expertise by working with TypeScript and SCSS to build more scalable and maintainable applications.
-                  </p>
-                </div>
-              </div>
-
-              <div class="project_info_item">
-                <img class="project_marker" src="./assets/icons/marker.svg" alt="">
-                <div class="project_info_text">
-                  <h3 data-i18n="projects.ongoing.pollTitle">Poll App</h3>
-                  <p data-i18n="projects.ongoing.pollText">
-                    One of my next projects is a real-time poll application built with Angular and Supabase, where users can create surveys and track live results as they update instantly.
-                  </p>
-                </div>
-              </div>
+              <p class="project_tech_text" data-i18n="projects.elpollo.techText">JavaScript, HTML, CSS</p>
             </div>
 
-            <div class="project_preview_column">
-              <div class="project_tech_block">
-                <p class="project_tech_title" data-i18n="projects.tech">Technologies</p>
-                <div class="project_tech_icons">
-                  <img src="./assets/icons/angular_notext.svg" alt="Angular">
-                  <img src="./assets/icons/ts_notext.svg" alt="TypeScript">
-                  <img src="./assets/icons/js_notext.svg" alt="JavaScript">
-                </div>
-                <p class="project_tech_text" data-i18n="projects.ongoing.techText">Angular, TypeScript, JavaScript</p>
-              </div>
+            <img class="project_preview_image" src="./assets/img/elpolloloco.png" alt="El Pollo Loco preview">
 
-              <img class="project_preview_image" src="./assets/img/coming.png" alt="Upcoming project preview">
+            <div class="project_actions">
+              <a class="btn_cta project_link_btn" href="https://2d-game.kuentzle-kseniya.de/" target="_blank" rel="noopener noreferrer" data-i18n="projects.live">Live Test</a>
+              <a class="btn_standard project_link_btn" href="https://github.com/Kasa28/EL_POLLO_LOCO" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
           </div>
-        </article>
-      </div>
+        </div>
+      </article>
+
+      <article class="project_card" id="ongoing">
+        <div class="project_layout">
+          <div class="project_info_column">
+            <h3 class="project_mobile_name" data-i18n="projects.ongoing.name">Ongoing Project</h3>
+
+            <div class="project_info_item">
+              <img class="project_marker" src="./assets/icons/marker.svg" alt="">
+              <div class="project_info_text">
+                <div class="project_info_headline_row">
+                  <h3 data-i18n="projects.ongoing.aboutTitle">About the projects</h3>
+                  <span class="project_duration" data-i18n="projects.ongoing.duration">Duration: ongoing</span>
+                </div>
+                <p data-i18n="projects.ongoing.aboutText">
+                  My upcoming projects will focus on showcasing my skills in Angular and TypeScript.
+                </p>
+              </div>
+            </div>
+
+            <div class="project_info_item">
+              <img class="project_marker" src="./assets/icons/marker.svg" alt="">
+              <div class="project_info_text">
+                <h3 data-i18n="projects.ongoing.memoryTitle">Memory Game</h3>
+                <p data-i18n="projects.ongoing.memoryText">
+                  I am currently expanding my frontend expertise by working with TypeScript and SCSS to build more scalable and maintainable applications.
+                </p>
+              </div>
+            </div>
+
+            <div class="project_info_item">
+              <img class="project_marker" src="./assets/icons/marker.svg" alt="">
+              <div class="project_info_text">
+                <h3 data-i18n="projects.ongoing.pollTitle">Poll App</h3>
+                <p data-i18n="projects.ongoing.pollText">
+                  One of my next projects is a real-time poll application built with Angular and Supabase, where users can create surveys and track live results as they update instantly.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project_preview_column">
+            <div class="project_tech_block">
+              <p class="project_tech_title" data-i18n="projects.tech">Technologies</p>
+              <div class="project_tech_icons">
+                <img src="./assets/icons/angular_notext.svg" alt="Angular">
+                <img src="./assets/icons/ts_notext.svg" alt="TypeScript">
+                <img src="./assets/icons/js_notext.svg" alt="JavaScript">
+              </div>
+              <p class="project_tech_text" data-i18n="projects.ongoing.techText">Angular, TypeScript, JavaScript</p>
+            </div>
+
+            <img class="project_preview_image" src="./assets/img/coming.png" alt="Upcoming project preview">
+          </div>
+        </div>
+      </article>
     </div>
-  </section>
+  </div>
+</section>
 
   <div class="layout_container">
     <section id="references" class="references_section">

@@ -8,23 +8,37 @@ const translations = {
     "nav.projects": "Projects",
     "nav.contact": "Contact",
     "nav.languageSwitcher": "Language switcher",
+
     "hero.name": "Kseniya Küntzle",
     "hero.role": "FRONTEND DEVELOPER",
+
     "whyMe.title": "Why me",
     "whyMe.location": "I am located in Heilbronn",
     "whyMe.text":
       "I’m a frontend developer with a strong eye for clean UI and a love for building smooth, responsive experiences. I enjoy turning ideas into structured, maintainable code — and I’m always curious to learn and improve.",
     "whyMe.button": "Let's talk",
+
     "skills.title": "My Skills",
     "skills.learningTitle": "I am currently learning",
     "skills.learningText":
       "I’m passionate about continuous learning. Every new challenge is an opportunity to grow, improve, and develop new skills.",
+
     "projects.title": "My Projects",
     "projects.tech": "Technologies",
     "projects.live": "Live Test",
-    "projects.tabJoin": "1. Join",
-    "projects.tabElPollo": "2. El Pollo Loco",
-    "projects.tabOngoing": "3. Ongoing Project",
+
+    "projects.tabJoin": "1. Project",
+    "projects.tabElPollo": "2. Project",
+    "projects.tabOngoing": "3. Project",
+
+    "projects.join.name": "Join",
+    "projects.elpollo.name": "El Pollo Loco",
+    "projects.ongoing.name": "Ongoing Project",
+
+    "projects.join.techText": "JavaScript, HTML, CSS",
+    "projects.elpollo.techText": "JavaScript, HTML, CSS",
+    "projects.ongoing.techText": "Angular, TypeScript, JavaScript",
+
     "projects.join.aboutTitle": "About the project",
     "projects.join.duration": "Duration: 1.5 months",
     "projects.join.aboutText":
@@ -35,6 +49,7 @@ const translations = {
     "projects.join.teamTitle": "My group work experience",
     "projects.join.teamText":
       "I really enjoyed working collaboratively within our team. We held daily meetings to track progress and stay aligned throughout the development process. We supported each other when needed and worked together on testing at the end of the project.",
+
     "projects.elpollo.aboutTitle": "About the project",
     "projects.elpollo.duration": "Duration: 1 month",
     "projects.elpollo.aboutText":
@@ -45,6 +60,7 @@ const translations = {
     "projects.elpollo.learnedTitle": "My lessons learned",
     "projects.elpollo.learnedText":
       "Designing and implementing classes and methods significantly improved my development skills. It enabled me to write more modular, flexible, and reusable code, and deepened my understanding of scalable application structure.",
+
     "projects.ongoing.aboutTitle": "About the projects",
     "projects.ongoing.duration": "Duration: ongoing",
     "projects.ongoing.aboutText":
@@ -55,6 +71,7 @@ const translations = {
     "projects.ongoing.pollTitle": "Poll App",
     "projects.ongoing.pollText":
       "One of my next projects is a real-time poll application built with Angular and Supabase, where users can create surveys and track live results as they update instantly.",
+
     "references.titleMain": "Need a teamplayer?",
     "references.titleSub": "Here’s what my colleagues say about me",
     "references.project": "Project",
@@ -65,6 +82,7 @@ const translations = {
       "Kseniya is thoughtful and supportive, with creativity, patience, and a strong drive to improve.",
     "references.elli":
       "Kseniya is motivated, reliable, and has a great eye for clean design. She’s a valuable team member.",
+
     "contact.title": "Contact me",
     "contact.text":
       "Ready for the next project? I look forward to hearing from you and building clean, modern, and user-friendly web experiences together.",
@@ -76,9 +94,12 @@ const translations = {
     "contact.messagePlaceholder": "Your Message",
     "contact.policyPrefix": "I've read the",
     "contact.policyLink": "privacy policy",
-    "contact.policySuffix": "and agree to the processing of my data as outlined.",
+    "contact.policySuffix":
+      "and agree to the processing of my data as outlined.",
     "contact.send": "Send",
+
     "footer.legal": "Legal notice",
+
     "legal.pageTitle": "Legal Notice",
     "legal.mobileBrandAria": "Go back to homepage",
     "legal.mobileBackAria": "Back to homepage",
@@ -126,23 +147,37 @@ const translations = {
     "nav.projects": "Projekte",
     "nav.contact": "Kontakt",
     "nav.languageSwitcher": "Sprachauswahl",
+
     "hero.name": "Kseniya Küntzle",
     "hero.role": "FRONTEND ENTWICKLERIN",
+
     "whyMe.title": "Warum ich",
     "whyMe.location": "Ich bin in Heilbronn",
     "whyMe.text":
       "Ich bin Frontend-Entwicklerin mit einem starken Blick für saubere Benutzeroberflächen und einer Leidenschaft für flüssige, responsive Nutzererlebnisse. Ich liebe es, Ideen in strukturierten und wartbaren Code umzusetzen und möchte mich ständig weiterentwickeln.",
     "whyMe.button": "Lass uns sprechen",
+
     "skills.title": "Meine Fähigkeiten",
     "skills.learningTitle": "Was ich aktuell lerne",
     "skills.learningText":
       "Ich lerne mit Leidenschaft weiter. Jede neue Herausforderung ist eine Chance zu wachsen, mich zu verbessern und neue Fähigkeiten zu entwickeln.",
+
     "projects.title": "Meine Projekte",
     "projects.tech": "Technologien",
     "projects.live": "Live Test",
-    "projects.tabJoin": "1. Join",
-    "projects.tabElPollo": "2. El Pollo Loco",
-    "projects.tabOngoing": "3. Laufendes Projekt",
+
+    "projects.tabJoin": "1. Projekt",
+    "projects.tabElPollo": "2. Projekt",
+    "projects.tabOngoing": "3. Projekt",
+
+    "projects.join.name": "Join",
+    "projects.elpollo.name": "El Pollo Loco",
+    "projects.ongoing.name": "Laufendes Projekt",
+
+    "projects.join.techText": "JavaScript, HTML, CSS",
+    "projects.elpollo.techText": "JavaScript, HTML, CSS",
+    "projects.ongoing.techText": "Angular, TypeScript, JavaScript",
+
     "projects.join.aboutTitle": "Über das Projekt",
     "projects.join.duration": "Dauer: 1,5 Monate",
     "projects.join.aboutText":
@@ -153,6 +188,7 @@ const translations = {
     "projects.join.teamTitle": "Meine Erfahrung in der Teamarbeit",
     "projects.join.teamText":
       "Ich habe die Zusammenarbeit in unserem Team sehr genossen. Wir hatten tägliche Meetings, um den Fortschritt zu verfolgen und während des gesamten Entwicklungsprozesses abgestimmt zu bleiben. Wir haben uns gegenseitig unterstützt und am Ende gemeinsam getestet.",
+
     "projects.elpollo.aboutTitle": "Über das Projekt",
     "projects.elpollo.duration": "Dauer: 1 Monat",
     "projects.elpollo.aboutText":
@@ -163,6 +199,7 @@ const translations = {
     "projects.elpollo.learnedTitle": "Was ich gelernt habe",
     "projects.elpollo.learnedText":
       "Das Entwerfen und Implementieren von Klassen und Methoden hat meine Entwicklungsfähigkeiten deutlich verbessert. Dadurch konnte ich modulareren, flexibleren und wiederverwendbaren Code schreiben und mein Verständnis für skalierbare Anwendungsstrukturen vertiefen.",
+
     "projects.ongoing.aboutTitle": "Über die Projekte",
     "projects.ongoing.duration": "Dauer: laufend",
     "projects.ongoing.aboutText":
@@ -173,6 +210,7 @@ const translations = {
     "projects.ongoing.pollTitle": "Poll App",
     "projects.ongoing.pollText":
       "Eines meiner nächsten Projekte ist eine Echtzeit-Umfrage-App mit Angular und Supabase, bei der Nutzer Umfragen erstellen und Live-Ergebnisse in Echtzeit verfolgen können.",
+
     "references.titleMain": "Du suchst eine Teamplayerin?",
     "references.titleSub": "Das sagen meine Kolleginnen über mich",
     "references.project": "Projekt",
@@ -183,6 +221,7 @@ const translations = {
       "Kseniya ist aufmerksam und unterstützend, mit Kreativität, Geduld und dem starken Wunsch, sich weiterzuentwickeln.",
     "references.elli":
       "Kseniya ist motiviert, zuverlässig und hat ein gutes Gespür für sauberes Design. Sie ist eine wertvolle Teamkollegin.",
+
     "contact.title": "Kontakt",
     "contact.text":
       "Bereit für das nächste Projekt? Ich freue mich darauf, von dir zu hören und gemeinsam saubere, moderne und benutzerfreundliche Web-Erlebnisse zu entwickeln.",
@@ -194,9 +233,12 @@ const translations = {
     "contact.messagePlaceholder": "Deine Nachricht",
     "contact.policyPrefix": "Ich habe die",
     "contact.policyLink": "Datenschutzerklärung",
-    "contact.policySuffix": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
+    "contact.policySuffix":
+      "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
     "contact.send": "Senden",
+
     "footer.legal": "Impressum",
+
     "legal.pageTitle": "Impressum",
     "legal.mobileBrandAria": "Zur Startseite zurück",
     "legal.mobileBackAria": "Zur Startseite zurück",
