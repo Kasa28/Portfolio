@@ -253,7 +253,7 @@ const translations = {
     "legal.mobileBackAlt": "Zurück",
     "legal.desktopBrandAria": "Zur Startseite zurück",
     "legal.title": "Impressum",
-    "legal.imprintTitle": "Impressum",
+    "legal.imprintTitle": "Datenschutz",
     "legal.imprintAddress":
       "Kseniya Küntzle<br>Heilbronnerstr.25<br>74177 Heilbronn<br>Deutschland",
     "legal.emailLabel": "E-Mail:",
