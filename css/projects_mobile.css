@@ -67,7 +67,6 @@
   }
 
   .project_tech_title {
-    margin: 0 0 8px;
     font-size: 1rem;
   }
 
@@ -82,7 +81,6 @@
   }
 
   .project_tech_text {
-    margin-top: 8px;
     font-size: 0.92rem;
   }
 
@@ -174,7 +172,7 @@
 
 @media (max-width: 700px) {
   .project_tab {
-    font-size: 0.78rem;
+    font-size: 0.88rem;
     padding: 10px 2px 8px;
   }
 
