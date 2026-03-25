@@ -28,8 +28,12 @@ const touched = { name: false, email: false, message: false, privacy: false };
 const byId = (id) => document.getElementById(id);
 const getLang = () => document.documentElement.lang === "de" ? "de" : "en";
 const text = (key) => TEXTS[getLang()][key];
-const validateEmail = (email) =>
-  /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(String(email).trim());
+
+function validateEmail(email) {
+  const value = String(email).trim();
+  if (value.includes("..")) return false;
+  return /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(value);
+}
 
 function setFormError(message = "") {
   const error = byId("formError");
