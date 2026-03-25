@@ -366,3 +366,19 @@ input,textarea,select{ font:inherit; }
   text-align: center;
   flex-shrink: 0;
 }
+.btn_standard.project_link_btn {
+  width: 150px;
+  height: 48px;
+  border-radius: 999px;
+  border: 1px solid #89BCD9;
+  background: transparent;
+  color: #89BCD9;
+  transition: background-color 180ms ease, color 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.btn_standard.project_link_btn:hover {
+  background:  hsl(202, 8%, 27%);
+  color: #F6E7CF;
+  border-color: #89BCD9;
+  box-shadow: 0 0 12px rgba(137, 188, 217, 0.12);
+}
