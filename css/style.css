@@ -352,3 +352,17 @@ input,textarea,select{ font:inherit; }
   top: 9px;
   transform: rotate(-45deg);
 }
+
+.section_cta_row {
+  display: flex;
+  justify-content: center;
+}
+
+.section_cta_row .btn_standard {
+  min-width: 170px;
+  height: 54px;
+  padding: 0 24px;
+  white-space: nowrap;
+  text-align: center;
+  flex-shrink: 0;
+}

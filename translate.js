@@ -27,6 +27,10 @@ const translations = {
     "projects.tech": "Technologies",
     "projects.live": "Live Test",
 
+    "projects.tabJoinDesktop": "1. Join",
+    "projects.tabElPolloDesktop": "2. El Pollo Loco",
+    "projects.tabOngoingDesktop": "3. Ongoing Project",
+
     "projects.tabJoin": "1. Project",
     "projects.tabElPollo": "2. Project",
     "projects.tabOngoing": "3. Project",
@@ -166,6 +170,10 @@ const translations = {
     "projects.tech": "Technologien",
     "projects.live": "Live Test",
 
+    "projects.tabJoinDesktop": "1. Join",
+    "projects.tabElPolloDesktop": "2. El Pollo Loco",
+    "projects.tabOngoingDesktop": "3. Laufendes Projekt",
+
     "projects.tabJoin": "1. Projekt",
     "projects.tabElPollo": "2. Projekt",
     "projects.tabOngoing": "3. Projekt",
@@ -285,7 +293,6 @@ function setText(lang) {
     const key = element.dataset.i18n;
     const value = translations[lang]?.[key];
     if (!value) return;
-
     if (
       value.includes("<br>") ||
       value.includes("<a") ||
@@ -296,7 +303,6 @@ function setText(lang) {
       element.innerHTML = value;
       return;
     }
-
     element.textContent = value;
   });
 }

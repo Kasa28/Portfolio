@@ -352,3 +352,21 @@
     flex-wrap: nowrap;
   }
 }
+
+.project_tab_mobile {
+  display: none;
+}
+
+.project_tab_desktop {
+  display: inline;
+}
+
+@media (max-width: 1000px) {
+  .project_tab_desktop {
+    display: none;
+  }
+
+  .project_tab_mobile {
+    display: inline;
+  }
+}

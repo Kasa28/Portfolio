@@ -259,17 +259,28 @@
   <div class="layout_container">
     <h2 class="section_title" data-i18n="projects.title">My Projects</h2>
 
-    <div class="projects_tabs" role="tablist" aria-label="Project tabs">
-      <div class="project_tab_item">
-        <button class="project_tab active" data-project="join" role="tab" aria-selected="true" data-i18n="projects.tabJoin">1. Join</button>
-      </div>
-      <div class="project_tab_item">
-        <button class="project_tab" data-project="elpolloloco" role="tab" aria-selected="false" data-i18n="projects.tabElPollo">2. El Pollo Loco</button>
-      </div>
-      <div class="project_tab_item">
-        <button class="project_tab" data-project="ongoing" role="tab" aria-selected="false" data-i18n="projects.tabOngoing">3. Ongoing Project</button>
-      </div>
-    </div>
+<div class="projects_tabs" role="tablist" aria-label="Project tabs">
+  <div class="project_tab_item">
+    <button class="project_tab active" data-project="join" role="tab" aria-selected="true">
+      <span class="project_tab_desktop" data-i18n="projects.tabJoinDesktop">1. Join</span>
+      <span class="project_tab_mobile" data-i18n="projects.tabJoin">1. Project</span>
+    </button>
+  </div>
+
+  <div class="project_tab_item">
+    <button class="project_tab" data-project="elpolloloco" role="tab" aria-selected="false">
+      <span class="project_tab_desktop" data-i18n="projects.tabElPolloDesktop">2. El Pollo Loco</span>
+      <span class="project_tab_mobile" data-i18n="projects.tabElPollo">2. Project</span>
+    </button>
+  </div>
+
+  <div class="project_tab_item">
+    <button class="project_tab" data-project="ongoing" role="tab" aria-selected="false">
+      <span class="project_tab_desktop" data-i18n="projects.tabOngoingDesktop">3. Ongoing Project</span>
+      <span class="project_tab_mobile" data-i18n="projects.tabOngoing">3. Project</span>
+    </button>
+  </div>
+</div>
   </div>
 
   <div class="projects_panel">
