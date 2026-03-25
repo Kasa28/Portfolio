@@ -290,3 +290,10 @@ input,textarea,select{ font:inherit; }
   font-size: 1rem;
   line-height: 1.32;
 }
+
+.error_message_text {
+  min-height: 20px;
+  color: #ff4d4f;
+  font-size: 0.95rem;
+  margin-top: 6px;
+}

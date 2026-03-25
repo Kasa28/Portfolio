@@ -4,7 +4,7 @@ const TEXTS = {
   de: {
     name: "Bitte gib deinen Namen ein.",
     email: "Bitte gib eine gültige E-Mail-Adresse ein.",
-    message: "Bitte gib deine Nachricht ein.",
+    message: "Bitte schreibe mindestens 10 Zeichen.",
     privacy: "Bitte akzeptiere die Datenschutzerklärung.",
     failed: "Etwas ist schiefgelaufen. Bitte versuche es später erneut.",
     title: "Vielen Dank für deine Nachricht!",
@@ -14,7 +14,7 @@ const TEXTS = {
   en: {
     name: "Please enter your name.",
     email: "Please enter a valid email address.",
-    message: "Please enter your message.",
+    message: "Please write at least 10 characters.",
     privacy: "Please accept the privacy policy.",
     failed: "Something went wrong. Please try again later.",
     title: "Thank you for your message!",
@@ -23,11 +23,13 @@ const TEXTS = {
   },
 };
 
+const touched = { name: false, email: false, message: false, privacy: false };
+
 const byId = (id) => document.getElementById(id);
 const getLang = () => document.documentElement.lang === "de" ? "de" : "en";
+const text = (key) => TEXTS[getLang()][key];
 const validateEmail = (email) =>
   /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(String(email).trim());
-const text = (key) => TEXTS[getLang()][key];
 
 function setFormError(message = "") {
   const error = byId("formError");
@@ -45,11 +47,15 @@ function getFormEls() {
   };
 }
 
+function isValidMessage(message) {
+  return message.value.trim().length >= 10;
+}
+
 function isFormValid(name, email, message, privacy) {
   return !!(
     name.value.trim() &&
     validateEmail(email.value) &&
-    message.value.trim() &&
+    isValidMessage(message) &&
     privacy.checked
   );
 }
@@ -103,12 +109,16 @@ function activateMobileLink(link, links) {
   link.classList.add("active");
 }
 
-function handleMobileLinkClick(link, links, burger, card) {
+function scrollToTarget(link) {
   const target = document.querySelector(link.getAttribute("href"));
+  target?.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+function handleMobileLinkClick(link, links, burger, card) {
   activateMobileLink(link, links);
   setTimeout(() => {
     closeBurgerState(burger, card);
-    target?.scrollIntoView({ behavior: "smooth", block: "start" });
+    scrollToTarget(link);
   }, 220);
 }
 
@@ -118,12 +128,10 @@ function initBurgerMenu() {
   const links = document.querySelectorAll(".mobile_link_section a");
   if (!burger || !card) return;
   burger.addEventListener("click", () => toggleBurgerState(burger, card));
-  links.forEach((link) =>
-    link.addEventListener("click", (event) => {
-      event.preventDefault();
-      handleMobileLinkClick(link, links, burger, card);
-    })
-  );
+  links.forEach((link) => link.addEventListener("click", (event) => {
+    event.preventDefault();
+    handleMobileLinkClick(link, links, burger, card);
+  }));
 }
 
 function setActiveButtons(selector, lang) {
@@ -183,28 +191,73 @@ function closeContactPopup() {
   popup.setAttribute("aria-hidden", "true");
 }
 
+function handlePopupOverlayClick(event, popup) {
+  if (event.target === popup) closeContactPopup();
+}
+
 function initContactPopup() {
   const popup = byId("contactPopup");
   const close = byId("contactPopupClose");
   if (close) close.addEventListener("click", closeContactPopup);
   if (popup) popup.addEventListener("click", (e) => {
-    if (e.target === popup) closeContactPopup();
+    handlePopupOverlayClick(e, popup);
+  });
+}
+
+function getFieldKey(field) {
+  if (field?.id === "name") return "name";
+  if (field?.id === "email") return "email";
+  if (field?.id === "message") return "message";
+  if (field?.id === "privacy") return "privacy";
+  return "";
+}
+
+function getFieldError(field) {
+  const { name, email, message, privacy } = getFormEls();
+  if (field === name) return name.value.trim() ? "" : text("name");
+  if (field === email) return validateEmail(email.value) ? "" : text("email");
+  if (field === message) return isValidMessage(message) ? "" : text("message");
+  if (field === privacy) return privacy.checked ? "" : text("privacy");
+  return "";
+}
+
+function getTouchedFormError() {
+  const { name, email, message, privacy } = getFormEls();
+  if (touched.name && !name.value.trim()) return text("name");
+  if (touched.email && !validateEmail(email.value)) return text("email");
+  if (touched.message && !isValidMessage(message)) return text("message");
+  if (touched.privacy && !privacy.checked) return text("privacy");
+  return "";
+}
+
+function bindSubmitOnly(input, eventName) {
+  if (!input) return;
+  input.addEventListener(eventName, () => {
+    const key = getFieldKey(input);
+    toggleSubmitState();
+    if (!key || !touched[key]) return;
+    setFormError(getTouchedFormError());
   });
 }
 
 function bindField(input, eventName) {
   if (!input) return;
   input.addEventListener(eventName, () => {
-    setFormError();
+    const key = getFieldKey(input);
+    if (key) touched[key] = true;
+    setFormError(getFieldError(input) || getTouchedFormError());
     toggleSubmitState();
   });
 }
 
 function initContactForm() {
   const { name, email, message, privacy } = getFormEls();
-  bindField(name, "input");
-  bindField(email, "input");
-  bindField(message, "input");
+  bindSubmitOnly(name, "input");
+  bindSubmitOnly(email, "input");
+  bindSubmitOnly(message, "input");
+  bindField(name, "blur");
+  bindField(email, "blur");
+  bindField(message, "blur");
   bindField(privacy, "change");
   toggleSubmitState();
 }
@@ -212,7 +265,7 @@ function initContactForm() {
 function getSendError(name, email, message, privacy) {
   if (!name) return text("name");
   if (!validateEmail(email)) return text("email");
-  if (!message) return text("message");
+  if (message.trim().length < 10) return text("message");
   if (!privacy) return text("privacy");
   return "";
 }
@@ -222,9 +275,11 @@ async function postForm(name, email, message) {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ name, email, message }),
-  })
+  });
   const result = await response.json();
-  if (!response.ok || !result.success) throw new Error(result.error || "Send failed");
+  if (!response.ok || !result.success) {
+    throw new Error(result.error || "Send failed");
+  }
 }
 
 function getTrimmedFormValues(name, email, message) {
@@ -235,19 +290,52 @@ function getTrimmedFormValues(name, email, message) {
   };
 }
 
+function getSendPayload() {
+  const { name, email, message, privacy } = getFormEls();
+  return {
+    ...getTrimmedFormValues(name, email, message),
+    privacyValue: privacy.checked,
+  };
+}
+
+function markAllTouched() {
+  touched.name = true;
+  touched.email = true;
+  touched.message = true;
+  touched.privacy = true;
+}
+
+function resetTouched() {
+  touched.name = false;
+  touched.email = false;
+  touched.message = false;
+  touched.privacy = false;
+}
+
+async function submitValidForm(form, submit, payload) {
+  submit.disabled = true;
+  await postForm(payload.nameValue, payload.emailValue, payload.messageValue);
+  form.reset();
+  resetTouched();
+  setFormError();
+  showContactPopup();
+}
+
 async function sendForm() {
-  const { form, name, email, message, privacy, submit } = getFormEls();
-  if (!form || !name || !email || !message || !privacy || !submit) return;
-  const { nameValue, emailValue, messageValue } = getTrimmedFormValues(name, email, message);
-  const error = getSendError(nameValue, emailValue, messageValue, privacy.checked);
+  const { form, submit } = getFormEls();
+  const payload = getSendPayload();
+  const error = getSendError(
+    payload.nameValue,
+    payload.emailValue,
+    payload.messageValue,
+    payload.privacyValue
+  );
+  if (!form || !submit) return;
+  if (error) markAllTouched();
   setFormError(error);
   if (error) return;
-  submit.disabled = true;
   try {
-    await postForm(nameValue, emailValue, messageValue);
-    form.reset();
-    setFormError();
-    showContactPopup();
+    await submitValidForm(form, submit, payload);
   } catch {
     setFormError(text("failed"));
   } finally {
