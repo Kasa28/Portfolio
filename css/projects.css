@@ -278,3 +278,16 @@
     font-size: 16px;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+#me,
+#skills,
+#projects,
+#contact,
+#legal {
+  scroll-margin-top: 80px;
+}
