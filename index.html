@@ -279,8 +279,15 @@
 
         <div class="project_tab_item">
           <button class="project_tab" data-project="ongoing" role="tab" aria-selected="false">
-            <span class="project_tab_desktop" data-i18n="projects.tabOngoingDesktop">3. Ongoing Project</span>
-            <span class="project_tab_mobile" data-i18n="projects.tabOngoing">3. Project</span>
+            <span class="project_tab_desktop" data-i18n="projects.tabOngoingDesktop">3. Memory</span>
+            <span class="project_tab_mobile" data-i18n="projects.tabOngoing">3. Memory</span>
+          </button>
+        </div>
+
+        <div class="project_tab_item">
+          <button class="project_tab" data-project="pollapp" role="tab" aria-selected="false">
+            <span class="project_tab_desktop" data-i18n="projects.tabPollDesktop">4. PollApp</span>
+            <span class="project_tab_mobile" data-i18n="projects.tabPoll">4. PollApp</span>
           </button>
         </div>
       </div>
@@ -418,17 +425,17 @@
         <article class="project_card" id="ongoing">
           <div class="project_layout">
             <div class="project_info_column">
-              <h3 class="project_mobile_name" data-i18n="projects.ongoing.name">Ongoing Project</h3>
+              <h3 class="project_mobile_name" data-i18n="projects.ongoing.name">Memory</h3>
 
               <div class="project_info_item">
                 <img class="project_marker" src="./assets/icons/marker.svg" alt="">
                 <div class="project_info_text">
                   <div class="project_info_headline_row">
-                    <h3 data-i18n="projects.ongoing.aboutTitle">About the projects</h3>
-                    <span class="project_duration" data-i18n="projects.ongoing.duration">Duration: ongoing</span>
+                    <h3 data-i18n="projects.ongoing.aboutTitle">About the project</h3>
+                    <span class="project_duration" data-i18n="projects.ongoing.duration">Duration: 3 weeks</span>
                   </div>
                   <p data-i18n="projects.ongoing.aboutText">
-                    My upcoming projects will focus on showcasing my skills in Angular and TypeScript.
+                    Memory is a card-matching game that focuses on concentration, interaction, and a clear user experience.
                   </p>
                 </div>
               </div>
@@ -436,9 +443,9 @@
               <div class="project_info_item">
                 <img class="project_marker" src="./assets/icons/marker.svg" alt="">
                 <div class="project_info_text">
-                  <h3 data-i18n="projects.ongoing.memoryTitle">Memory Game</h3>
+                  <h3 data-i18n="projects.ongoing.memoryTitle">Build time</h3>
                   <p data-i18n="projects.ongoing.memoryText">
-                    I am currently expanding my frontend expertise by working with TypeScript and SCSS to build more scalable and maintainable applications.
+                    I built this Memory project in three weeks and used the time to strengthen my frontend fundamentals in a practical way.
                   </p>
                 </div>
               </div>
@@ -446,9 +453,64 @@
               <div class="project_info_item">
                 <img class="project_marker" src="./assets/icons/marker.svg" alt="">
                 <div class="project_info_text">
-                  <h3 data-i18n="projects.ongoing.pollTitle">Poll App</h3>
+                  <h3 data-i18n="projects.ongoing.pollTitle">What I focused on</h3>
                   <p data-i18n="projects.ongoing.pollText">
-                    One of my next projects is a real-time poll application built with Angular and Supabase, where users can create surveys and track live results as they update instantly.
+                    My focus was on clean game logic, responsive layout, and creating a simple experience that feels intuitive on different screen sizes.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="project_preview_column">
+              <div class="project_tech_block">
+                <p class="project_tech_title" data-i18n="projects.tech">Technologies</p>
+                <div class="project_tech_icons">
+                  <img src="./assets/icons/htm_notext.svg" alt="HTML">
+                  <img src="./assets/icons/css_notext.svg" alt="CSS">
+                  <img src="./assets/icons/js_notext.svg" alt="JavaScript">
+                </div>
+                <p class="project_tech_text" data-i18n="projects.ongoing.techText">HTML, CSS, JavaScript</p>
+              </div>
+
+              <img class="project_preview_image" src="./assets/icons/memory.png" alt="Memory project preview">
+            </div>
+          </div>
+        </article>
+
+        <article class="project_card" id="pollapp">
+          <div class="project_layout">
+            <div class="project_info_column">
+              <h3 class="project_mobile_name" data-i18n="projects.poll.name">PollApp</h3>
+
+              <div class="project_info_item">
+                <img class="project_marker" src="./assets/icons/marker.svg" alt="">
+                <div class="project_info_text">
+                  <div class="project_info_headline_row">
+                    <h3 data-i18n="projects.poll.aboutTitle">About the project</h3>
+                    <span class="project_duration" data-i18n="projects.poll.duration">Duration: 2 weeks</span>
+                  </div>
+                  <p data-i18n="projects.poll.aboutText">
+                    PollApp is a real-time survey application where users can create polls and follow live results instantly.
+                  </p>
+                </div>
+              </div>
+
+              <div class="project_info_item">
+                <img class="project_marker" src="./assets/icons/marker.svg" alt="">
+                <div class="project_info_text">
+                  <h3 data-i18n="projects.poll.processTitle">Core idea</h3>
+                  <p data-i18n="projects.poll.processText">
+                    The goal of PollApp is to combine a simple voting flow with instant updates so the interaction feels dynamic and direct.
+                  </p>
+                </div>
+              </div>
+
+              <div class="project_info_item">
+                <img class="project_marker" src="./assets/icons/marker.svg" alt="">
+                <div class="project_info_text">
+                  <h3 data-i18n="projects.poll.focusTitle">Technical focus</h3>
+                  <p data-i18n="projects.poll.focusText">
+                    My focus for this project is real-time data handling, clean component structure, and a responsive user interface with Angular.
                   </p>
                 </div>
               </div>
@@ -460,12 +522,12 @@
                 <div class="project_tech_icons">
                   <img src="./assets/icons/angular_notext.svg" alt="Angular">
                   <img src="./assets/icons/ts_notext.svg" alt="TypeScript">
-                  <img src="./assets/icons/js_notext.svg" alt="JavaScript">
+                  <img src="./assets/icons/firebase_notext.svg" alt="Firebase">
                 </div>
-                <p class="project_tech_text" data-i18n="projects.ongoing.techText">Angular, TS, JS</p>
+                <p class="project_tech_text" data-i18n="projects.poll.techText">Angular, TypeScript, Firebase</p>
               </div>
 
-              <img class="project_preview_image" src="./assets/img/coming.png" alt="Upcoming project preview">
+              <img class="project_preview_image" src="./assets/icons/PollApp.png" alt="PollApp project preview">
             </div>
           </div>
         </article>

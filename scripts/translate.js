@@ -29,19 +29,23 @@ const translations = {
 
     "projects.tabJoinDesktop": "1. Join",
     "projects.tabElPolloDesktop": "2. El Pollo Loco",
-    "projects.tabOngoingDesktop": "3. Ongoing Project",
+    "projects.tabOngoingDesktop": "3. Memory",
+    "projects.tabPollDesktop": "4. PollApp",
 
     "projects.tabJoin": "1. Project",
     "projects.tabElPollo": "2. Project",
-    "projects.tabOngoing": "3. Project",
+    "projects.tabOngoing": "3. Memory",
+    "projects.tabPoll": "4. PollApp",
 
     "projects.join.name": "Join",
     "projects.elpollo.name": "El Pollo Loco",
-    "projects.ongoing.name": "Ongoing Project",
+    "projects.ongoing.name": "Memory",
+    "projects.poll.name": "PollApp",
 
     "projects.join.techText": "JavaScript, HTML, CSS",
     "projects.elpollo.techText": "JavaScript, HTML, CSS",
-    "projects.ongoing.techText": "Angular, TS, JS",
+    "projects.ongoing.techText": "HTML, CSS, JavaScript",
+    "projects.poll.techText": "Angular, TypeScript, Firebase",
 
     "projects.join.aboutTitle": "About the project",
     "projects.join.duration": "Duration: 1.5 months",
@@ -65,16 +69,27 @@ const translations = {
     "projects.elpollo.learnedText":
       "Designing and implementing classes and methods significantly improved my development skills. It enabled me to write more modular, flexible, and reusable code, and deepened my understanding of scalable application structure.",
 
-    "projects.ongoing.aboutTitle": "About the projects",
-    "projects.ongoing.duration": "Duration: ongoing",
+    "projects.ongoing.aboutTitle": "About the project",
+    "projects.ongoing.duration": "Duration: 3 weeks",
     "projects.ongoing.aboutText":
-      "My upcoming projects will focus on showcasing my skills in Angular and TypeScript.",
-    "projects.ongoing.memoryTitle": "Memory Game",
+      "Memory is a card-matching game that focuses on concentration, interaction, and a clear user experience.",
+    "projects.ongoing.memoryTitle": "Build time",
     "projects.ongoing.memoryText":
-      "I am currently expanding my frontend expertise by working with TypeScript and SCSS to build more scalable and maintainable applications.",
-    "projects.ongoing.pollTitle": "Poll App",
+      "I built this Memory project in three weeks and used the time to strengthen my frontend fundamentals in a practical way.",
+    "projects.ongoing.pollTitle": "What I focused on",
     "projects.ongoing.pollText":
-      "One of my next projects is a real-time poll application built with Angular and Supabase, where users can create surveys and track live results as they update instantly.",
+      "My focus was on clean game logic, responsive layout, and creating a simple experience that feels intuitive on different screen sizes.",
+
+    "projects.poll.aboutTitle": "About the project",
+    "projects.poll.duration": "Duration: 2 weeks",
+    "projects.poll.aboutText":
+      "PollApp is a real-time survey application where users can create polls and follow live results instantly.",
+    "projects.poll.processTitle": "Core idea",
+    "projects.poll.processText":
+      "The goal of PollApp is to combine a simple voting flow with instant updates so the interaction feels dynamic and direct.",
+    "projects.poll.focusTitle": "Technical focus",
+    "projects.poll.focusText":
+      "My focus for this project is real-time data handling, clean component structure, and a responsive user interface with Angular.",
 
     "references.titleMain": "Need a teamplayer?",
     "references.titleSub": "Here’s what my colleagues say about me",
@@ -172,19 +187,23 @@ const translations = {
 
     "projects.tabJoinDesktop": "1. Join",
     "projects.tabElPolloDesktop": "2. El Pollo Loco",
-    "projects.tabOngoingDesktop": "3. Laufendes Projekt",
+    "projects.tabOngoingDesktop": "3. Memory",
+    "projects.tabPollDesktop": "4. PollApp",
 
     "projects.tabJoin": "1. Projekt",
     "projects.tabElPollo": "2. Projekt",
-    "projects.tabOngoing": "3. Projekt",
+    "projects.tabOngoing": "3. Memory",
+    "projects.tabPoll": "4. PollApp",
 
     "projects.join.name": "Join",
     "projects.elpollo.name": "El Pollo Loco",
-    "projects.ongoing.name": "Laufendes Projekt",
+    "projects.ongoing.name": "Memory",
+    "projects.poll.name": "PollApp",
 
     "projects.join.techText": "JavaScript, HTML, CSS",
     "projects.elpollo.techText": "JavaScript, HTML, CSS",
-    "projects.ongoing.techText": "Angular, TS, JS",
+    "projects.ongoing.techText": "HTML, CSS, JavaScript",
+    "projects.poll.techText": "Angular, TypeScript, Firebase",
 
     "projects.join.aboutTitle": "Über das Projekt",
     "projects.join.duration": "Dauer: 1,5 Monate",
@@ -208,16 +227,27 @@ const translations = {
     "projects.elpollo.learnedText":
       "Das Entwerfen und Implementieren von Klassen und Methoden hat meine Entwicklungsfähigkeiten deutlich verbessert. Dadurch konnte ich modulareren, flexibleren und wiederverwendbaren Code schreiben und mein Verständnis für skalierbare Anwendungsstrukturen vertiefen.",
 
-    "projects.ongoing.aboutTitle": "Über die Projekte",
-    "projects.ongoing.duration": "Dauer: laufend",
+    "projects.ongoing.aboutTitle": "Über das Projekt",
+    "projects.ongoing.duration": "Dauer: 3 Wochen",
     "projects.ongoing.aboutText":
-      "Meine kommenden Projekte werden sich darauf konzentrieren, meine Fähigkeiten in Angular und TypeScript zu zeigen.",
-    "projects.ongoing.memoryTitle": "Memory Game",
+      "Memory ist ein Karten-Matching-Spiel, bei dem Konzentration, Interaktion und eine klare User Experience im Mittelpunkt stehen.",
+    "projects.ongoing.memoryTitle": "Entwicklungszeit",
     "projects.ongoing.memoryText":
-      "Ich erweitere aktuell meine Frontend-Kenntnisse mit TypeScript und SCSS, um skalierbarere und wartbarere Anwendungen zu entwickeln.",
-    "projects.ongoing.pollTitle": "Poll App",
+      "Ich habe dieses Memory-Projekt in drei Wochen umgesetzt und die Zeit genutzt, um meine Frontend-Grundlagen praxisnah zu vertiefen.",
+    "projects.ongoing.pollTitle": "Mein Fokus",
     "projects.ongoing.pollText":
-      "Eines meiner nächsten Projekte ist eine Echtzeit-Umfrage-App mit Angular und Supabase, bei der Nutzer Umfragen erstellen und Live-Ergebnisse in Echtzeit verfolgen können.",
+      "Mein Fokus lag auf sauberer Spiellogik, einem responsiven Layout und einer einfachen Bedienung auf verschiedenen Bildschirmgrößen.",
+
+    "projects.poll.aboutTitle": "Über das Projekt",
+    "projects.poll.duration": "Dauer: 2 Wochen",
+    "projects.poll.aboutText":
+      "PollApp ist eine Echtzeit-Umfrage-Anwendung, in der Nutzer Umfragen erstellen und Live-Ergebnisse direkt verfolgen können.",
+    "projects.poll.processTitle": "Grundidee",
+    "projects.poll.processText":
+      "Das Ziel von PollApp ist es, einen einfachen Abstimmungsprozess mit sofortigen Updates zu verbinden, damit sich die Interaktion direkt und lebendig anfühlt.",
+    "projects.poll.focusTitle": "Technischer Fokus",
+    "projects.poll.focusText":
+      "Mein Fokus bei diesem Projekt liegt auf Echtzeit-Daten, einer sauberen Komponentenstruktur und einer responsiven Benutzeroberfläche mit Angular.",
 
     "references.titleMain": "Du suchst eine Teamplayerin?",
     "references.titleSub": "Das sagen meine Kolleginnen über mich",
